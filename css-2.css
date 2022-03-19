@@ -1,0 +1,57 @@
+selettore {
+    border-collapse: 15px;
+}
+
+
+table {
+    text-align: center;
+    table-layout: fixed;
+    width: 400px;
+    border : 2px solid black;
+    border-collapse: separate;
+    border-spacing: 100px;
+} 
+
+
+body {
+    align-content: center;
+    font:12px, Segoe UI;
+}
+
+
+table, td, th {
+    align-items: center;
+	border:1px solid rgb(161, 161, 161);
+	border-collapse:collapse
+}
+
+
+td, th {
+	padding:3px 5px
+}
+
+tbody{
+    align-items: center;
+}
+
+
+td {
+	text-align: right
+}
+th {
+	text-align: left
+}
+
+
+tr.odd td, tr.odd th {
+	background-color:#D5E4FF
+}
+
+
+tr:nth-child(2n+1) {background-color:#D5E4FF;}
+
+
+caption {
+	font-weight:bold;
+	color: rgb(126, 126, 126)
+}

@@ -1,0 +1,4 @@
+header span.animated {
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
