@@ -15,7 +15,7 @@ table {
 
 body {
     align-content: center;
-    font:12px, Segoe UI;
+    font:15px, Segoe UI;
 }
 
 
@@ -29,6 +29,7 @@ table, td, th {
 td, th {
 	padding:3px 5px
 }
+
 
 tbody{
     align-items: center;

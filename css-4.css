@@ -1,0 +1,6 @@
+img {
+    ascent-override:initial;
+    image-rendering: auto;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,4 +1,6 @@
 header span.animated {
-    animation-duration: 3.5s;
+    ascent-override:initial;
+    align-self: start;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
