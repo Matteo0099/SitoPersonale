@@ -1,6 +1,37 @@
 header span.animated {
     ascent-override:initial;
     align-self: start;
-    animation-duration: 4s;
+    animation-duration: 6s;
+    animation-delay: 6ms;
     animation-iteration-count: infinite;
 }
+
+
+/*sfondo*/
+body {
+	background: linear-gradient(-45deg, #ee7752, #db3b78, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 13s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+table {
+    initial-value: 100%;
+    margin: 0 auto;
+    resize: auto;
+}
+
+ 
+ 

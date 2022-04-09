@@ -2,5 +2,6 @@ img {
     ascent-override:initial;
     image-rendering: auto;
     max-width: 100%;
+    min-width: 60%;
     height: auto;
 }

@@ -1,141 +1,196 @@
 <!DOCTYPE html>
 <html>
-      <head>
-            <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-      </head>
+    <head>
+      <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-      <head>
-            <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-      </head>
+      <link rel="icon" href = "./immagini/zippo_107 logo.png"
+    </head>
 
-      <body background = "./immagini/img_sfondo.jpg" style = "text-align: center;"/>
+    <!--<body background = "./immagini/img_sfondo.jpg" style = "text-align: center;" />-->
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <style>
+      body {
+        background-color:none;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
       
-      <link rel = "stylesheet" href = "./css-3.css" />
-      <div class = "magictime">
-      <header>
-            <h1 style = "font-size : 65px; text-align: center; font-style:initial ; align-content: center; text-shadow: 0 0 4px #ccc, 0 -5px 4px rgb(255, 255, 42), 2px -6px 6px #fd3, -2px -10px 12px
-            #f80, 2px -14px 14px rgb(245, 33, 0);" class="animated bounceInDown"> <a name = "inizio">Benvenuto nel sito di ZIPPO107!</a>
-            </h1>
-            <span class="animated bounce"></span>
-      </header>
-      </div>
-      </link>
+      li {
+        float: left;
+      }
+      
+      li a, .dropbtn {
+        font: Poppins;
+        font-size: 25px;
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 17px 24px;
+        text-decoration: none;
+      }
+      
+      li a:hover, .dropdown:hover .dropbtn {
+        background-color:#f1f1f1;
+      }
+      
+      li.dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
+      </head>
+      <body>
+            
+      <ul>
+        <li class = "dropdown">
+          <a href = "javascript:void(0)" class = "dropbtn">Home</a>
+          <div class = "dropdown-content">
+            <a href = "#file1">Me</a>
+          </div>
+        </li>
 
-      <h2 style = "font-size : 30px; text-align: center; font-style:oblique; align-content: flex-end; text-shadow: 1px 1px 4px#000;">
-            Se sei qui vuol dire che coltivi di giorno in giorno come me la passione dell'informatica; <br> se è così, vieni a far un due chiacchiere e contattami <br> sui social:
-      </h2>
+      <li><a href="#git">
+        <form action = "">
+          <button onclick="window.open('https://github.com/Matteo0099');">
+            Github
+          </button>
+        </form>
+      </a></li>
 
-      <br><br>
+      <li><a href="#reddit">
+        <button onclick="window.opne();">
+          Reddit
+        </button>
+      </a></li>
 
-      <a href = "https://www.instagram.com/itsmatteomania/"> 
-            <img src = "./immagini/altr/social_instagram_square.png" alt = " INSTAGRAM " height="47" width="47">
-      </a>
-
-      &ensp;&ensp;
-
-      <a href = "https://www.facebook.com/robin.ticke.50/">
-            <img src = "./immagini/altr/social_facebook_square.png" alt = " FACEBOOK "  height="47" width="47">
-      </a>  
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">
+          <form action = "mailto:matteomania09@gmail.com">
+            <button type = "submit">
+              Email
+            </button>
+          </form>
+        </a>
+      </ul>
 
       <br><br><br><br><br><br><br>
+            
+      <link rel = "stylesheet" href = "./css-3.css" />
+
+
+    <header>
+      <h1 style = "font-size : 60px; text-align: center; font-style:initial ; align-content: center; text-shadow: 0 0 4px #ccc, 0 -5px 4px rgb(255, 255, 42), 2px -6px 6px #fd3, -2px -10px 12px
+      #f80, 2px -14px 14px rgb(245, 33, 0);" class="animated bounceInDown"> <a>Benvenuto nel sito di ZIPPO107!</a>
+      </h1>
+      <span class="animated bounce"></span>
+    </header>
+
+    <br><br><br><br>
+
+  <center>
+    <table borderColor = black cellSpacing= 50 cellPaddring=10 align=center height = 28% width="19%" >
+      <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+        <tr>
+          <td>
+            <center> 
+              <h1 style = "font: Poppins; font-size: 22px; letter-spacing: 1px;">Informatico e fps-player</h1>
+            </center>
+
+              &ensp;
+            <div class = "magictime">
+            
+            <p style="font: Poppins;">
+              <center>
+              <span class = "font-mono font-medium" style = "font-size: 30px; letter-spacing: 1.5px;">
+                Socials:         
+              </span>
+              </center>
+            </p>
+            
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+              <style>
+                .fa {
+                  padding: 40px;
+                  resize: both;
+                  image-resolution: auto;
+                  align-content: center;
+                  text-align: center;
+                  margin: 16px 25px;
+                  font-size: 50px;
+                  height: 60px;
+                  width: 70px;
+                }
+                .fa-facebook {
+                  background: #3B5998;
+                  color: white;
+                  text-align: center;
+                  align-self: center;
+                  align-items: center;
+                  align-content: center;
+                }
+              
+                .fa-instagram {
+                  background: #9315a3;
+                  color: white;
+                  text-align: center;
+                  align-self: center;
+                  align-items: center;
+                  align-content: center;
+                } 
+              </style>
+              
+              <ul>   
+                  <li>
+                    <a href = "https://www.facebook.com/robin.ticke.50/" class="fa fa-facebook"> 
+                    </a>              
+                </li>
+
+                <li>
+                  <a href = "https://www.instagram.com/itsmatteomania/" class="fa fa-instagram"> </a>
+                </li>
+              </ul>
+            </center>
+          </link>
+
+            <br>
+      
+          </td>
+        </tr>
+        </div>
+      </div>
+    </table>
+  </center>
   
-      <h3 style = "font-size : 22px; text-align: center; font-style:oblique; align-content: flex-end;"><br>
-            si, questo sono proprio io mentre triccko con la bmx...
-      </h3>
-
-      <br>
-
-      <link rel = "stylesheet" href ="css-4.css">
-            <a href ="./immagini/me.table.png" style = "border: #000; align-items: center;">    
-                  <img src = "./immagini/me.table.png">
-            </a>
-            
-            <br><br><br>
-            
-            <h3 style = "font-size : 30px; text-align: center; font-style:oblique; align-content: flex-end;">
-                  altre foto di repertorio riguardo me...
-            </h3>
-
-            <br><br><br>
-
-            <a href ="./immagini/mtb1.png" style = "border: #000; align-items:initial;">    
-                  <img src = "./immagini/mtb1.png">
-            </a>
-      </link>
-
-      <h4 style = "font-size : 22px; text-align: center; font-style:oblique; align-content: flex-end;">
-            Forni di Sopra, Enduro Race.
-      </h4>
-
-      <br><br><br><br><br>
-
-      <link rel="stylesheet" href="./Untitled-1.css" />
-      <div align = "center">
-      <table>
-            <caption style = "font-size: 20px; color:rgb(109, 108, 108);">SPECS PC: </caption>
-            <tbody style = "font-size: 18px;">
-                  <tr><th>CPU</th>
-                        <td> RYZEN 7 3800 XT </td>
-
-                  <tr><th>GPU</th>
-                        <td>1660 SUPER OC GIGABYTE</td>
-
-                  <tr><th>COOLER</th>
-                        <td>NOCTUA D12 CROMAX</td>
-
-                  <tr><th>PSU</th>
-                        <td>ENERMAX 750W MARBLEBRON</td>
-
-                  <tr><th>MOTHERBOARD</th>
-                        <td>MSI X570 AM4 TOMAHAWK</td>
-
-                  <tr><th>CASE</th>
-                        <td>RAM 16GB CORSAIR 3600MHZ CL 16-18</td>
-
-                  <tr><th>CASE</th>
-                        <td>EMPIRE GAMING ATX</td>
-                  </tr>
-            </tbody>
-      </table>
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <div align = "center">
-      <link rel="stylesheet" href="./css-2.css" />
-      <table> 
-            <caption style = "font-size: 20px; color:rgb(109, 109, 109);"> PROFILI AGGIUNTIVI </caption>
-            <tbody style = "font-size: 18px; font: Sans-serif ; text-align: center;">   
-                  <tr><th>GITHUB: </th> 
-                        <td><a href = https://github.com/Matteo0099>Matteo0099</a></td>
-                  <tr><th>REDDIT: </th>
-                        <td><a href = https://www.reddit.com/user/matty0507>matty0507</td>
-                  <tr><th>TWITCH </th>
-                        <td><a href = https://www.twitch.tv/zippo_107>ZIPPO107</td>
-                        
-                  </tr>
-            </tbody>   
-      </table>
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <a HREF="#inizio">Torna all'inizio</a> 
-      
-      </h3>
-
-      <br><br><br>
-      
-      </body>
+  </body>
 </html>
