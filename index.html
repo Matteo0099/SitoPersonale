@@ -7,16 +7,31 @@
     <link rel="icon" href = "./immagini/zippo_107 logo.png"
   </head>
 
+    <!--vecchio sfondo-->
     <!--<body background = "./immagini/img_sfondo.jpg" style = "text-align: center;" />-->
+
+  <link rel = "stylesheet" href = "./css-1.css"/>
+
   <body>
     <head>
       <style>
+        .image {
+          height: 100px;
+          width: 100px;  
+          image-rendering:optimizeQuality;
+          }
+
+          .crisp-edges {
+          image-rendering: -webkit-optimize-contrast; /* Chrome, Edge, Opera, and Safari */
+          image-rendering: crisp-edges;
+        }
+  
         body {
           background-color:none;
         }
         ul {
           list-style-type: none;
-          margin: 0;
+          margin: 2;
           padding: 0;
           overflow: hidden;
           background-color: transparent;
@@ -27,17 +42,18 @@
         }
         
         li a, .dropbtn {
-          font: Poppins;
-          font-size: 25px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 30px;
           display: inline-block;
-          color: rgb(0, 0, 0);
+          color:azure;
           text-align: center;
           padding: 17px 24px;
           text-decoration: none;
         }
         
         li a:hover, .dropdown:hover .dropbtn {
-          background-color:#f1f1f1;
+          background-color:transparent;
+          resize: vertical;
         }
         
         li.dropdown {
@@ -47,7 +63,7 @@
         .dropdown-content {
           display: none;
           position: absolute;
-          background-color: #f9f9f9;
+          background-color: #f5f5f5;
           min-width: 160px;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
@@ -71,62 +87,59 @@
     </head>
   </body>
 
-  <body>      
-    <ul>
-      <li class = "dropdown">
-        <a href = "javascript:void(0)" class = "dropbtn">Home</a>
-        <div class = "dropdown-content">
-          <a href = "#file1">Me
-            <form aciotn = "">
-              <button onclick="window.open()">
-                <img src = "./immagini/zippo_107 logo.png" height="90" width="90">
+  <body>
+    <div id = "span1">      
+      <ul>
+        <li class = "dropdown">
+          <a href = "javascript:void(0)" class = "dropbtn">Home</a>
+          <div class = "dropdown-content">
+            <form action = "">
+              <br>
+              &ensp;&ensp;
+              <button onclick="window.open('https://matteo0099.github.io/Aumento-Prezzi/')" id = "pulsante" width="20" height="20">sito2</button>
+              <br><br>              
+              </form>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <a href="#git">
+            <form action = "">
+              <button onclick="window.open('https://github.com/Matteo0099');" id = "pulsante">
+                Github
               </button>
-              <br><br>
-            <button onclick="window.open('https://matteo0099.github.io/Aumento-Prezzi/')" id = "pulsante" padding = "20px">sito2</button>
-          </a>
             </form>
           </a>
-        </div>
-      </li>
+        </li>
 
-      <li>
-        <a href="#git">
-          <form action = "">
-            <button onclick="window.open('https://github.com/Matteo0099');" id = "pulsante">
-              Github
-            </button>
-          </form>
-        </a>
-      </li>
+        <li>
+          <a href="#reddit">
+            <form action ="">
+              <button onclick="window.open('https://www.reddit.com/user/matty0507');" id = "pulsante">
+                Reddit
+              </button>
+            </form>
+          </a>
+        </li>
 
-      <li>
-        <a href="#reddit">
-          <form action ="">
-            <button onclick="window.open('https://www.reddit.com/user/matty0507');" id = "pulsante">
-              Reddit
-            </button>
-          </form>
-        </a>
-      </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">
+            <form action = "mailto:matteomania09@gmail.com">
+              <button type = "submit" id = "pulsante">
+                Email
+              </button>
+            </form>
+          </a>
+        </ul>
+      </div>
 
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">
-          <form action = "mailto:matteomania09@gmail.com">
-            <button type = "submit" id = "pulsante">
-              Email
-            </button>
-          </form>
-        </a>
-    </ul>
-
-      <br><br><br><br><br><br><br><br>    
-        
-    <link rel = "stylesheet" href = "./css-3.css" />
+      <br><br><br><br><br><br><br>    
 
     <center>
       <header>
         <span class="animated bounce">
-          <h1 style = "font : Poppins; font-size : 60px; text-align: center; font-style:initial ; align-content: center; text-shadow: 0 0 4px #ccc, 0 -5px 4px rgb(255, 255, 42), 2px -6px 6px #fd3, -2px -10px 12px
+          <h1 style = "font : Poppins; font-size : 57px; text-align: center; font-style:initial ; align-content: center; text-shadow: 0 0 4px #ccc, 0 -5px 4px rgb(255, 255, 42), 2px -6px 6px #fd3, -2px -10px 12px
           rgb(255, 137, 2), 2px -14px 14px rgba(239, 33, 2, 0.918);" class="animated bounceInDown"> <a>Benvenuto nel sito di ZIPPO107!</a>
           </h1>
         </span>
@@ -135,7 +148,7 @@
     </center>
 
     <center> 
-      <h1 style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 22px; letter-spacing: 1px;">- Informatico e fps-player -</h1>
+      <h1 style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 22px; letter-spacing: 1px;">- Informatico / fps-player -</h1>
     </center>
 
     <center>
@@ -163,11 +176,11 @@
           <!-- dovrebbe fare qualcosa nel file css-->  
 
           <a href="https://www.facebook.com/robin.ticke.50/">
-          <img src="./immagini/facebook.png" title ="facebook icons" width="100" height="100"></a>
+          <img src="./immagini/facebook.png" title ="facebook icons" width="105" height="105"></a>
           </a>
 
           <a href="https://www.instagram.com/itz_matteomania/">
-          <img src="./immagini/instagram.png" title="instagram icons" width="100" height="100"></a>
+          <img src="./immagini/instagram.png" title="instagram icons" width="105" height="105"></a>
           </a>
 
         </div>
