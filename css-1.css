@@ -6,11 +6,12 @@
 	}
 }
 
+/* no scroll */
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: none;
   }
 
-span1{
+.span1{
 	resize: both;
 	overflow: auto;
 	image-rendering:-moz-crisp-edges; /* firefox */
@@ -24,24 +25,13 @@ textarea {
 /*sfondo*/
 
 body {
-	background: linear-gradient(-45deg, #ee7752, #db3b78, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ffadad, #ffd6a5, #fdffb6, #caffbf,#9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff);
 	background-size: 400% 400%;
-	animation: gradient 11s ease infinite;
-	height: 80vh;
+	animation: gradient 9s ease infinite;
+	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
+/* azione pulsanti home.. */
 #pulsante {
 	outline: none;
 	cursor: pointer;
@@ -65,7 +55,7 @@ body {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
- #pulsante:hover {
+#pulsante:hover {
 	background: #0095cd;
 	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#15c1ff));
 	background: -webkit-linear-gradient(top, #0078a5, #15c1ff);
@@ -75,12 +65,11 @@ body {
 	background: linear-gradient(top, #0078a5, #15c1ff);
 	}
 
- #pulsante:hover {
+#pulsante:hover {
 		background: #0681ad;
 	}
 
- #pulsante:active {
+#pulsante:active {
 		position: relative;
 		top: 4px;
-}
-
+	}
