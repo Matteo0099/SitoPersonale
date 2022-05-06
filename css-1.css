@@ -18,18 +18,48 @@ html {
 	image-rendering: optimizeQuality;
   }
 
+/*
+.span2:hover{
+	background: #0078a5;
+}
+
+.span2:active{
+	position: relative;
+	top: 1px;
+}
+*/
+
 textarea {
 	resize: none;
   }
 
+
 /*sfondo*/
 
-body {
-	background: linear-gradient(-45deg, #ffadad, #ffd6a5, #fdffb6, #caffbf,#9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff);
-	background-size: 400% 400%;
-	animation: gradient 9s ease infinite;
-	height: 100vh;
+html, body {
+	width: 100%;
+	height:100%;
+  }
+  
+  body {
+	  background: linear-gradient(-45deg, #fbf8cc, #fde4cf, #ffcfd2, #f1c0e8, #cfbaf0, #a3c4f3, #90dbf4, #8eecf5, #98f5e1, #b9fbc0);
+	  background-size: 400% 400%;
+	  animation-delay: 0 0.4ms;
+	  animation: gradient 12s ease infinite;
 }
+  
+  @keyframes gradient {
+	  0% {
+		  background-position: 0% 50%;
+	  }
+	  50% {
+		  background-position: 100% 50%;
+	  }
+	  100% {
+		  background-position: 0% 50%;
+	  }
+}
+  
 
 /* azione pulsanti home.. */
 #pulsante {
@@ -66,10 +96,19 @@ body {
 	}
 
 #pulsante:hover {
+		position: relative;
+		top:2px;
 		background: #0681ad;
 	}
 
 #pulsante:active {
-		position: relative;
+		position:relative;
 		top: 4px;
 	}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:-1;
+}
