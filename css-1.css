@@ -67,7 +67,7 @@ html, body {
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: bold 12px Arial, Helvetica, sans-serif;
+	font: bold 13px Arial, Helvetica, sans-serif;
 	color: #fff;
 	padding: 10px 18px;
 	border: solid 1px #0076a3;
@@ -97,13 +97,13 @@ html, body {
 
 #pulsante:hover {
 		position: relative;
-		top:2px;
+		top:0px; /*idk if 1 or 0 px*/
 		background: #0681ad;
 	}
 
 #pulsante:active {
 		position:relative;
-		top: 4px;
+		top: 0.2em;
 	}
 
 canvas {

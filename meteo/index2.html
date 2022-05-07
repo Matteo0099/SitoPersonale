@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, align-content: center">
+    <meta charset="utf-8">
+  </head>
+
+  <link rel = "stylesheet" href = "./css-3.css"/>
+
+    <form>
+        <INPUT TYPE="button" VALUE="Torna Indietro" onClick="history.go(-1);return true;" style="
+        background-color: #727272; 
+        width: 120px;
+        padding: .4em;
+        margin-top: 1px;
+        color: #000000;
+        text-shadow: 1px 1px 1px #000;
+        font: 12px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: solid thin #ffffff;
+        -webkit-border-radius: .6em;
+        -moz-border-radius: .6em;
+        border-radius: .6em;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e9ede8), to(#ffffff),color-stop(0.4, #d8d8d8));">
+    </form>
+
+    <style>
+        p {
+            text-shadow: 0px 2px 8px rgb(54, 54, 54);
+            font-size: 23px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <div align = "center" style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        <p script = "text/css"> 
+            METEO FRIULI-VENEZIA-GIULIA
+        </p>
+    </div>
+
+    <center>
+        <div id = "meteo" style="align-items: baseline; margin-top: 5px;">
+            <iframe src="https://www.3bmeteo.com/moduli_esterni/regione_7_giorni/6/ffffff/fc9b2a/5e5e5e/ffffff/it" width="735" height = "570" frameborder="0"></iframe>
+            <a href="https://www.3bmeteo.com/meteo_regione-friuli_vg.htm"></a>
+        </div>
+    </center>
+
+    <div align = "center" style="text-align: center; align-items: baseline; margin-top: 14px;">
+        <iframe src="http://www.meteoam.it/widget/localita/189" width="350" height="300">
+        </iframe>
+    </div>
+
+
+    <!-- Vecchio widget
+    <div align = "center" style="text-align: center; align-items: baseline;">
+        <iframe src="http://www.meteoam.it/widget/localita/189" width="660" height="660" ></iframe>
+    </div>
+
+    <div align = "right">
+        <iframe src="http://www.meteoam.it/widget/regione/FVG" width="405" height="480"></iframe>
+    </div>
+    -->
+
+  </body>
+</html>

@@ -12,6 +12,7 @@
 
   <link rel = "stylesheet" href = "./css-1.css"/>
   <link rel = "stylesheet" href = "./css-2.css"/>
+  <link rel = "stylesheet" href = "./meteo/index2.html"/>
   <!--OPENSOURCE-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <script type="text/javascript" src="./core.js"></script>
@@ -35,7 +36,7 @@
 
         ul {
           list-style-type: none;
-          margin: 6px;
+          margin: 2px;
           padding: 0;
           overflow: hidden;
           background-color: transparent;
@@ -47,12 +48,12 @@
         
         li a, .dropbtn {
           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-size: 28px;
+          font-size: 32px;
           display: inline-block;
           color:rgb(0, 0, 0);
           text-align: center;
           padding: 12px 24px;
-          text-decoration:double;
+          text-decoration:solid;
         }
         
         li a:hover, .dropdown:hover .dropbtn {
@@ -78,14 +79,14 @@
           display: none;
           position: absolute;
           background-color:none;
-          min-width: 40px;
+          min-width: 65px;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
         }
         
         .dropdown-content a {
           color: black;
-          padding: 2px 10px;
+          padding: 3px 10px;
           text-decoration: none;
           display: block;
           text-align: left;
@@ -117,6 +118,16 @@
             </center>
             </a>
           </div>
+
+          <li class="dropdown">
+            <a href = "#meteo">
+              <form action="./meteo/index2.html">
+                <button type = "submit" id = "pulsante">
+                  METEO
+                </button>
+              </form>
+            </a>
+          </li>
 
           <li>
             <a href="#git">
@@ -150,8 +161,7 @@
         </li>
       </div>
 
-      <br>
-
+      <br><br><br>
     <!--
     <div class ="box">
       <link rel = "stylesheet" href = "./css-2.css">
@@ -164,12 +174,13 @@
 
     <!-- TITLE -->
 
-    <div style="text-align: center; font-family: 'Segoe UI'; font-size: 55px; align-content: center; text-shadow: 0 0 4px #ccc, 0 -2px 2px rgb(252, 252, 52), 2px -2px 2px #fd3, -2px -4px 6px
+    <div style="text-align: center; font-family: 'Segoe UI'; font-size: 57px; align-content: center; text-shadow: 0 0 4px #ccc, 0 -2px 2px rgb(252, 252, 52), 2px -2px 2px #fd3, -2px -4px 6px
     #f80, 2px -6px 6px rgb(240, 32, 0);" id="app"></div>
       <script type="text/javascript" src="./jvs1.js"></script> 
     </div>
 
     <br><br>
+    
     
     <!--Molto indeciso su questo-->
     <div class ="box">
@@ -178,7 +189,7 @@
       </center>
     </div>
 
-    <br><br>
+    <br>
 
     <center>
       <div class="d-flex flex-column justify-content-center w-100 h-100">
@@ -191,9 +202,11 @@
               </span>
               </center>
             </p>
-          </div>  <br> 
+          </div>  
       </div>
     </center> 
+
+    <br>
 
     <head>
       <center>
@@ -201,19 +214,19 @@
           <!-- dovrebbe fare qualcosa nel file css :)-->  
 
           <a href="https://www.facebook.com/robin.ticke.50/">
-          <img src="./immagini/facebook.png" title ="facebook icons" width="95" height="95"></a>
+          <img src="./immagini/facebook.png" title ="facebook icons" width="100" height="100"></a>
           </a>
 
           <a href="https://www.instagram.com/itz_matteomania/">
-          <img src="./immagini/instagram.png" title="instagram icons" width="95" height="95"></a>
+          <img src="./immagini/instagram.png" title="instagram icons" width="100" height="100"></a>
           </a>
         </div>
       </center>
     </head>
-
-      <br><br>
+  
+    <br>
       
-      <div class ="pulsante" style = "position: static;">
+      <div class ="pulsante" style = "position: static; margin-top: 75px;">
         <center>
           <button id="pulsante" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="window.open('https://overknown1.github.io/asm/index.html')">Push me!</button>
         </center>
