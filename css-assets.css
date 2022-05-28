@@ -1,9 +1,14 @@
 @charset "utf-8";
 
 @font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
+    /*
     font-family: "San Francisco";
     font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");*/
 }
 
 :root {
@@ -18,17 +23,23 @@ body {
     background: #170827;
     color: var(--fg-normal);
     margin: 0;
-    text-underline-offset: 0.2em;
+    /*text-underline-offset: 0.2em;*/
     line-height: 1.45;
     padding: 25px 25px 25px 25px; 
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
+    font-weight: 400;
 }
 
 .home {
-    font-size: 20px;
-    font-family: "SF Display";
-    font-weight: 500;
-    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+    font-size: 22px;
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
 }
 
 .buttonStyle {
@@ -81,7 +92,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font: 100;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 h2 {
@@ -109,9 +120,9 @@ header p {
 }
 
 .accent {
-    font-size: 40px;
+    font-size: 44px;
     color: var(--bg-accent);
-    font-weight: 850;
+    font-weight: 900;
 }
 
 .media-icons {
@@ -153,6 +164,7 @@ header p {
   }
   
   .projects p {
+      font-weight: 300;
     margin: 0;
     color: var(--fg-muted);
   }
@@ -197,31 +209,32 @@ header p {
     flex-direction: column;
     gap: 50px;
     margin-top: 2%;
-    margin: 3.5% 3.5% 3.5% 3.5%;
+    margin: 4.5% 4.5% 4.5% 4.5%;
 }
 /*****/
 
 /*resize*/
 @keyframes weeeeeeeee {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @media only screen and (max-width: 737px /* haha funny plane number */ /* i like planes */) {
-    main {
-      flex-direction: column;
-      margin: auto;
-    }
-  }
 
-  .grid{
-      display:grid;
-      grid-template-columns: minmax(200px, 300px);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 737px /* haha funny plane number */ /* i like planes */) {
+    main {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: minmax(200px, 300px);
+}
 /*****/
 
 .container {
@@ -344,7 +357,7 @@ nav input:checked ~ #overlay {
 
 /* List */
 nav ul {
-    font-size: 25px;
+    font-size: 22px;
     list-style: none;
     margin: 0;
     max-height: 0;
