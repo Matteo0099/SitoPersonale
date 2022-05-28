@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+:root {
+    --bg-base: #9c27b0;
+    --bg-accent: #d06dff;
+    --fg-normal: #e5e5e5;
+    --fg-muted: #d9d0de;
+    --fg-accent: #d06dff;
+}
+
+body {
+    background: #170827;
+    color: var(--fg-normal);
+    margin: 0;
+    text-underline-offset: 0.2em;
+    line-height: 1.45;
+    padding: 25px 25px 25px 25px; 
+    font-size: 17px;
+}
+
+.home {
+    font-size: 20px;
+    font-family: "SF Display";
+    font-weight: 500;
+    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+.buttonStyle {
+    background-color: #f7f7f7;
+}
+
+/*global*/
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font: 100;
+    font-size: 24px;
+}
+
+h2 {
+    margin-left: 5%;
+    font-size: 15px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.ulStyle {
+    font-size: 30px;
+    font-weight: 400;
+    word-spacing: 0.5em;
+    cursor: pointer;
+}
+
+header p {
+    margin: 0;
+    margin-top: -5px;
+    font-size: 20px;
+    color: var(--fg-muted);
+}
+
+.accent {
+    font-size: 40px;
+    color: var(--bg-accent);
+    font-weight: 850;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+  
+  .media-icons a {
+    margin-left: 5%;
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+    background: var(--bg-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 3px;
+  }
+  
+  .projects article {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .projects h3 {
+    font-size: inherit;
+    margin: 0;
+  }
+  
+  .projects p {
+    margin: 0;
+    color: var(--fg-muted);
+  }
+  
+  ::selection {
+    background: var(--bg-accent);
+}
+
+/*colonums*/
+.chip-grid {
+    margin-left: 6%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    gap: 10px;
+}
+
+.chip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    gap: 10px;
+}
+  
+.chip-grid a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.chip-grid img {
+    width: 32px;
+    height: 32px;
+    user-select: none;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 2%;
+    margin: 3.5% 3.5% 3.5% 3.5%;
+}
+/*****/
+
+/*resize*/
+@keyframes weeeeeeeee {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 737px /* haha funny plane number */ /* i like planes */) {
+    main {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+
+  .grid{
+      display:grid;
+      grid-template-columns: minmax(200px, 300px);
+  }
+/*****/
+
+.container {
+    margin: 0 auto;
+    max-width: 100em;
+    resize: both;  /*no overflow*/
+}
+
+main .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+nav {
+    background: transparent; /*f5f3f4, */
+    color: var(--fg-muted);
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 26px/1 'Oswald', sans-serif;
+    padding: 0.8em;
+    padding-left: 0.3em;
+}
+
+/* Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #888888;
+    border-radius: 0.04em;
+    height: 0.2em;
+    transition: all 0.25s ease-in-out;
+    transition-timing-function: calc(4ms 6ms 8ms);
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    animation-delay: 0.4ms;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    animation-delay: 0.4ms;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #361758;    /*quando apri*/
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 25px;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: var(--fg-normal)!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: var(--fg-normal);
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0.5em;
+}
+
+/*icone*/
+.fa {  
+    padding: 22px;  
+    text-align: center;    
+    width: 60px;
+    height: 60px;  
+  }  
+  .fa-facebook {  
+    background: #3B5998;  
+    color: white;  
+  }   
+  .fa-instagram {  
+    background: #d508c5;  
+    color: white;  
+  }  
+  .fa-youtube {  
+    background: #bb0000;  
+    color: white;  
+  }    
+  .fa:hover {  
+      opacity: 0.9;  
+  }  

@@ -1,234 +1,244 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, align-content: center">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="icon" href = "./immagini/zippo_107 logo.png"
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--assets(mio)-->
+    <link rel="stylesheet" href="./css-assets.css">
+    <!--icone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head> 
 
-    <!--vecchio sfondo-->
-    <!--<body background = "./immagini/img_sfondo.jpg" style = "text-align: center;" />-->
+  <head>
+    <nav>
+        <div class="container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu"><span id="menu-icon"></span></label>
+            <div id="overlay"></div>
+            <ul class="ulStyle">
+                <li>
+                    <a href="#">
+                        <a href="./index.html">Home</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="./matteomania05@gmail.com">E-mail</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="https://www.reddit.com/user/matty0507">Reddit</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="https://github.com/Matteo0099">Github</a>
+                    </a>
+                </li>
+            </ul>
 
-  <link rel = "stylesheet" href = "./css-1.css"/>
-  <link rel = "stylesheet" href = "./css-2.css"/>
-  <link rel = "stylesheet" href = "./meteo/index2.html"/>
-  <!--OPENSOURCE-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script type="text/javascript" src="./core.js"></script>
-
- 
-  <body>
-    <head>
-      <style>
-        .image {
-          image-rendering:optimizeQuality;
-          }
-
-          .crisp-edges {
-          image-rendering: -webkit-optimize-contrast; /* Chrome, Edge, Opera, and Safari */
-          image-rendering: crisp-edges;
-        }
-  
-        body {
-          background-color:transparent;
-        }
-
-        ul {
-          list-style-type: none;
-          margin: 2px;
-          padding: 0;
-          overflow: hidden;
-          background-color: transparent;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a, .dropbtn {
-          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-size: 32px;
-          display: inline-block;
-          color:rgb(0, 0, 0);
-          text-align: center;
-          padding: 12px 24px;
-          text-decoration:solid;
-        }
-        
-        li a:hover, .dropdown:hover .dropbtn {
-          background-color:none;
-          resize: vertical;
-          align-items: center;
-          text-align: center;
-          vertical-align:middle;
-        }
-        
-        li.dropdown {
-          display: inline-block;
-          align-items: center;
-        }
-        
-        .dropdown-content {
-          height: 90px;
-          width: 120px;
-          margin-top: 0px;
-          align-items: left;
-          vertical-align: middle;
-          align-items: center;
-          display: none;
-          position: absolute;
-          background-color:none;
-          min-width: 65px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        .dropdown-content a {
-          color: black;
-          padding: 3px 10px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-          align-items: center;
-          -moz-box-align: center;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: none;
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
-
-      </style>
-    </head>
-
-
-    <div id = "span1" class="container">      
-      <ul class="resize">
-        <li class = "dropdown">
-          <a href = "javascript:void(0)" class = "dropbtn">Home</a>
-          <div class = "dropdown-content" id = "span2">
-            <center>
-              <form action = "">
-                <button onclick="window.open('https://matteo0099.github.io/Aumento-Prezzi/')" id = "pulsante">sito2</button>             
-              </form>
-            </center>
-            </a>
-          </div>
-
-          <li class="dropdown">
-            <a href = "#meteo">
-              <form action="./meteo/index2.html">
-                <button type = "submit" id = "pulsante">
-                  METEO
-                </button>
-              </form>
-            </a>
-          </li>
-
-          <li>
-            <a href="#git">
-              <form action = "">
-                <button onclick="window.open('https://github.com/Matteo0099');" id = "pulsante">
-                  Github
-                </button>
-              </form>
-            </a>
-          </li>
-
-          <li>
-            <a href="#reddit">
-              <form action ="">
-                <button onclick="window.open('https://www.reddit.com/user/matty0507');" id = "pulsante">
-                  Reddit
-                </button>
-              </form>
-            </a>
-          </li>
-
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">
-              <form action = "mailto:matteomania09@gmail.com">
-                <button type = "submit" id = "pulsante">
-                  Email
-                </button>
-              </form>
-            </a>
-          </ul>
-        </li>
-      </div>
-
-      <br><br><br>
-    <!--
-    <div class ="box">
-      <link rel = "stylesheet" href = "./css-2.css">
-        <x-sign>
-          Benvenuto nel sito di ZIPPO107!
-        </x-sign>
-      </link>
-    </div>
-    -->
-
-    <!-- TITLE -->
-
-    <div style="text-align: center; font-family: 'Segoe UI'; font-size: 57px; align-content: center; text-shadow: 0 0 4px #ccc, 0 -2px 2px rgb(252, 252, 52), 2px -2px 2px #fd3, -2px -4px 6px
-    #f80, 2px -6px 6px rgb(240, 32, 0);" id="app"></div>
-      <script type="text/javascript" src="./jvs1.js"></script> 
-    </div>
-
-    <br><br>
-    
-    
-    <!--Molto indeciso su questo-->
-    <div class ="box">
-      <center> 
-        <h2 style = "text-align-last: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 17px; letter-spacing: 1px;">- Informatico / fps-player -</h2>
-      </center>
-    </div>
-
-    <br>
-
-    <center>
-      <div class="d-flex flex-column justify-content-center w-100 h-100">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <div class = "magictime" style = "text-align: center;">
-            <p style="font: Poppins;">
-              <center>
-              <span class = "font-mono font-medium" style = "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 32px; letter-spacing: 1.2px;">
-                Socials:       
-              </span>
-              </center>
-            </p>
-          </div>  
-      </div>
-    </center> 
-
-    <br>
-
-    <head>
-      <center>
-        <div style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px, 40px; word-spacing: 20px;"> 
-          <!-- dovrebbe fare qualcosa nel file css :)-->  
-          <div class = "item">
-          <a href="https://www.facebook.com/robin.ticke.50/">
-          <img src="./immagini/facebook.png" title ="facebook icons" width="100" height="100"></a>
-          </a>
-          <a href="https://www.instagram.com/itz_matteomania/">
-          <img src="./immagini/instagram.png" title="instagram icons" width="100" height="100"></a>
-          </a></div>
+            <ul id="social-media">
+                <li>
+                    <a href="#facebook">
+                        <a href="https://www.facebook.com/robin.ticke.50/" alt="#facebook">
+                        <i class="fa fa-facebook"></i>
+                        <span class="screen-reader-text"></span>
+                        </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="https://www.instagram.com/itz_matteomania/">
+                        <i class="fa fa-instagram"></i>                      
+                        <span class="screen-reader-text"></span>
+                        </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="https://www.youtube.com/AREACREWBMX">
+                        <i class="fa fa-youtube"></i>                  
+                        <span class="screen-reader-text"></span>
+                        </a>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </center>
-    </head>
-  
-    <br>
+    </nav>
+    <head>
+    <header>
+        <h1 style="margin-top: -18px">
+            I'm  
+        <span class="accent">
+            Matt
+        </span>
+            !
+        </h1>
+        <p style="margin-top: 0%; margin-bottom: 0%;">
+            I'm a developer from the 
+            <strong>IT</strong>
+        </p>
+    </header>
+
+    <main>
+        <div class="column">
+            <section>
+                <h2 style="margin-bottom: 2%; margin-left: 2.5%; margin-top: 3.5%;">All tech I know:</h2>
+                <div class="chip-grid">
+                    <article>
+                        <img src="./img/c-.png"/>
+                        <div>C</div>  
+                    </article>
+                    <article>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 2L6.1875 27.2013L15.9856 30L25.8125 27.1969L28 2H4ZM22.1675 22.9312L16.0044 24.6875L9.85063 22.9225L9.42875 18.0625H12.445L12.6594 20.535L16.0088 21.4825L16.0169 21.5L19.3587 20.5719L19.7113 16.5625H12.6875L12.4375 13.4375H19.9781L20.25 10.25H8.75L8.5 7.1875H23.5362L22.1675 22.9312Z" fill="white"/>
+                        </svg>
+                        <div>Css</div>
+                    </article>
+                    <article>
+                        <img src="./img/c-sharp.png">
+                        <div>C#</div>
+                    </article>
+                    <article>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 2L6.18375 27.2006L15.9856 30L25.8125 27.1969L28 2H4ZM23.25 10.25H11.75L12 13.4375H23L22.1556 22.8994L16 24.655L9.8325 22.905L9.40875 18.0625H12.425L12.6388 20.5181L16 21.4419L19.3388 20.5094L19.6875 16.5H9.25L8.46313 7.15063H23.5125L23.25 10.25Z" fill="white"/>
+                        </svg>
+                        <div>HTML</div>
+                    </article>
+                    <article>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2V30H30V2H2ZM17 23.75C17 26.4756 15.39 27.8044 13.0594 27.8044C10.9544 27.8044 9.7325 26.7144 9.1125 25.3988L11.255 24.1019C11.6681 24.835 11.9819 25.455 12.8837 25.455C13.6337 25.455 14.25 25.1169 14.25 23.8013V15H17V23.75ZM23.2094 27.7419C20.7663 27.7419 19.1875 26.6394 18.4169 25.1169L20.5625 23.875C21.125 24.7962 21.8594 25.41 23.1562 25.41C24.2463 25.41 24.8794 24.9275 24.8794 24.1756C24.8794 23.2738 24.2275 22.9544 23.0244 22.4256L22.3669 22.1431C20.4681 21.3356 19.2094 20.3206 19.2094 18.1775C19.2094 16.2044 20.7125 14.7631 23.0619 14.7631C24.735 14.7631 25.9369 15.2831 26.8025 16.8056L24.75 18.125C24.2987 17.3169 23.8125 17 23.0588 17C22.2881 17 21.7994 17.4888 21.7994 18.125C21.7994 18.9144 22.2881 19.2337 23.4156 19.7225L24.0731 20.0044C26.31 20.9631 27.5694 21.9419 27.5694 24.1394C27.57 26.5081 25.7094 27.7419 23.2094 27.7419Z" fill="white"/>
+                        </svg>                            
+                        <div>Javascript</div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="margin-bottom: 2%; margin-left: 2.5%; margin-top: -1%;">Tools I use</h2>
+
+                <div class='chip-grid'>
+                    <article>
+                        <img src="https://img.icons8.com/fluency/48/000000/github.png"/>
+                        <div>Github</div>
+                    </article>
+                    <article>
+                        <img src="https://img.icons8.com/ios/50/000000/java-eclipse.png"/>
+                        <div>Eclipse</div>
+                    </article>
+                    <article>
+                        <img src="https://img.icons8.com/fluency/48/000000/visual-studio.png"/>
+                        <div>VS (C#)</div>
+                    </article>
+                    <article>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)"><g filter="url(#filter0_d)"><mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="28" height="28">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8553 29.8802C22.2963 30.0529 22.7992 30.042 23.2443 29.8266L29.0089 27.0385C29.6147 26.7456 30 26.1293 30 25.4532V6.54698C30 5.87092 29.6147 5.25466 29.0089 4.96167L23.2443 2.17334C22.6601 1.8908 21.9765 1.95999 21.4638 2.33468C21.3906 2.38818 21.3208 2.44796 21.2553 2.51381L10.2194 12.6343L5.41242 8.9664C4.96495 8.625 4.33902 8.65297 3.92343 9.03298L2.38165 10.4427C1.87327 10.9076 1.87272 11.7114 2.38039 12.177L6.54919 16L2.38039 19.823C1.87272 20.2886 1.87327 21.0925 2.38165 21.5574L3.92343 22.9671C4.33902 23.3471 4.96495 23.3752 5.41242 23.0336L10.2194 19.3658L21.2553 29.4862C21.4299 29.6618 21.6349 29.7941 21.8553 29.8802ZM23.0043 9.61076L14.6306 16L23.0043 22.3893V9.61076Z" fill="white"/></mask>
+                            <g mask="url(#mask0)"><path d="M29.0092 4.96661L23.2399 2.17441C22.5721 1.85121 21.774 1.98754 21.2499 2.51435L2.36353 19.8236C1.85554 20.2892 1.85612 21.0931 2.36478 21.5579L3.9075 22.9676C4.32336 23.3476 4.94966 23.3755 5.39738 23.0342L28.1409 5.69097C28.9039 5.10913 30 5.65617 30 6.61886V6.55155C30 5.87577 29.6147 5.25977 29.0092 4.96661Z" fill="#D9D0DE"/><g filter="url(#filter1_d)">
+                            <path d="M29.0092 27.0341L23.2399 29.8263C22.5721 30.1495 21.774 30.0132 21.2499 29.4862L2.36353 12.177C1.85554 11.7114 1.85612 10.9075 2.36478 10.4427L3.9075 9.03295C4.32336 8.65293 4.94966 8.62496 5.39738 8.96639L28.1409 26.3096C28.9039 26.8916 30 26.3445 30 25.3817V25.4492C30 26.1249 29.6147 26.7409 29.0092 27.0341Z" fill="#D9D0DE"/></g>
+                            <g filter="url(#filter2_d)">
+                            <path d="M23.2402 29.8265C22.5722 30.1497 21.7741 30.0131 21.25 29.4861C21.8958 30.1351 23 29.6755 23 28.7576V3.2423C23 2.3243 21.8958 1.86453 21.25 2.51369C21.7741 1.98682 22.5722 1.85031 23.2402 2.17322L29.0083 4.96156C29.6144 5.25455 30 5.8708 30 6.54686V25.4532C30 26.1292 29.6144 26.7452 29.0083 27.0384L23.2402 29.8265Z" fill="white"/>
+                            </g>
+                            <g style="mix-blend-mode:overlay" opacity="0.25">
+                            <path style="mix-blend-mode:overlay" opacity="0.25" fill-rule="evenodd" clip-rule="evenodd" d="M21.8382 29.8802C22.2792 30.0529 22.7821 30.042 23.2272 29.8266L28.992 27.0384C29.5978 26.7455 29.9828 26.1293 29.9828 25.4532V6.5469C29.9828 5.87087 29.5978 5.25465 28.992 4.96163L23.2272 2.17327C22.643 1.89073 21.9594 1.95995 21.4467 2.33461C21.3734 2.38814 21.3037 2.44789 21.2382 2.51374L10.2023 12.6342L5.3953 8.96636C4.94783 8.62492 4.32192 8.6529 3.90632 9.03291L2.36455 10.4426C1.8562 10.9075 1.85562 11.7114 2.36329 12.177L6.53207 16L2.36329 19.823C1.85562 20.2885 1.8562 21.0925 2.36455 21.5573L3.90632 22.967C4.32192 23.347 4.94783 23.3749 5.3953 23.0336L10.2023 19.3658L21.2382 29.4862C21.4128 29.6618 21.6178 29.794 21.8382 29.8802ZM22.9872 9.61069L14.6135 16L22.9872 22.3892V9.61069Z" fill="url(#paint0_linear)"/></g></g></g></g>
+                            <defs>
+                            <filter id="filter0_d" x="-4.25" y="-2.16667" width="40.5" height="40.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="2.08333"/>
+                            <feGaussianBlur stdDeviation="3.125"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                            </filter>
+                            <filter id="filter1_d" x="-6.35043" y="0.394627" width="44.6838" height="37.9386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="4.16667"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                            </filter>
+                            <filter id="filter2_d" x="12.9167" y="-6.33346" width="25.4167" height="44.6668" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="4.16667"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter>
+                            <linearGradient id="paint0_linear" x1="15.9829" y1="1.99994" x2="15.9829" y2="30.0002" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/>
+                            </linearGradient><clipPath id="clip0">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath></defs></svg>                            
+                        <div>VS Code</div>
+                    </article>
+                    <article>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.9662 14.6326C30.0047 15.0573 30.0312 15.4859 30.0312 15.921C30.0312 15.4859 30.0047 15.0577 29.9662 14.6326Z" fill="white"/>
+                            <path d="M9.15005 14.5584C9.15005 14.5584 5.24797 28.9356 20.8879 29.0607C25.7949 27.234 29.4108 22.7554 29.9588 17.356C29.9967 16.9825 30.0079 16.6016 30.0164 16.22C30.0179 16.1196 30.0314 16.022 30.0314 15.9209C30.0314 15.4862 30.0048 15.0573 29.9663 14.6325C25.8344 30.8987 7.55481 24.5274 9.15005 14.5584Z" fill="white"/>
+                            <path d="M17.2369 9.22189C17.2369 9.22189 2.6752 5.15529 2.89916 21.0332C3.64561 22.952 4.80401 24.6835 6.29264 26.1058C6.3552 26.1649 6.41995 26.2209 6.48313 26.2791C6.9042 26.6673 7.34857 27.0294 7.81375 27.3635C7.886 27.4151 7.95388 27.472 8.02644 27.5224C8.5185 27.8589 9.03159 28.1635 9.56256 28.4345C9.71677 28.5139 9.87536 28.5865 10.0318 28.6606C10.4887 28.8758 10.957 29.0658 11.4346 29.2299C11.5519 29.27 11.6639 29.32 11.7828 29.3572C12.3554 29.5323 12.9387 29.6702 13.5291 29.7701C13.7077 29.8014 13.8882 29.8277 14.069 29.8527C14.6814 29.9411 15.2991 29.9891 15.9179 29.9963C15.9416 29.9963 15.9645 30 15.9882 30C16.4549 30 16.9157 29.975 17.3702 29.9303C1.0318 26.0338 7.24196 7.76429 17.2369 9.22189Z" fill="white"/>
+                            <path d="M22.9128 16.7518C22.9128 16.7518 26.3579 2.2276 10.8503 2.87633C5.65012 4.93043 1.96887 9.99015 1.96887 15.9197C1.97371 16.5583 2.02188 17.1958 2.11307 17.8278C5.37674 1.39557 23.97 6.71741 22.9128 16.7518Z" fill="white"/>
+                            <path d="M15.4668 23.0019C15.4668 23.0019 30.0539 24.9062 29.1408 11.0373C27.1555 5.69892 22.0295 1.88849 16.0001 1.88849C15.1464 1.89179 14.2947 1.97272 13.4556 2.13028C29.7095 4.12557 25.4849 23.1439 15.4668 23.0019Z" fill="white"/>
+                            <path d="M20.0494 15.9213C20.0494 16.6986 19.8189 17.4586 19.387 18.1049C18.9551 18.7513 18.3412 19.255 17.6229 19.5524C16.9047 19.8499 16.1144 19.9276 15.352 19.7759C14.5896 19.6241 13.8893 19.2497 13.3397 18.6999C12.7901 18.1501 12.4158 17.4497 12.2643 16.6872C12.1128 15.9248 12.1908 15.1345 12.4885 14.4164C12.7862 13.6982 13.2901 13.0845 13.9366 12.6528C14.5831 12.2211 15.3431 11.9908 16.1204 11.991C17.1626 11.9913 18.162 12.4055 18.8988 13.1425C19.6356 13.8796 20.0495 14.8791 20.0494 15.9213Z" fill="#D9D0DE"/>
+                            </svg>                        
+                        <div>Replit</div>
+                    </article>
+                </div>
+            </section>  
+        </div>
+
+        <div class='column'>
+            <section>
+              <h2 style="font-size: 22px">About me</h2>
       
-      <div class ="pulsante" style = "position: static; margin-top: 75px;margin-bottom: 20px;">
-        <center>
-          <button id="pulsante" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="window.open('https://overknown1.github.io/asm/index.html')">Push me!</button>
-        </center>
-      </div> 
-  </body>
+              <div class='projects'>
+                <article>
+                  <h3 style="font-size: 18px">I'm Matteo, I'm 17 and I love develop</h3>
+                  <p>
+                    I have started to work on pc, when i was 13 y.o., and this <br> passion
+                    and this passion I have cultivated since the 1st grade
+                  </p>
+                </article>
+      
+                <article>
+                  <h3>Is it easy to develop?</h3>
+                  <p>
+                   "all you can do, do it"; the only limit is your mind...<br>
+                   You can start with the basics from programming, until <br> 
+                   you get to do more complex projects.
+                  </p>
+                </article>
+
+                <article>
+                    <h3>Front-end or Back-end?</h3>
+                    <p>
+                        they are two completely different worlds but <br>
+                        which must work in parallel. I prefer Front-end <br>
+                        because I love graphic-web-design.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Extend your Brain</h3>
+                    <p>
+                        Learn a new languages of programming, can also <br>
+                        help you to understand some concents, and you <br>
+                        can learn a few tips from it.
+                    </p>
+                </article>
+
+                <article>
+                  <a href="" target="_blank" rel="noopener noreferrer"></a>
+                </article>
+              </div>
+            </section>
+          </div>
+        </main>
+
+
+    </main>
 </html>
