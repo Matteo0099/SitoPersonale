@@ -15,7 +15,7 @@
     --bg-base: #9c27b0;
     --bg-accent: #d06dff;
     --fg-normal: #e5e5e5;
-    --fg-muted: #d9d0de;
+    --fg-muted: #d3c9d9;
     --fg-accent: #d06dff;
 }
 
@@ -69,7 +69,7 @@ html, body {
     /*safari*/
     -webkit-text-size-adjust: none  auto  100%;
     -webkit-box-align: baseline  center  end  start  stretch;
-    -webkit-backface-visibility:visible;
+    /*-webkit-backface-visibility:visible;*/
     /*-webkit-column-gap: normal  20%;
     -webkit-background-size: 20% 30%;*/
 
@@ -77,8 +77,8 @@ html, body {
     -webkit-text-stroke: inherit;
     -webkit-text-stroke: initial;
     -webkit-text-stroke: unset;
-    -moz-backface-visibility: visible;
-    -moz-animation-delay: 0.3ms;
+    /*-moz-backface-visibility: visible;
+    -moz-animation-delay: 0.3ms;*/
     /* <number> values */
     -moz-box-flex: 0;
     -moz-box-flex: 2;
@@ -129,8 +129,9 @@ h2 {
     margin: 0;
 }
 
-h3 {
-    font-size: 15px;
+.projects-h3 {
+    font: 900;
+    font-size: 16px;
 }
 
 .item {
@@ -191,15 +192,17 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    letter-spacing: 0.2px;
   }
   
   .projects h3 {
     font-size: inherit;
     margin: 0;
+    letter-spacing: 1px;
   }
   
   .projects p {
-      font-weight: 300;
+    color: var(--fg-muted);
     margin: 0;
     color: var(--fg-muted);
   }
@@ -244,7 +247,7 @@ header p {
     flex-direction: column;
     gap: 50px;
     margin-top: 2%;
-    margin: 4.5% 4.5% 4.5% 4.5%;
+    margin: 4% 4% 4% 4%;
 }
 /*****/
 
@@ -338,7 +341,7 @@ nav label {
     background: #888888;
     border-radius: 0.04em;
     height: 0.2em;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transition-timing-function: calc(4ms 6ms 8ms);
     width: 100%;
 }
