@@ -1,0 +1,159 @@
+@font-face{font-family: RobotoMono; src: url('../FONTSSSS/RobotoMono-Regular.ttf');}
+
+.source-code {
+    font-family: RobotoMono;
+    position: relative;
+}
+
+.source-code * {
+    user-select: none;
+}
+
+#canvas {
+    position: absolute;
+}
+
+.canvas-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.settings-canvas button {
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    transition: .05s;
+}
+
+.settings-canvas button:hover {
+    color: red;
+    transform: scale(1);
+}
+
+.settings-canvas span {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+input[type="color"] {
+    border: none;
+    width: 2em;
+    height: 2em;
+    transition: .2s;
+    background-color: transparent;
+}
+
+input[type="color"]:hover {
+    transform: scale(1.02);
+}
+
+.output, .output-bg {
+    background-color: #DFDFDF;
+}
+
+.output {
+    width: 1em;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.instr-bg {
+    background-color: #E6F3FF;
+}
+
+.instr-bg a {
+    color: inherit;
+    cursor: pointer;
+}
+
+.stack-bg {
+    background-color: #F8DCB4;
+}
+
+.memory-block {
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+}
+
+.marker {
+    width: 2em;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+.marker-ip {
+    background-color: #428BCA;
+}
+
+.marker-sp {
+    background-color: #EEA236;
+}
+
+.marker-a {
+    background-color: #4D8C20;
+}
+
+.marker-b {
+	background-color: #22D19D;
+}
+
+.marker-c {
+	background-color: #A137ED;
+}
+
+.marker-d {
+	background-color: #E81F1F;
+}
+
+.codelabel-line a {
+    cursor: pointer;
+}
+
+.rainbow{
+    animation: rainbow 6s infinite;
+	font-size: 22px;
+	font-family: RobotoMono;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+.betterBtn{
+	text-align: center; 
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #1a1a1a;
+	font-family: RobotoMono;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: #2c2e2c;
+    zoom:101.333333333%;
+}
+
+.btn:after{
+    text-align: center; 
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #1a1a1a;
+}
+
+@keyframes rainbow {
+	0% { color: #ff0000; }
+	20% { color: #ffe600; }
+	40% { color: #26ff00; }
+	60% { color: #00ffea; }
+	80% { color: blue; }
+	100% { color: #e100ff; }
+}
