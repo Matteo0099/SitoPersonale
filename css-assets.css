@@ -1,25 +1,19 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Inter Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
-    /*
-    font-family: "San Francisco";
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");*/
+    font-family: 'Palanquin', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Palanquin&display=swap");
 }
-
 :root {
     --bg-base: #9c27b0;
     --bg-accent: #d06dff;
     --fg-normal: #e5e5e5;
-    --fg-muted: #d3c9d9;
+    --fg-muted: #c6c2c9;
     --fg-accent: #d06dff;
 }
 
 body {
+    font-family: 'Palanquin', sans-serif;
     background: #170827;
     color: var(--fg-normal);
     margin: 0;
@@ -27,19 +21,13 @@ body {
     line-height: 1.45;
     padding: 25px 25px 25px 25px; 
     font-size: 18px;
-    font-family: 'Inter Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
-    font-weight: 400;
 }
 
 .home {
+    font-family: 'Palanquin', sans-serif;
     font-size: 22px;
-    font-family: 'Inter Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
 }
 
 .buttonStyle {
@@ -49,7 +37,6 @@ body {
 /*global*/
 /* Code By Webdevtrick ( https://webdevtrick.com ) */
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -103,13 +90,13 @@ h1 {
 
 h2 {
     margin-left: 5%;
-    font-size: 15px;
-    margin: 0;
+    font-size: 19px;
+    margin: 0 auto;
 }
 
 .projects-h3 {
-    font: 900;
-    font-size: 16px;
+    font:bolder;
+    font-size: 17px;
 }
 
 .item {
@@ -133,8 +120,14 @@ header p {
     color: var(--fg-muted);
 }
 
+.muted {
+    font: 300;
+    color: var(--fg-muted);
+    
+}
+
 .accent {
-    font-size: 44px;
+    font-size: 46px;
     color: var(--bg-accent);
     font-weight: 900;
 }
@@ -224,7 +217,7 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-top: 2%;
+    margin-top: 3%;
     margin: 4% 4% 4% 4%;
 }
 /*****/
@@ -269,6 +262,7 @@ header p {
     -moz-box-direction: column;
     width: 100%;
     height: auto;
+    padding: 0.333em;
 }
 
 main .container {
@@ -307,7 +301,7 @@ nav input {
 nav label {
     cursor: pointer;
     display: block;
-    font: 26px/1 'Oswald', sans-serif;
+    font: 26px/1 'Palanquin', sans-serif;
     padding: 0.8em;
     padding-left: 0.3em;
 }
@@ -317,7 +311,7 @@ nav label {
 #menu-icon:before,
 #menu-icon:after {
     background: #888888;
-    border-radius: 0.04em;
+    border-radius: 0.07332533em;
     height: 0.2em;
     transition: all 0.150s ease-in-out;
     transition-timing-function: calc(2ms 4ms 6ms);
@@ -372,7 +366,7 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 /*** MENU ***/
 /* Overlay */
 nav input:checked ~ #overlay {
-    background: #361758;    /*quando apri*/
+    background: #381959;    /*quando apri*/
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -402,7 +396,7 @@ nav input:checked ~ ul {
 }
 
 nav ul > li {
-    margin: 0.5em 0;
+    margin: 0.8em 0;
 }
 
 nav ul a {
@@ -418,13 +412,13 @@ nav ul a:hover {
 /* Social Media */
 nav ul#social-media > li {
     display: inline-block;
-    font-size: 20px;
-    margin: 0.5em;
+    font-size: 22px;
+    margin: 0.8em;
 }
 
 /*icone*/
 .fa {  
-    padding: 22px;  
+    padding: 20px;  
     text-align: center;    
     width: 60px;
     height: 60px;  
@@ -442,5 +436,5 @@ nav ul#social-media > li {
     color: white;  
   }    
   .fa:hover {  
-      opacity: 0.9;  
+      opacity: 0.65;  
   }  
