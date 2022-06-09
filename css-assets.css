@@ -51,44 +51,22 @@ body {
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
 html, body {
-    /*global body-html*/
     height: 100%;
     margin: 0;
     padding: 0;
-    /* Width and color values */
     -webkit-text-stroke: 3px var(--fg-accent);
-    /*text-stroke:3px var(--fg-accent);*/
-
-    /*safari*/
     -webkit-text-size-adjust: none  auto  100%;
     -webkit-box-align: baseline  center  end  start  stretch;
-    /*-webkit-backface-visibility:visible;*/
-    /*-webkit-column-gap: normal  20%;
-    -webkit-background-size: 20% 30%;*/
-
-    /* Global for chrome, safari, firefox, edge. */
     -webkit-text-stroke: inherit;
     -webkit-text-stroke: initial;
     -webkit-text-stroke: unset;
-    /*-moz-backface-visibility: visible;
-    -moz-animation-delay: 0.3ms;*/
-    /* <number> values */
-    -moz-box-flex: 0;
-    -moz-box-flex: 2;
-    -moz-box-flex: 3.5;
-    -webkit-box-flex: 0;
+    -moz-box-flex: 3;
     -webkit-box-flex: 2;
-    -webkit-box-flex: 3.5;
-    /*text-stroke: inherit;
-    text-stroke: initial;
-    text-stroke: unset;*/
 }
 
 html * {
@@ -213,11 +191,11 @@ header p {
 
 /*colonums*/
 .chip-grid {
-    margin-left: 6%;
+    margin-left: 5%;
     align-self: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
-    gap: 10px;
+    gap: 12px;
 }
 
 .chip-grid {
@@ -341,8 +319,8 @@ nav label {
     background: #888888;
     border-radius: 0.04em;
     height: 0.2em;
-    transition: all 0.2s ease-in-out;
-    transition-timing-function: calc(4ms 6ms 8ms);
+    transition: all 0.150s ease-in-out;
+    transition-timing-function: calc(2ms 4ms 6ms);
     width: 100%;
 }
 
@@ -380,13 +358,13 @@ nav input[type=checkbox]:checked + label #menu-icon {
 
 nav input[type=checkbox]:checked + label #menu-icon:before {
     top: 0;
-    animation-delay: 0.4ms;
+    animation-delay: 0.25ms;
     transform: rotate(-45deg);
 }
 
 nav input[type=checkbox]:checked + label #menu-icon:after {
     bottom: 0;
-    animation-delay: 0.4ms;
+    animation-delay: 0.25ms;
     transform: rotate(45deg);
 }
 
