@@ -16,6 +16,7 @@ typewriter
 .typeString("Italy!")
 .start();
 
+
 //Controllo
 // Si può usare anche usare direttamente un carattere non BMP
 var str = 'A \uD87E\uDC04 Z'; 
@@ -23,14 +24,12 @@ for (var i = 0, chr; i < str.length; i++) {
     if ((chr = getWholeChar(str, i)) === false) {
     continue;
 }
-
-/*  
+    console.log(chr);
+    /*  
     Adatta questa riga all'inizio di ogni ciclo, passando l'intera stringa e
     l'iterazione corrente e la restituzione di una variabile per rappresentare il
     carattere individuale
-*/
-
-    console.log(chr);
+    */
 }
 
 function getWholeChar(str, i) {

@@ -73,9 +73,10 @@ main {
     font: 500;
     font-weight: 400;
     font-style: normal;
-    font-size: 19px;
+    font-size: 21px;
     color:var(--fg-normal);
     word-spacing: -0.2%;
+    font-family: 'Palanquin',sans-serif;
 }
 
 header {
