@@ -5,9 +5,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-.pauseFor(500)
-.typeString("Hi!👋\t")
-.pauseFor(600)
+.pauseFor(800)
 .typeString("I'm a Developer from \t")
 .pauseFor(10)
 .typeString("It...")
