@@ -5,9 +5,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-.pauseFor(500)
-.typeString("Hi!👋\t")
-.pauseFor(600)
+.pauseFor(800)
 .typeString("I'm a Developer from \t")
 .pauseFor(10)
 .typeString("It...")
@@ -16,22 +14,18 @@ typewriter
 .typeString("Italy!")
 .start();
 
+
 //Controllo
 // Si può usare anche usare direttamente un carattere non BMP
+/*
 var str = 'A \uD87E\uDC04 Z'; 
 for (var i = 0, chr; i < str.length; i++) {
     if ((chr = getWholeChar(str, i)) === false) {
     continue;
 }
-
-/*  
-    Adatta questa riga all'inizio di ogni ciclo, passando l'intera stringa e
-    l'iterazione corrente e la restituzione di una variabile per rappresentare il
-    carattere individuale
-*/
-
     console.log(chr);
 }
+*/
 
 function getWholeChar(str, i) {
     var code = str.charCodeAt(i);
