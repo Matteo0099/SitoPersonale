@@ -319,8 +319,8 @@ nav label {
 #menu-icon:before,
 #menu-icon:after {
     background: #888888;
-    border-radius: 0.07332533em;
-    height: 0.2em;
+    border-radius: 2.8em;
+    height: 0.176em;
     transition: all 0.150s ease-in-out;
     transition-timing-function: calc(2ms 4ms 6ms);
     width: 100%;
@@ -415,6 +415,8 @@ nav ul a {
 nav ul a:hover {
     text-decoration: underline;
     color: var(--fg-normal);
+    opacity: 0.5;
+    transition: .6s
 }
 
 /* Social Media */
@@ -424,7 +426,16 @@ nav ul#social-media > li {
     margin: 0.8em;
 }
 
+nav ul#social-media > li:hover{
+    transition: .6s;
+}
+
+#Git:hover {
+    opacity: 0.7;
+}
+
 /*icone*/
+/*
 .fa {  
     padding: 20px;  
     text-align: center;    
@@ -446,3 +457,4 @@ nav ul#social-media > li {
   .fa:hover {  
       opacity: 0.65;  
   }  
+*/
