@@ -108,6 +108,20 @@ h2 {
     font-size: 17px;
 }
 
+.card {
+    box-shadow: 0 0 6px 0;
+    background: inherit;
+    backdrop-filter: blur(12px);
+    margin: 20px;
+    text-align:justify;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 12px 1px;
+    transition: .3s;
+}
+
+
 .item {
     /*resize*/
     flex: 1;
@@ -139,6 +153,13 @@ header p {
     font-size: 46px;
     color: var(--bg-accent);
     font-weight: 900;
+}
+
+.accent:hover {
+    opacity: 0.85;
+    text-shadow: 0 0 10px 0;
+    -ms-zoom-animation: default;
+    transition: 600ms;
 }
 
 .media-icons {
@@ -193,24 +214,26 @@ header p {
 
 /*colonums*/
 .chip-grid {
+    margin-top: 0%;
     margin-left: 5%;
     align-self: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
-    gap: 12px;
+    gap: 14px;
 }
 
 .chip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
-    gap: 10px;
+    gap: 14px;
 }
   
 .chip-grid a {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: inherit;
     text-decoration: none;
 }
@@ -226,10 +249,36 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-top: 3%;
-    margin: 4% 4% 4% 4%;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 4%;
+    margin-bottom: 5%;
 }
 /*****/
+
+
+.chipText {
+    font:500; 
+    color: inherit;
+    font-family: inherit;
+}
+
+.chipText:hover {
+    opacity: 0.85;
+}
+
+.Cardarea {
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+    width: 40%;
+    text-align: center;
+}
+
+.Cardarea:hover {
+   box-shadow: 1px 1px 12px 1px rgba(255, 255, 255, 0.5); 
+}
+
 
 /*resize*/
 @keyframes weeeeeeeee {
@@ -242,7 +291,7 @@ header p {
     }
 }
 
-@media only screen and (max-width: 737px /* haha funny plane number */ /* i like planes */) {
+@media only screen and (max-width: 737px /* boeing 737 */) {
     main {
         flex-direction: column;
         margin: auto;
@@ -405,7 +454,7 @@ nav input:checked ~ ul {
 }
 
 nav ul > li {
-    margin: 0.8em 0;
+    margin: 0.5em 0;
 }
 
 nav ul a {
@@ -416,7 +465,7 @@ nav ul a {
 nav ul a:hover {
     text-decoration: underline;
     color: var(--fg-normal);
-    opacity: 0.5;
+    opacity: 0.7;
     transition: .6s
 }
 
@@ -431,8 +480,34 @@ nav ul#social-media > li:hover{
     transition: .6s;
 }
 
+/*
 #Git:hover {
     opacity: 0.7;
+}
+*/
+
+#zoom {
+    padding: 6px;
+    transition: transform .2s; /* Animation */
+    width: inherit;
+    height: inherit;
+    margin: 0 auto;
+}
+
+#zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#Gitzoom {
+    transition: transform .2s; /* Animation */
+    width: inherit;
+    height: inherit;
+    margin: 0 auto;  
+}
+
+#Gitzoom:hover{
+    transform: scale(1.3);
+    color: #9c27b0;
 }
 
 /*icone*/
