@@ -116,7 +116,7 @@ h2 {
     margin: 20px;
     text-align:justify;
     border: 2px #222;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .card:hover {
@@ -268,6 +268,16 @@ header p {
     user-select: none;
 }
 
+.chip-grid article {
+    background-color: #B45DDE;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 110px;
+}
+
 .column {
     flex: 1;
     display: flex;
@@ -281,23 +291,13 @@ header p {
 /*****/
 
 
-.chipText {
-    font:500; 
-    color: inherit;
-    font-family: inherit;
-}
-
-.chipText:hover {
-    opacity: 0.85;
-}
-
 .Cardarea {
     box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
     transition: 0.3s;
     backdrop-filter: blur(12px);
-    width: 40%;
+    width: 100%;
     border: 1px #222;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
 }
 
