@@ -115,6 +115,8 @@ h2 {
     backdrop-filter: blur(12px);
     margin: 20px;
     text-align:justify;
+    border: 2px #222;
+    border-radius: 5px;
 }
 
 .card:hover {
@@ -155,9 +157,26 @@ header p {
 }
 
 .accent {
-    font-size: 46px;
+    font-size: 48px;
     color: var(--bg-accent);
     font-weight: 900;
+    letter-spacing: 0.0275em;
+    animation-delay: 300ms;
+    -o-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+    -webkit-animation: color-change 1.85s infinite;
+    -moz-animation: color-change 1.85s infinite;
+    -o-animation: color-change 1.85s infinite;
+    -ms-animation: color-change 1.85s infinite;
+    animation: color-change 1.85s infinite;
+}
+
+@keyframes color-change {
+    0% { color: var(--bg-accent)}
+    25% { color: #d06dff}
+    50% { color:#daa1f5}
+    75% { color: #d280f8}
+    100% { color: #d06dff}
 }
 
 .accent:hover {
@@ -277,6 +296,8 @@ header p {
     transition: 0.3s;
     backdrop-filter: blur(12px);
     width: 40%;
+    border: 1px #222;
+    border-radius: 5px;
     text-align: center;
 }
 
