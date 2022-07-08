@@ -157,7 +157,8 @@ header p {
 }
 
 .accent {
-    font-size: 48px;
+    text-rendering: optimizeLegibility;
+    font-size: 53px;
     color: var(--bg-accent);
     font-weight: 900;
     letter-spacing: 0.0275em;
@@ -181,7 +182,7 @@ header p {
 
 .accent:hover {
     opacity: 0.85;
-    text-shadow: 0 0 10px 0;
+    text-shadow: 0 0 12px 0;
     -ms-zoom-animation: default;
     transition: 600ms;
 }
@@ -236,35 +237,42 @@ header p {
     background: var(--bg-accent);
 }
 
+@media  screen and(max-width: 420px) {
+    .chip-grid {
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+}
+
 /*colonums*/
 .chip-grid {
     margin-top: 0%;
-    margin-left: 5%;
+    margin-left: 4%;
     align-self: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    gap: 16px;
 }
 
 .chip-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));*/
     gap: 14px;
 }
   
 .chip-grid a {
-    margin-top: 5px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: inherit;
     text-decoration: none;
 }
 
 .chip-grid img {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     user-select: none;
 }
 
@@ -282,8 +290,8 @@ header p {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-top: 8%;
+    gap: 44px;
+    margin-top: 5%;
     margin-left: 8%;
     margin-right: 4%;
     margin-bottom: 5%;
@@ -325,7 +333,6 @@ header p {
 
 .grid{
     display:grid;
-    grid-template-columns: minmax(200px, 300px);
 }
 /*****/
 
@@ -394,16 +401,18 @@ nav label {
 #menu-icon:before,
 #menu-icon:after {
     background: #888888;
-    border-radius: 2.8em;
-    height: 0.176em;
-    transition: all 0.150s ease-in-out;
-    transition-timing-function: calc(2ms 4ms 6ms);
+    border-radius: 2.5em;
+    height: 0.1525em;
+    transition: all 0.125s ease-in-out;
+    transition-timing-function: calc(2ms 3ms 6ms);
     width: 100%;
 }
 
 #menu-icon {
     display: inline-block;
-    margin: 0.4em 0;
+    margin: 0.55em 0;
+    margin-top: 0.6em 0;
+    margin-right: 0.55em;
     max-width: 1em;
     position: relative;
 }
@@ -435,14 +444,14 @@ nav input[type=checkbox]:checked + label #menu-icon {
 
 nav input[type=checkbox]:checked + label #menu-icon:before {
     top: 0;
-    animation-delay: 0.25ms;
-    transform: rotate(-45deg);
+    animation-delay: 0.3ms;
+    transform: rotate(-135deg);
 }
 
 nav input[type=checkbox]:checked + label #menu-icon:after {
     bottom: 0;
-    animation-delay: 0.25ms;
-    transform: rotate(45deg);
+    animation-delay: 0.3ms;
+    transform: rotate(135deg);
 }
 
 
@@ -462,7 +471,7 @@ nav input:checked ~ #overlay {
 
 /* List */
 nav ul {
-    font-size: 22px;
+    font-size: 23px;
     list-style: none;
     margin: 0;
     max-height: 0;
@@ -524,14 +533,14 @@ nav ul#social-media > li:hover{
 }
 
 #Gitzoom {
-    transition: transform .2s; /* Animation */
+    transition: transform .19s; /* Animation */
     width: inherit;
     height: inherit;
     margin: 0 auto;  
 }
 
 #Gitzoom:hover{
-    transform: scale(1.3);
+    transform: scale(1.4);
     color: #9c27b0;
 }
 
