@@ -1,276 +1,373 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en">  <!--no it-->
   <head>
-    <title>Matteo Manià • Aka: Zippo107 </title>
-    <link rel="icon" href="./img/Logo.png"/>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet"> 
-    <!--assets(mio)-->
-    <link rel="stylesheet" href="./assets/index.css">
-    <!--icone-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  </head> 
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <head>
-    <nav>
-        <div class="container">
-            <input id="responsive-menu" type="checkbox">
-            <label for="responsive-menu">
-                <span id="menu-icon"></span>
-                <a href="https://github.com/Matteo0099" style="font-size:13px">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" id="Gitzoom" viewBox="0 0 16 16" style="margin-left:15px; margin-top: 3px">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                </a>
-            </label>
-            <div id="overlay"></div>
-            <ul class="ulStyle"> 
-                <li>
-                    <a href="#">
-                        <a href="./index.html" target="_self">Home</a>      
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="mailto:matteomania05@gmail.com" target="_blank">E-mail</a>   <!--Target blank per le tab(new)-->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="https://www.reddit.com/user/matty0507" target="_blank">Reddit</a>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="https://github.com/Matteo0099" target="_blank">Github</a>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="./Assembler.html" target="_blank">Assembler 8-Bit</a>
-                    </a>
-                </li>
-            </ul>
+    <title>Matteo Manià Website</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-            <ul id="social-media" align="center">
-                <li>
-                    <a href="#facebook">
-                        <a href="https://www.facebook.com/robin.ticke.50/" alt="#facebook" title="Facebook">
-                        <!--<i class="fa fa-facebook"></i>-->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" id="zoom">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                          </svg>
-                        <span class="screen-reader-text"></span>
-                        </a>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="https://www.instagram.com/itz_matteomania/" title="Instagram">
-                        <!--<i class="fa fa-instagram"></i>-->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" id="zoom">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                          </svg>        
-                        <span class="screen-reader-text"></span>
-                        </a>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="https://www.youtube.com/AREACREWBMX" title="Youtube">
-                        <!--<i class="fa fa-youtube"></i>-->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" id="zoom">
-                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                          </svg>   
-                        <span class="screen-reader-text"></span>
-                        </a>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <a href="https://www.twitch.tv/zippo_107" title="Twitch">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16" id="zoom">
-                                <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
-                                <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
-                              </svg>
-                        </a>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <head>
-    <header>
-        <h1 style="margin-top: -29px; font: 400;color: #aca8a8; font-family: 'Palanquin', sans-serif; word-spacing: 5px;">
-            I'm  
-        <span class="accent">
-            Matt 
-        </span>
-        <span style="color: #aca8a8; font: 40px">!</span>
+    <!-- Favicons -->
+    <link href="assets/img/" rel="icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="./assets/vendor/bootstrap-icons/index.html">
+    <link href="./assets/assets/vendor/bootstrap-icons/bootstrap-icons.json">
+  </head>
+
+  <body>
+    <!--Header-->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+          <a href="index.html" target="_self">
+            <button type="button" class="btn btn-outline-rounded btn-light active" role="button" style="background-color:rgba(222, 222, 222, 0.991)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>
+            </button>
+          </a>
         </h1>
-        <!--<p style="margin-top: 0%; margin-bottom: 0%; color: #aca8a8">
-            I'm a developer from the 
-            <strong style="font:bolder; font-size: 22px; color:aliceblue">IT</strong>
-        </p>-->
-        <h2 style="font-size: 21px; font: 600; font-style:normal; margin-top: 1%; word-spacing: 4px;">Ciao! <img class="emoji" draggable="false" alt="👋" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f44b.svg" width="22" height="22"></h2>
-        <div id="app" class="module.exports">
-            <!--Js titolo scorrevole-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-            <link rel="text/Javascript" href="./NodeJs/Caracter.js" style="font:600">
-            <script type="text/Javascript" src="./NodeJs/CaracterLibrary.js"></script>
-            <script>
-                const svgIcon = `<svg xmlns="" class="icon icon-tabler icon-tabler-settings" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><circle cx="12" cy="12" r="3" /></svg>`;
-                document.getElementById('targetElement').outerHTML += svgIcon;
-            </script>
-            <script type="text/Javascript" src="./NodeJs/Caracter.js" class="Testo"></script>
-        </div>
-    </header>
-    <main>
-        <div class="column">
-            <section>
-                <h2 style="margin-bottom: 3.5%; margin-left: 2.5%; margin-top: 5%;" class="Cardarea">All tech I know:</h2>
-                <div class="chip-grid">
-                    <article>
-                        <img src="./img/c-.png"/>  
-                    </article>
-                    <article>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 2L6.1875 27.2013L15.9856 30L25.8125 27.1969L28 2H4ZM22.1675 22.9312L16.0044 24.6875L9.85063 22.9225L9.42875 18.0625H12.445L12.6594 20.535L16.0088 21.4825L16.0169 21.5L19.3587 20.5719L19.7113 16.5625H12.6875L12.4375 13.4375H19.9781L20.25 10.25H8.75L8.5 7.1875H23.5362L22.1675 22.9312Z" fill="white"/>
-                        </svg>
-                    </article>
-                    <article>
-                        <img src="./img/c-sharp.png">
-                    </article>
-                    <article>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 2L6.18375 27.2006L15.9856 30L25.8125 27.1969L28 2H4ZM23.25 10.25H11.75L12 13.4375H23L22.1556 22.8994L16 24.655L9.8325 22.905L9.40875 18.0625H12.425L12.6388 20.5181L16 21.4419L19.3388 20.5094L19.6875 16.5H9.25L8.46313 7.15063H23.5125L23.25 10.25Z" fill="white"/>
-                        </svg>
-                    </article>
-                    <article>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 2V30H30V2H2ZM17 23.75C17 26.4756 15.39 27.8044 13.0594 27.8044C10.9544 27.8044 9.7325 26.7144 9.1125 25.3988L11.255 24.1019C11.6681 24.835 11.9819 25.455 12.8837 25.455C13.6337 25.455 14.25 25.1169 14.25 23.8013V15H17V23.75ZM23.2094 27.7419C20.7663 27.7419 19.1875 26.6394 18.4169 25.1169L20.5625 23.875C21.125 24.7962 21.8594 25.41 23.1562 25.41C24.2463 25.41 24.8794 24.9275 24.8794 24.1756C24.8794 23.2738 24.2275 22.9544 23.0244 22.4256L22.3669 22.1431C20.4681 21.3356 19.2094 20.3206 19.2094 18.1775C19.2094 16.2044 20.7125 14.7631 23.0619 14.7631C24.735 14.7631 25.9369 15.2831 26.8025 16.8056L24.75 18.125C24.2987 17.3169 23.8125 17 23.0588 17C22.2881 17 21.7994 17.4888 21.7994 18.125C21.7994 18.9144 22.2881 19.2337 23.4156 19.7225L24.0731 20.0044C26.31 20.9631 27.5694 21.9419 27.5694 24.1394C27.57 26.5081 25.7094 27.7419 23.2094 27.7419Z" fill="white"/>
-                        </svg>                            
-                    </article>
-                </div>
-            </section>
-            <section>
-                <h2 style="margin-bottom: 5%; margin-left: 2.5%; margin-top: -4%;" class="Cardarea">Tools I use</h2>
-                <div class='chip-grid'>
-                    <article>
-                        <img src="https://img.icons8.com/fluency/48/000000/github.png"/>
-                    </article>
-                    <article>
-                        <img src="https://img.icons8.com/ios/50/000000/java-eclipse.png"/>
-                    </article>
-                    <article>
-                        <img src="https://img.icons8.com/fluency/48/000000/visual-studio.png"/>
-                    </article>
-                    <article>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)"><g filter="url(#filter0_d)"><mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="28" height="28">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8553 29.8802C22.2963 30.0529 22.7992 30.042 23.2443 29.8266L29.0089 27.0385C29.6147 26.7456 30 26.1293 30 25.4532V6.54698C30 5.87092 29.6147 5.25466 29.0089 4.96167L23.2443 2.17334C22.6601 1.8908 21.9765 1.95999 21.4638 2.33468C21.3906 2.38818 21.3208 2.44796 21.2553 2.51381L10.2194 12.6343L5.41242 8.9664C4.96495 8.625 4.33902 8.65297 3.92343 9.03298L2.38165 10.4427C1.87327 10.9076 1.87272 11.7114 2.38039 12.177L6.54919 16L2.38039 19.823C1.87272 20.2886 1.87327 21.0925 2.38165 21.5574L3.92343 22.9671C4.33902 23.3471 4.96495 23.3752 5.41242 23.0336L10.2194 19.3658L21.2553 29.4862C21.4299 29.6618 21.6349 29.7941 21.8553 29.8802ZM23.0043 9.61076L14.6306 16L23.0043 22.3893V9.61076Z" fill="white"/></mask>
-                            <g mask="url(#mask0)"><path d="M29.0092 4.96661L23.2399 2.17441C22.5721 1.85121 21.774 1.98754 21.2499 2.51435L2.36353 19.8236C1.85554 20.2892 1.85612 21.0931 2.36478 21.5579L3.9075 22.9676C4.32336 23.3476 4.94966 23.3755 5.39738 23.0342L28.1409 5.69097C28.9039 5.10913 30 5.65617 30 6.61886V6.55155C30 5.87577 29.6147 5.25977 29.0092 4.96661Z" fill="#D9D0DE"/><g filter="url(#filter1_d)">
-                            <path d="M29.0092 27.0341L23.2399 29.8263C22.5721 30.1495 21.774 30.0132 21.2499 29.4862L2.36353 12.177C1.85554 11.7114 1.85612 10.9075 2.36478 10.4427L3.9075 9.03295C4.32336 8.65293 4.94966 8.62496 5.39738 8.96639L28.1409 26.3096C28.9039 26.8916 30 26.3445 30 25.3817V25.4492C30 26.1249 29.6147 26.7409 29.0092 27.0341Z" fill="#D9D0DE"/></g>
-                            <g filter="url(#filter2_d)">
-                            <path d="M23.2402 29.8265C22.5722 30.1497 21.7741 30.0131 21.25 29.4861C21.8958 30.1351 23 29.6755 23 28.7576V3.2423C23 2.3243 21.8958 1.86453 21.25 2.51369C21.7741 1.98682 22.5722 1.85031 23.2402 2.17322L29.0083 4.96156C29.6144 5.25455 30 5.8708 30 6.54686V25.4532C30 26.1292 29.6144 26.7452 29.0083 27.0384L23.2402 29.8265Z" fill="white"/>
-                            </g>
-                            <g style="mix-blend-mode:overlay" opacity="0.25">
-                            <path style="mix-blend-mode:overlay" opacity="0.25" fill-rule="evenodd" clip-rule="evenodd" d="M21.8382 29.8802C22.2792 30.0529 22.7821 30.042 23.2272 29.8266L28.992 27.0384C29.5978 26.7455 29.9828 26.1293 29.9828 25.4532V6.5469C29.9828 5.87087 29.5978 5.25465 28.992 4.96163L23.2272 2.17327C22.643 1.89073 21.9594 1.95995 21.4467 2.33461C21.3734 2.38814 21.3037 2.44789 21.2382 2.51374L10.2023 12.6342L5.3953 8.96636C4.94783 8.62492 4.32192 8.6529 3.90632 9.03291L2.36455 10.4426C1.8562 10.9075 1.85562 11.7114 2.36329 12.177L6.53207 16L2.36329 19.823C1.85562 20.2885 1.8562 21.0925 2.36455 21.5573L3.90632 22.967C4.32192 23.347 4.94783 23.3749 5.3953 23.0336L10.2023 19.3658L21.2382 29.4862C21.4128 29.6618 21.6178 29.794 21.8382 29.8802ZM22.9872 9.61069L14.6135 16L22.9872 22.3892V9.61069Z" fill="url(#paint0_linear)"/></g></g></g></g>
-                            <defs>
-                            <filter id="filter0_d" x="-4.25" y="-2.16667" width="40.5" height="40.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="2.08333"/>
-                            <feGaussianBlur stdDeviation="3.125"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                            </filter>
-                            <filter id="filter1_d" x="-6.35043" y="0.394627" width="44.6838" height="37.9386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset/>
-                            <feGaussianBlur stdDeviation="4.16667"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                            </filter>
-                            <filter id="filter2_d" x="12.9167" y="-6.33346" width="25.4167" height="44.6668" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset/>
-                            <feGaussianBlur stdDeviation="4.16667"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter>
-                            <linearGradient id="paint0_linear" x1="15.9829" y1="1.99994" x2="15.9829" y2="30.0002" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/>
-                            </linearGradient><clipPath id="clip0">
-                            <rect width="32" height="32" fill="white"/>
-                            </clipPath></defs></svg>                            
-                    </article>
-                    <article>
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M29.9662 14.6326C30.0047 15.0573 30.0312 15.4859 30.0312 15.921C30.0312 15.4859 30.0047 15.0577 29.9662 14.6326Z" fill="white"/>
-                            <path d="M9.15005 14.5584C9.15005 14.5584 5.24797 28.9356 20.8879 29.0607C25.7949 27.234 29.4108 22.7554 29.9588 17.356C29.9967 16.9825 30.0079 16.6016 30.0164 16.22C30.0179 16.1196 30.0314 16.022 30.0314 15.9209C30.0314 15.4862 30.0048 15.0573 29.9663 14.6325C25.8344 30.8987 7.55481 24.5274 9.15005 14.5584Z" fill="white"/>
-                            <path d="M17.2369 9.22189C17.2369 9.22189 2.6752 5.15529 2.89916 21.0332C3.64561 22.952 4.80401 24.6835 6.29264 26.1058C6.3552 26.1649 6.41995 26.2209 6.48313 26.2791C6.9042 26.6673 7.34857 27.0294 7.81375 27.3635C7.886 27.4151 7.95388 27.472 8.02644 27.5224C8.5185 27.8589 9.03159 28.1635 9.56256 28.4345C9.71677 28.5139 9.87536 28.5865 10.0318 28.6606C10.4887 28.8758 10.957 29.0658 11.4346 29.2299C11.5519 29.27 11.6639 29.32 11.7828 29.3572C12.3554 29.5323 12.9387 29.6702 13.5291 29.7701C13.7077 29.8014 13.8882 29.8277 14.069 29.8527C14.6814 29.9411 15.2991 29.9891 15.9179 29.9963C15.9416 29.9963 15.9645 30 15.9882 30C16.4549 30 16.9157 29.975 17.3702 29.9303C1.0318 26.0338 7.24196 7.76429 17.2369 9.22189Z" fill="white"/>
-                            <path d="M22.9128 16.7518C22.9128 16.7518 26.3579 2.2276 10.8503 2.87633C5.65012 4.93043 1.96887 9.99015 1.96887 15.9197C1.97371 16.5583 2.02188 17.1958 2.11307 17.8278C5.37674 1.39557 23.97 6.71741 22.9128 16.7518Z" fill="white"/>
-                            <path d="M15.4668 23.0019C15.4668 23.0019 30.0539 24.9062 29.1408 11.0373C27.1555 5.69892 22.0295 1.88849 16.0001 1.88849C15.1464 1.89179 14.2947 1.97272 13.4556 2.13028C29.7095 4.12557 25.4849 23.1439 15.4668 23.0019Z" fill="white"/>
-                            <path d="M20.0494 15.9213C20.0494 16.6986 19.8189 17.4586 19.387 18.1049C18.9551 18.7513 18.3412 19.255 17.6229 19.5524C16.9047 19.8499 16.1144 19.9276 15.352 19.7759C14.5896 19.6241 13.8893 19.2497 13.3397 18.6999C12.7901 18.1501 12.4158 17.4497 12.2643 16.6872C12.1128 15.9248 12.1908 15.1345 12.4885 14.4164C12.7862 13.6982 13.2901 13.0845 13.9366 12.6528C14.5831 12.2211 15.3431 11.9908 16.1204 11.991C17.1626 11.9913 18.162 12.4055 18.8988 13.1425C19.6356 13.8796 20.0495 14.8791 20.0494 15.9213Z" fill="#D9D0DE"/>
-                            </svg>                        
-                        <div class="chipText">Replit</div>
-                    </article>
-                </div>
-            </section>  
-        </div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto " href="#work">Work</a></li>
+            <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+            <i class="bi bi-text-paragraph mobile-nav-toggle"></i><!--modified-->
+        </nav><!-- .navbar -->
+      </div>
+    </header><!-- End Header -->
 
-          <div class="card" style="margin-top:5%">
-            <div class="column">
-                <section>
-                <h2 style="font-size: 23px; margin-top: 2px;">About me</h2>
-                <div class='projects'>
-                    <article>
-                    <h3 style="font-size: 17.5px">I'm Matteo, I'm 17 and I love develop</h3>
-                    <p>
-                        I have started to work on pc, when i was 13 y.o., <br>
-                        and I have cultivated this passion since I started high school.
-                    </p>
-                    </article>
-                    <article style="margin-top: 2.5%;">
-                    <h3>Is it easy to develop?</h3>
-                    <p>
-                    "all you can do, do it"; the only limit is your mind...<br>
-                    You can start with the basics from <br> programming, until  
-                    you get to do more complex projects.
-                    </p>
-                    </article>
-                    <article style="margin-top: 2.5%">
-                        <h3>Front-end or Back-end?</h3>
-                        <p>
-                            they are two completely different worlds, <br>
-                            that must work in parallel. <br> I prefer Front-end 
-                            because I love <br> graphic-web-design.
-                        </p>
-                    </article>
-                    <article style="margin-top: 2.5%">
-                        <h3>Extend your Brain</h3>
-                        <p>
-                            Learn a new languages of programming, can also <br>
-                            help you to understand some concents, and you <br>
-                            can learn a few tips from it.
-                        </p>
-                    </article>
-                    <article>
-                    <a href="" target="_blank" rel="noopener noreferrer"></a>
-                    </article>
+    <div id="hero" class="hero route bg-image" style="background-color: black;">
+      <div class="overlay-itro"></div> 
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <h2 class="hero-title mb-2 fw-light" style="color: rgb(207, 207, 207); font-size: 29px;">I'm</h2>
+            <h1 class="hero-title mb-4" style="text-decoration: underline; font-family: cursive;text-decoration:line-through 6px #999; border-radius: 6px; vertical-align: middle; line-height: 1em;"> Matteo Manià</h1>
+            <p class="hero-subtitle fw-semiblod" style="font-size:26px"><span class="typed" data-typed-items="Designer, Developer, Athlete"></span></p>
+          </div>
+        </div>
+      </div>
+    </div><!--End Section-->
+
+    <main id="main">
+      <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6 pr-4" style="margin-right:5px">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img src="./assets/assets/img/IlMiofaccione.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info fs-5">
+                          <p><span class="title-s">Name: <br></span> <span>Matteo Manià</span></p>
+                          <p><span class="title-s">Profile:<br> </span> <span>Web Front-end Developer</span></p>
+                          <p><span class="title-s">Email: <br></span> <span><a href="mailto:matteomania09@gmail.com">contact me</a></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                      <p class="title-s">Skill</p>
+                      <span>HTML</span> <span class="pull-right">85%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span>CSS3</span> <span class="pull-right">75%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span>JAVASCRIPT</span> <span class="pull-right">60%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ml-3">
+                    <div class="about-me pt-4 pt-md-1">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          About me
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        When I started programming, <br>It was all very difficult.
+                      </p>
+                      <p class="lead">
+                        But when you understand the logic, <br>
+                        It's became all easier.
+                      </p>
+                      <p class="lead">
+                        You must need to remember about <br>
+                        the approach you use... <br>
+                        I recommend to always work on it!
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                </section>
+              </div>
             </div>
           </div>
-        </main>
+        </div>
+      </section>
+      <!--End About Section-->
+
+      <!--Services-->
+      <section id="services" class="services-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Services
+                </h3>
+                <p class="subtitle-a">
+                  I can do all the frontends of all the sites you want. <br>
+                  you just only need to contact me
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Web Design</h2>
+                  <p class="s-description text-center">
+                    I love Web-Design, since i was 15 y.o. when I started developing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Web Development</h2>
+                  <p class="s-description text-center">
+                    WebDevelopment is Costantly make perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Responsive Design</h2>
+                  <p class="s-description text-center">
+                    Responsive design it makes beautiful a Website.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Graphic Design</h2>
+                  <p class="s-description text-center">
+                    It needs creativity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Services Section-->
+
+      <!--Portfolio Section-->
+      <section id="work" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Portfolio
+                </h3>
+                <p class="subtitle-a">
+                  ROBA 1
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-4 pl-4 pr-4">
+              <div class="work-box">
+                <a href="./assets/assets/img/Examplesite.png.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="./assets/assets/img/Examplesite.png.png" alt="" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Stile Personal of Web-design (frontpage)</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">15 june 2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--End Portfolio Section-->
+
+      <!--Blog Section-->
+      <section id="blog" class="blog-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Blog
+                </h3>
+                <p class="subtitle-a">
+                  My blog
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="index.html"><img src="./assets/assets/img/EsempioLuogo1.jpeg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Travels</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="index.html">I did a few travels 'n my life</a></h3>
+                  <p class="card-description">
+                    55 place visited, with airplane, seaship and car.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="./assets/assets/img/IlMiofaccione.jpeg" alt="" class="avatar rounded-circle">
+                      <span class="author">Matteo Manià</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span>  few months ago
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Blog Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Get in Touch
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">
+                          Plus information on me:
+                        </p>
+                        <ul class="list-ico">
+                          <li><span class="bi bi-geo-alt"></span> Monfalcone(GO), 34074, Italy</li>
+                          <li><span class="bi bi-envelope"></span> <a href="mailto:matteomania09@gmail.com">E-mail</a></li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li><a href="https://www.facebook.com/robin.ticke.50/" title="Facebook" ><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                          <li><a href="https://www.instagram.com/itz_matteomania/" title="Instagram"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                          <li><a href="https://github.com/Matteo0099" title="Github"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                          <li><a href="https://www.twitch.tv/zippo_107" title="Twitch"><span class="ico-circle"><i class="bi bi-twitch"></i></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!--end pagina principale-->
+
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Website by <strong>Matteo Manià</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
