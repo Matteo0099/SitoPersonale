@@ -471,7 +471,7 @@ a:hover {
 }
 .navbar > ul > li {
   white-space: nowrap;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 32px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -530,7 +530,7 @@ a:hover {
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   color: #4e4e4e;
 }
@@ -599,7 +599,7 @@ a:hover {
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 15px;
 }
 .navbar-mobile ul {
@@ -621,7 +621,7 @@ a:hover {
   visibility: hidden;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 15px;
   color: #4e4e4e;
 }
@@ -646,7 +646,7 @@ a:hover {
   min-width: 200px;
 }
 .navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
+  padding: 28px 20px;
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
