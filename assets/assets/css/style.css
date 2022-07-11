@@ -1,25 +1,52 @@
-/**
-* Template Name: DevFolio - v4.7.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+*, * html, body, h1, h2, h3, h4, h5, span, p, .bi, .bi-list, article, section, aside, head, footer { 
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+/*bottoni*/
+#B1 {
+  place-items: center;
+  border: 1px #999;
+  border-radius: 100%;
+  object-fit: cover;
+  transition: all 500ms ease;
+}
+
+.bi-house {
+  margin-left: 0.2%;
+  margin-bottom: 14%;
+  width: 35px;
+  height: 35px;
+  border: 4px;
+}
+
+#B1:hover {
+  background-color: #fff;
+  transition: all 600ms ease-out;
+  box-shadow: 0 0 0 4px #999;
+}
+/********/
+
+
+h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e;
+  text-rendering: optimizeSpeed;
 }
 
 a {
@@ -31,6 +58,32 @@ a:hover {
   color: #0078ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+
+/*icons*/
+.icon {
+  background-color: var(--bs-light);
+  border-radius: .25rem;
+}
+.bi {
+  font-size: 1.75rem
+}
+.label {
+  font-family: var(--bs-font-monospace);
+}
+.label {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}   
+/***/
+
+span .ico-circle {
+  align-items: center;
+  align-self: center;
+  margin: 2px;
 }
 
 .p-r {
@@ -92,7 +145,8 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: rgb(13, 13, 13);
+  /*background-color: #0078ff;*/
 }
 
 .overlay-mf {
@@ -102,12 +156,12 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .display-table {
@@ -189,7 +243,7 @@ a:hover {
 }
 
 .box-shadow-full {
-  padding: 3rem 1.25rem;
+  padding: 2.5rem 4rem;
   position: relative;
   background-color: #fff;
   margin-bottom: 3rem;
@@ -204,7 +258,7 @@ a:hover {
 
 /*------/ Socials /------*/
 .socials {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 .socials ul li {
   display: inline-block;
@@ -212,18 +266,18 @@ a:hover {
 .socials .ico-circle {
   height: 40px;
   width: 40px;
-  font-size: 1.2rem;
+  font-size: 0rem;
   border-radius: 50%;
-  line-height: 1.6;
-  margin: 0 15px 0 0;
+  line-height: 2.585rem;
+  margin: 12px 20px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
 }
 .socials .ico-circle:hover {
   background-color: #0078ff;
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
+  box-shadow: 0 0 0 5px #cde1f8;
+  transition: all .4s ease;
 }
 
 /*------/ Ul resect /------*/
@@ -288,10 +342,10 @@ a:hover {
 .scrolltop-mf span {
   z-index: 999;
   position: fixed;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   background-color: #0078ff;
-  opacity: 0.7;
+  opacity: 0.4;
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
@@ -315,10 +369,10 @@ a:hover {
   bottom: 15px;
   z-index: 996;
   background: #0078ff;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50px;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 .back-to-top i {
   font-size: 28px;
@@ -389,7 +443,7 @@ a:hover {
   font-size: 1rem;
   border-radius: 0.3rem;
   border: 1px solid transparent;
-  transition: all 500ms ease;
+  transition: all 600ms ease;
   cursor: pointer;
 }
 .button:focus {
@@ -471,7 +525,7 @@ a:hover {
 }
 .navbar > ul > li {
   white-space: nowrap;
-  padding: 10px 0 10px 32px;
+  padding: 10px 0 10px 30px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -530,7 +584,7 @@ a:hover {
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
   color: #4e4e4e;
 }
@@ -569,12 +623,13 @@ a:hover {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
+  color: #f3f3f1;
+  font-size: 32px;
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
+  transition: 0.65s;
+  animation-delay: 0ms;
 }
 
 @media (max-width: 991px) {
@@ -593,14 +648,16 @@ a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 78, 78, 0.9);
-  transition: 0.3s;
+  background: rgba(88, 88, 88, 0.79);
+  backdrop-filter: blur(100px);
+  transition: .8s;
   z-index: 999;
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 15px;
+  bottom: 10px;
 }
 .navbar-mobile ul {
   display: block;
@@ -621,9 +678,10 @@ a:hover {
   visibility: hidden;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 15px;
-  font-size: 15px;
-  color: #4e4e4e;
+  padding: 12px 30px;
+  padding-top: 15px;
+  font-size: 19px;
+  color: #3a3a3a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #0078ff;
@@ -646,7 +704,7 @@ a:hover {
   min-width: 200px;
 }
 .navbar-mobile .dropdown ul a {
-  padding: 28px 20px;
+  padding: 10px 20px;
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
@@ -658,9 +716,7 @@ a:hover {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/*title*/
 .hero {
   height: 100vh;
   position: relative;
@@ -680,25 +736,56 @@ a:hover {
   width: 100%;
   opacity: 0.9;
 }
-.hero .hero-title {
+
+
+/**Container**/
+#container-1 {
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+
+/***TITLE***/
+.underline{
+  height:0px;border: 6px solid rgb(188, 188, 188);
+  border-radius: 1000px;
+}
+.titleFont {
+  font-family: 'Arizonia';
+  font-size: clamp(3rem, 5vh, 8rem);
+}
+.wrapper{
+  line-height: 3.5em;
+  margin-bottom: 3%;
+  margin-top: 1%;
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  display:inline-block;
 }
+
+/*
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 3.25rem;
   }
 }
+*/
+
 .hero .hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-top: 1.5%;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+  text-decoration: underline;
 }
+
+/*
 @media (min-width: 768px) {
   .hero .hero-subtitle {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
   }
 }
+*/
 .hero .text-slider-items {
   display: none;
 }
@@ -711,13 +798,15 @@ a:hover {
 }
 .hero-single .hero-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(3rem, 3vw, 5rem);
 }
+/*
 @media (min-width: 768px) {
   .hero-single .hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
+*/
 .hero-single .breadcrumb {
   background-color: transparent;
   color: #0078ff;
@@ -935,6 +1024,12 @@ a:hover {
   padding: 0;
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse >  ul {
+      display: block;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -943,7 +1038,7 @@ a:hover {
   text-align: center;
 }
 .testimonial-box .author-test {
-  margin-top: 1rem;
+  margin-top: 1.1rem;
 }
 .testimonial-box .author-test img {
   margin: 0 auto;
@@ -1001,11 +1096,12 @@ a:hover {
 # Contact
 --------------------------------------------------------------*/
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  margin-top: 15%;
+  padding: 2rem 0 0 0;
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 @media (min-width: 767px) {
   .contact-mf .box-pl2 {
@@ -1103,6 +1199,7 @@ a:hover {
   position: relative;
 }
 .card-blog .card-category-box {
+  user-select: none;
   position: absolute;
   text-align: center;
   top: -16px;
@@ -1128,6 +1225,7 @@ a:hover {
   margin-bottom: 0;
 }
 .card-blog .card-title {
+  user-select: none;
   font-size: 1.3rem;
   margin-top: 0.6rem;
 }
@@ -1135,9 +1233,12 @@ a:hover {
   color: #4e4e4e;
 }
 .card-blog .post-author {
+  padding-top: 1.4rem;
   display: inline-block;
 }
 .card-blog .post-date {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #4e4e4e;
   display: inline-block;
   float: right;
