@@ -38,8 +38,8 @@ body {
 
 #B1:hover {
   background-color: #fff;
-  transition: all 600ms ease-out;
-  box-shadow: 0 0 0 4px #999;
+  transition: all 400ms ease-out;
+  box-shadow: 0 0 0 11px #999;
 }
 /********/
 
@@ -933,7 +933,7 @@ span .ico-circle {
   background-color: #fff;
 }
 .work-box:hover img {
-  transform: scale(1.3);
+  transform: scale(1.125);
 }
 
 .work-img {
@@ -1242,6 +1242,12 @@ span .ico-circle {
   color: #4e4e4e;
   display: inline-block;
   float: right;
+}
+.img-fluid {
+  transition: all 1s;
+}
+.img-fluid:hover img {
+  scale: (1.125);
 }
 
 /*--------------------------------------------------------------
