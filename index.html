@@ -17,13 +17,14 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!--Bootstrap icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link href="./assets/vendor/bootstrap-icons/index.html">
-    <link href="./assets/assets/vendor/bootstrap-icons/bootstrap-icons.json">
   </head>
 
   <body>
@@ -54,14 +55,20 @@
       </div>
     </header><!-- End Header -->
 
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+
     <div id="hero" class="hero route bg-image" style="background-color: black;">
       <div class="overlay-itro"></div> 
       <div class="hero-content display-table">
         <div class="table-cell">
-          <div class="container">
+          <div class="container" id="container-1">
             <h2 class="hero-title mb-2 fw-light" style="color: rgb(207, 207, 207); font-size: 29px;">I'm</h2>
-            <h1 class="hero-title mb-4" style="text-decoration: underline; font-family: cursive;text-decoration:line-through 6px #999; border-radius: 6px; vertical-align: middle; line-height: 1em;"> Matteo Manià</h1>
-            <p class="hero-subtitle fw-semiblod" style="font-size:26px"><span class="typed" data-typed-items="Designer, Developer, Athlete"></span></p>
+            <!--title-->
+            <div class="wrapper">
+              <span class="titleFont">Matteo Manià</span>
+              <div class="underline"></div>
+            </div>
+            <p class="hero-subtitle fw-semiblod"><span class="typed" data-typed-items="Designer, Developer, Athlete"></span></p>
           </div>
         </div>
       </div>
@@ -277,15 +284,17 @@
                       <h6 class="category">Travels</h6>
                     </div>
                   </div>
-                  <h3 class="card-title"><a href="index.html">I did a few travels 'n my life</a></h3>
+                  <h3 class="card-title">I did a few travels 'n my life</h3>
                   <p class="card-description">
                     55 place visited, with airplane, seaship and car.
                   </p>
                 </div>
                 <div class="card-footer">
                   <div class="post-author">
-                    <a href="#">
-                      <img src="./assets/assets/img/IlMiofaccione.jpeg" alt="" class="avatar rounded-circle">
+                    <a href="#" style="margin-top:8px">
+                      <a href="./assets/assets/img/IlMiofaccione.jpeg"  target="_blank"> 
+                        <img src="./assets/assets/img/IlMiofaccione.jpeg" class="avatar rounded-circle" alt=""/> <!--show image into new window-->
+                      </a>
                       <span class="author">Matteo Manià</span>
                     </a>
                   </div>

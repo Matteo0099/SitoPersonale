@@ -1342,7 +1342,9 @@ url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("wof
 .bi-x-square-fill::before { content: "\f628"; }
 .bi-x-square::before { content: "\f629"; }
 .bi-x::before { /*content: "\f62a";*/ display: none;}
-.bi-youtube::before { content: "\f62b"; }
+.bi-x::before { content: "\F629"; }
+/*.bi-x::before { content: "\F659";}*/
+.bi-youtube::before { /*content: "\f62b";*/ display: none; }
 .bi-zoom-in::before { content: "\f62c"; }
 .bi-zoom-out::before { content: "\f62d"; }
 .bi-bank::before { content: "\f62e"; }
