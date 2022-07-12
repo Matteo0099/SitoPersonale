@@ -752,7 +752,7 @@ span .ico-circle {
 }
 .titleFont {
   font-family: 'Arizonia';
-  font-size: clamp(3.75rem, 5vh, 8rem);
+  font-size: clamp(3.25rem, 100vw, 3.75rem);
 }
 .wrapper{
   line-height: 3.5em;
