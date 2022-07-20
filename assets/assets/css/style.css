@@ -23,7 +23,7 @@ body {
 #B1 {
   place-items: center;
   border: 1px #999;
-  border-radius: 100%;
+  border-radius: 26px;
   object-fit: cover;
   transition: all 500ms ease;
 }
