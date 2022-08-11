@@ -26,6 +26,10 @@ html, body, * {
     transition: all 375ms ease !important; 
 }
 
+/*  scroll-behavior: smooth;
+    some issues for scroll if js is active.
+*/
+
 h1,
 h2,
 h3,
@@ -342,8 +346,48 @@ p#code {
 }
   
 .child {
+    overflow: hidden;
+    color: black !important;
     text-align: center;
 }
+
+
+/*section slide*/
+.section-1 .slide-in-demo {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 4em;
+}
+
+
+/*grid*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 16px;
+    height: 250px;
+}
+
+.column a {
+    color:#1974d0; /*slategrey;*/
+    margin: 1.5em auto; 
+    word-wrap: none;
+    word-break: none;
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+    color: #1974d0;
+}
+/****/
+
 
 /*back to top*/
 .top-btn {
@@ -365,6 +409,9 @@ p#code {
 @media (max-width: 581px) {
     .top-btn {
         right: 20px;
+    }
+    .column a {
+        font-size: 16px !important;
     }
 }
 

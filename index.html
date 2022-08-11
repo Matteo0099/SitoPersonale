@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal website by Zippo107</title>
+    <title> Matteo Mania&#768 | Web-development | Web-design</title>
     <link rel="stylesheet" href="assets/assets.css">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
@@ -27,16 +30,16 @@
         
         <div class="navbar-links">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick="scrollToSection()">Home</a></li>
+            <li><a href="#about" onClick="scrollToAbout()">About</a></li>
+            <li><a href="#projects" onClick="scrollToProjects()">Projects</a></li>
+            <li><a href="#contact" onClick="scrollToContact()">Contact</a></li>
           </ul>
         </div>
     </nav>
 
     <div class="container" id="home">
-        <div class="child">
+        <div class="child" data-aos="flip-down">
             <h1 id="spinner">Hi, I'm <span>&lt;Matt!/&gt;</span></h1>
             <p>
                 I'm a Web developer, I love design <br>
@@ -46,7 +49,7 @@
     </div>
 
     <div class="container" id="about">
-        <div class="child">
+        <div class="child" data-aos="flip-down">
             <span class="code-txt">&lt;About me/&gt;</span>
             <p id="code">
                 I'm 17 y.o. , and I'll became <br>a Software-developer
@@ -56,18 +59,26 @@
     </div>
 
     <div class="container" id="projects">
-        <div class="child">
+        <div class="child" data-aos="flip-down">
             <span class="code-txt">&lt;My projects/&gt;</span>
             <p id="code">I am working on some projects, and I want to improve <br> 
                 my approach to programming more and more.<br>
                 You can visit 2 of my websites in the link <br>
                  in top of the page.
             </p>
+            <div class="row">
+                <div class="column">
+                    <a href="https://areacrewmonfalcone.it" target="_blank" aria-label="true">"AreaCrewWebsite"</a>
+                </div>
+                <div class="column">
+                    <a href="https://matteo0099.github.io/ilpiccone/" target="_blank" aria-label="true">"Il piccone"</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container" id="contact">
-        <div class="child">
+        <div class="child" data-aos="flip-down">
             <span class="code-txt">&lt;Get in touch!/&gt;</span>
             <p id="code">Visit all my socials and go follow me; <br>
                 You certainly need a website!<br>
@@ -110,10 +121,20 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>   
+
     <!--icons-->
     <script src="src/script.js"></script>
     <script src="src/toggle.js"></script>
+    <script src="src/ScrollSmooth.js"></script>
+    <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Ion-Icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
