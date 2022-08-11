@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0; 
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -303,8 +308,8 @@ section.container {
 }
 
 section.container#home {
-    padding-top: 250px;
-    height: 90vh;
+    padding-top: 320px;
+    height: 85vh;
 }
 
 section.container#about {
@@ -314,46 +319,7 @@ section.container#about {
 section.container#contact {
     gap: 200px;
 	padding-top: 220px;
-    height: 70vh;
-}
-
-@media only screen and (max-width: 600px) {
-    section {
-        height: auto !important;
-        padding: 100px 20px !important;
-    }
-}
-@media only screen and (max-width: 1100px) {
-    .container1 .project {
-        width: calc(100vw - 200px);
-        height: calc(100vw - 200px);
-    }
-}
-
-.row2#appear {
-    gap: 40px;
-    display: none;
-}
-
-.row2 a {
-    text-decoration: none;
-    color: #1974d0 !important;
-    font-size: 22px !important;
-}
-
-.row2 a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 579px) {
-    .container1 .row {
-        display: none !important;
-    }
-    .row2#appear {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    height: 80vh;
 }
 
 .child {
@@ -362,76 +328,93 @@ section.container#contact {
     text-align: center;
 }
 
-
-/*projects*/
-.container1 {
-	display: flex;
-	gap: 50px;
-	flex-direction: column;
-}
-.container1 .row {
-	display: flex;
-	gap: 50px;
-}
-.container1 .project {
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	background: #f4f4f4;
-	width: 100%;
-	height: calc((100vw - 50px) - 50vw - 75px);
-	cursor: pointer;
-	padding: 20px;
-}
-.project:hover {
-    transition: all 10ms ease !important;
-	outline: 2px solid #f00;
-}
-.row a {
-    text-decoration: none;
-    color: #1974d0;
-}
-.row a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-.project img {
-	width: 100%;
-}
-
-/*section slide*/
-.section-1 .slide-in-demo {
-    position: absolute;
-    top: 95%;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    font-size: 4em;
-}
-
-/*grid*/
-.row {
+/******projects******/
+.containerP {
     display: flex;
+    gap: 60px;
+    flex-direction: column;
 }
 
-.column {
-    flex: 50%;
-    padding: 16px;
-    height: 250px;
+.containerP .row {
+    display: flex;
+    gap: 60px;
 }
 
-.column a {
-    color:#1974d0; /*slategrey;*/
-    margin: 1.5em auto; 
-    word-wrap: none;
-    word-break: none;
+.containerP .project {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    width: 100%;
+    height: calc((100vw - 50px) - 50vw - 75px);
+    cursor: pointer;
+    padding: 20px;
+}
+
+.containerP .project:hover {
+    transition: 25ms !important;
+    outline: 2px solid #f00;
+}
+
+.containerP .row a {
+    color: #1974d0;
     text-decoration: none;
 }
 
-.column a:hover {
-    text-decoration: underline;
-    color: #1974d0;
+.containerP .row a:hover {
+    transition: 250ms !important;
+    text-decoration:underline;
+}
+
+.project img {
+    width: 100% !important;
+}
+
+/*resize*/
+/*@media only screen and (max-width: 2160px) {
+    section {
+        height: auto !important;
+    }
+}*/
+
+@media only screen and (max-width: 1100px) {
+	.containerP .row {
+		flex-direction: column;
+	}
+
+	.containerP .project {
+		width: calc(100vw - 200px);
+		height: calc(100vw - 200px);
+	}
+
+	.hi a {
+		font-size: 8.5vw;
+	}
+
+	.hi {
+		gap: 50px;	
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	section {
+		height: auto !important;
+		padding: 100px 20px !important;
+	}
+
+	section.container{
+		gap: 10px;
+	}
+
+	.containerP .project {
+		width: 100%;
+		height: calc(100vw - 40px);
+	}
+
+    .containerP {
+        padding: 0 3rem !important;
+    }
 }
 /****/
 
@@ -440,10 +423,10 @@ section.container#contact {
 .top-btn {
     all: unset; 
     position: fixed;
-    right: 40px;
-    bottom: 175px;
+    right: 31px;
+    bottom: 140px;
     cursor: pointer;
-    transform:scale(1.05);
+    transform: scale(1.05);
     opacity: 0;
     transition: 275ms all;
 }
@@ -483,7 +466,7 @@ section.container#contact {
     text-align: center;
     width: 100%;
     bottom: 0;
-    padding-bottom: 20px;
+    padding: 24px 0;
 }
 
 .card {
@@ -514,11 +497,12 @@ section.container#contact {
 .footer {
     position: relative;
     padding-top: 8px;
-    margin: 8px;
+    margin: 2px;
 }
 
 .footer.text h5 {
-    font-size: 15px !important;
+    margin-bottom: 1em;
+    font-size: 16px !important;
     color: white !important;
 }
 
