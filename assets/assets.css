@@ -158,47 +158,6 @@ p#code {
     }
 }
 
-/*#spinner:hover {
-    animation-name: spinner;
-    animation-timing-function: linear;
-    /*animation-iteration-count:infinite;*/
-    /*animation-duration: 1.25s;
-    transform-style: preserve-3d;
-    text-align: center;
-    text-rendering: optimizeSpeed;
-}
-@keyframes spinner {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(-360deg);
-    }
-}
-#spinner:hover {
-    animation-name: transform;
-    animation-timing-function: linear;
-    animation-duration: 720ms;
-}
-@keyframes transform {
-    0% {
-        transform: rotateX(0deg);
-    }
-    35% {
-        transform: rotateX(180deg);
-    }
-    65% {
-        transform: rotateY(180deg);
-    }
-    85% {
-        transform: rotateY(360deg);
-    }
-    100% {
-        transform: rotateX(360deg);
-    }
-}
-*/
-
 #spinner:hover{
     font-style: italic;
 }
@@ -283,33 +242,6 @@ p#code {
 }
 /*end toggle*/
 
-/*
-.toggle-button {
-    position: absolute;
-    top: 1.2rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.bar-1, .bar-2, .bar-3 {
-    width: 100%;
-    background-color: white;
-    border-radius: 12px;
-}
-.toggle-button .bar-1 {
-    height: 4px;
-}
-.toggle-button .bar-2 {
-    height: 3px;
-}
-.toggle-button .bar-3 {
-    height: 4px;
-}
-*/
-
 @media (max-width: 860px) {
     .navbar-links li a {
         font-size: 16px !important;
@@ -387,14 +319,40 @@ section.container#contact {
 
 @media only screen and (max-width: 600px) {
     section {
-    height: auto !important;
-    padding: 100px 20px !important;
+        height: auto !important;
+        padding: 100px 20px !important;
     }
 }
 @media only screen and (max-width: 1100px) {
     .container1 .project {
         width: calc(100vw - 200px);
         height: calc(100vw - 200px);
+    }
+}
+
+.row2#appear {
+    gap: 40px;
+    display: none;
+}
+
+.row2 a {
+    text-decoration: none;
+    color: #1974d0 !important;
+    font-size: 22px !important;
+}
+
+.row2 a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 579px) {
+    .container1 .row {
+        display: none !important;
+    }
+    .row2#appear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
