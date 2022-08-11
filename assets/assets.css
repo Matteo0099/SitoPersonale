@@ -68,7 +68,7 @@ h5 {
 }
 
 a {
-    font-size: 24px;
+    font-size: 22.5px;
 }
 
 p {
@@ -115,15 +115,6 @@ p#code {
     }
 }
 
-/*
-.code-text {
-    margin-top: -1.2rem;
-    margin-left: 1.5rem;
-    margin-bottom: .2rem;
-    margin-right: 1.2rem;
-}
-*/
-
 /*navbar*/
 .navbar {
     display: flex;
@@ -145,8 +136,6 @@ p#code {
 }
 
 .brand-title:hover, .navbar-links li a:hover {
-    /*font-style: italic;
-    opacity: .75;*/
     text-shadow: 0 0 22px rgba(255, 0, 0);
     color: rgb(250, 220, 220);
     transition: 200ms all ease !important;
@@ -165,21 +154,22 @@ p#code {
     }
 }
 
-.spinner:hover {
-    animation-name: spinner !important;
-    animation-timing-function: linear !important;
-    animation-iteration-count: infinite !important;
-    animation-duration: 3s !important;
-    transform-style: preserve-3d !important;
-    text-align:center !important;
+#spinner:hover {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    /*animation-iteration-count:infinite;*/
+    animation-duration: 1.25s;
+    transform-style: preserve-3d;
+    text-align: center;
+    text-rendering: optimizeSpeed;
 }
 
 @keyframes spinner {
     from {
-      transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     to {
-      transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
     }
 }
 
@@ -204,6 +194,66 @@ p#code {
     padding: 1.25rem;
 }
 
+/*new toggle button*/
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: .65em;
+    opacity: 1;
+    right: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+}
+  
+.nav-toggle:focus {
+    outline-width: 0;
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
+}
+  
+.nav-toggle [class*='bar-'] {
+    background: whitesmoke;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+    border-radius: 8px;
+    margin-bottom: 5.5px;
+    height: 2px;
+    width: 31px;
+}
+  
+.nav-toggle .bar-bot {
+    margin-bottom: 0;
+}
+
+.opened .bar-top {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 15% 15%;
+    transform-origin: 15% 15%;
+}
+
+.opened .bar-mid {
+    opacity: 0;
+}
+
+.opened .bar-bot {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 15% 95%;
+    transform-origin: 15% 95%;
+}
+/*end toggle*/
+
+/*
 .toggle-button {
     position: absolute;
     top: 1.2rem;
@@ -214,31 +264,40 @@ p#code {
     width: 30px;
     height: 21px;
 }
-
-.toggle-button .bar {
-    height: 3.6px;
+.bar-1, .bar-2, .bar-3 {
     width: 100%;
     background-color: white;
     border-radius: 12px;
 }
+.toggle-button .bar-1 {
+    height: 4px;
+}
+.toggle-button .bar-2 {
+    height: 3px;
+}
+.toggle-button .bar-3 {
+    height: 4px;
+}
+*/
 
-@media (max-width: 820px) {
+@media (max-width: 860px) {
     .navbar-links li a {
-        font-size: 21px !important;
+        font-size: 16px !important;
     }
     .brand-title {
-        font-size: 21px !important;
+        font-size: 17.3px !important;
     }
 }
 
 @media (max-width: 720px) {
     .navbar {
-        padding: .15rem;
+        padding: .5rem;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .toggle-button {
+    /*old toggle-button*/
+    .nav-toggle {
         display: flex;
     }
 
@@ -266,6 +325,7 @@ p#code {
     
     .navbar-links li a {
         margin: auto;
+        font-size: 20px !important;
     }
 }
 /*end nav*/
