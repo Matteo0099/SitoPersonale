@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matteo Mania&#768 | Web-development | Web-design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Matteo Mania&#768 | Web-development | Web-design</title>
+    <meta name="description" content="My name is Matteo and I'm a Front-end developer">
+    <meta property="og:title" content="Matteo Manià | Web-development | Web-design">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.zippo107.tk">
     <link rel="stylesheet" href="assets/assets.css">
     <!--aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,12 +20,7 @@
 
 <body>
     <nav class="navbar">
-        <div class="brand-title">&lt;Matteo Manià/&gt;</div>
-        <!--<a href="#" class="toggle-button">
-          <span class="bar-1"></span>
-          <span class="bar-2"></span>
-          <span class="bar-3"></span>
-        </a>-->
+        <div class="brand-title" onclick="scrollToAbout()">&lt;Matteo Manià/&gt;</div>
         <button class="nav-toggle">
             <span class="bar-top"></span>
             <span class="bar-mid"></span>
@@ -42,8 +41,8 @@
         <div class="child" data-aos="flip-down">
             <h1 id="spinner">Hi, I'm <span>&lt;Matt!/&gt;</span></h1>
             <p>
-                I'm a Web developer, I love design <br>
-                and some backend of a Website.<br>
+                I'm a <span id="dotted">Front-End Developer</span>, I love <span id="dotted">design </span><br>
+                and some <span id="dotted">backend</span> of a Website.<br>
             </p>
         </div>
     </section>
@@ -52,7 +51,7 @@
         <div class="child" data-aos="flip-down">
             <span class="code-txt" id="spinner">&lt;About me/&gt;</span>
             <p id="code">
-                I'm 17 y.o. , and I'll became <br>a Software-developer
+                I'm <span id="dotted">17 y.o. </span>, and I'll became <br>a Full-Stack developer
                 cauz <br> I like do this shit.
             </p>
         </div>
@@ -61,9 +60,9 @@
     <section class="container" id="projects">
         <div class="child" data-aos="flip-down">
             <span class="code-txt" id="spinner">&lt;My projects/&gt;</span>
-            <p id="code">I am working on some projects, and I want to improve <br> 
+            <p id="code">I am working on <span id="dotted">some projects</span>, and I want to improve <br> 
                 my approach to programming more and more.<br>
-                You can visit 2 of my websites in the link <br>
+                You can visit <span id="dotted">2 of my websites</span> in the link <br>
                  in top of the page.
             </p>
             <!--projects-->
@@ -90,8 +89,8 @@
     <section class="container" id="contact">
         <div class="child" data-aos="flip-down">
             <span class="code-txt" id="spinner">&lt;Get in touch!/&gt;</span>
-            <p id="code">Visit all my socials and go follow me; <br>
-                You certainly need a website!<br>
+            <p id="code">Visit all <span id="dotted"> my socials </span>and go follow me; <br>
+                <span id="dotted"> You certainly need a website! </span><br>
                 Just need to contact me.
             </p>
         </div>
@@ -130,7 +129,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

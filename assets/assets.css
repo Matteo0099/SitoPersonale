@@ -87,7 +87,7 @@ p {
 }
 
 span {
-    color: #f00;
+    color: #f20101;
     font-size: 85px;
     font-weight: 700;
     letter-spacing: -.4px;
@@ -144,22 +144,22 @@ p#code {
     word-wrap: none;
 }
 
-.brand-title:hover, .navbar-links li a:hover {
-    text-shadow: 0 0 22px rgba(255, 0, 0);
+.brand-title:hover {
+    text-shadow: 0 0 22px #f20101;
     color: rgb(250, 220, 220);
     transition: 200ms all ease !important;
 }
 
 .brand-title:hover {
-    cursor: crosshair;
+    cursor: text;
 }
 
 @media (min-width: 1024px) {
     .brand-title {
-        margin: 1rem 6rem;
+        margin: 1rem 7rem;
     }
     .navbar-links ul {
-        padding-right: 6rem !important;
+        padding-right: 7rem !important;
     }
 }
 
@@ -182,10 +182,17 @@ p#code {
 }
 
 .navbar-links li a {
+    transition: 100ms all !important;
     display: block;
     text-decoration: none;
     color: white;
     padding: 1.25rem;
+}
+
+.navbar-links li a:hover {
+    color: #f20101;
+    text-decoration: underline;
+    /*border-bottom: 1px solid whitesmoke;*/
 }
 
 /*new toggle button*/
@@ -252,7 +259,7 @@ p#code {
         font-size: 16px !important;
     }
     .brand-title {
-        font-size: 17.3px !important;
+        font-size: 19px !important;
     }
 }
 
@@ -297,14 +304,26 @@ p#code {
 }
 /*end nav*/
 
+span#dotted {
+    color: black;
+    font-size: inherit;
+    font-weight: 400;
+    border-bottom: 3px dotted #f20101;
+    bottom: 0;
+}
+
 section.container {
     font-size: 24px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 100px;
+    padding: 250px 100px;
     position: relative;
+}
+
+section div {
+    margin: auto;
 }
 
 section.container#home {
@@ -354,7 +373,7 @@ section.container#contact {
 
 .containerP .project:hover {
     transition: 25ms !important;
-    outline: 2px solid #f00;
+    outline: 2px solid #f20101;
 }
 
 .containerP .row a {
@@ -485,7 +504,7 @@ section.container#contact {
 
 .card a:hover {
     transition: all 50ms;
-    color: rgba(255, 0, 0, 0.7); /*#457B9D*/
+    color: #f20101; /*#457B9D*/
     cursor: pointer;
 }
 
