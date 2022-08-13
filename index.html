@@ -19,23 +19,29 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="brand-title" onclick="scrollToAbout()">&lt;Matteo Manià/&gt;</div>
-        <button class="nav-toggle">
-            <span class="bar-top"></span>
-            <span class="bar-mid"></span>
-            <span class="bar-bot"></span>
-        </button>
-        
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#home" onClick="scrollToSection()">Home</a></li>
-            <li><a href="#about" onClick="scrollToAbout()">About</a></li>
-            <li><a href="#projects" onClick="scrollToProjects()">Projects</a></li>
-            <li><a href="#contact" onClick="scrollToContact()">Contact</a></li>
-          </ul>
-        </div>
-    </nav>
+    <div id="progress-bar">
+		<div id="progress-line"></div>
+	</div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="brand-title" onclick="scrollToAbout()">&lt;Matteo Manià/&gt;</div>
+            <button class="nav-toggle">
+                <span class="bar-top"></span>
+                <span class="bar-mid"></span>
+                <span class="bar-bot"></span>
+            </button>
+            
+            <div class="navbar-links">
+            <ul>
+                <li><a href="#home" onClick="scrollToSection()">Home</a></li>
+                <li><a href="#about" onClick="scrollToAbout()">About</a></li>
+                <li><a href="#projects" onClick="scrollToProjects()">Projects</a></li>
+                <li><a href="#contact" onClick="scrollToContact()">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
 
     <section class="container" id="home">
         <div class="child" data-aos="flip-down">
@@ -136,6 +142,7 @@
     </script>   
 
     <!--icons-->
+    <script src="src/readProgression.js"></script>
     <script src="src/script.js"></script>
     <script src="src/toggle.js"></script>
     <script src="src/ScrollSmooth.js"></script>
