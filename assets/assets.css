@@ -375,10 +375,6 @@ section.container#home {
     height: 85vh;
 }
 
-section.container#about {
-    height: 65vh;
-}
-
 section.container#contact {
     gap: 200px;
 	padding-top: 220px;
@@ -516,11 +512,11 @@ section.container#contact {
     left: 0;
     width: 100%;
     opacity: 1;
-	height: 8px;
+	height: 4px;
 	background-color: rgba(255, 255, 255, 0.6575);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-	z-index: 3;
+	z-index: 99;
     overflow: hidden;
 }
 
@@ -534,7 +530,7 @@ section.container#contact {
 .top-btn {
     all: unset; 
     position: fixed;
-    right: 31px;
+    right: 26px;
     bottom: 180px;
     cursor: pointer;
     transform: scale(1.04);
