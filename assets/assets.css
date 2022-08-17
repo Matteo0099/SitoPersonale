@@ -27,10 +27,6 @@ html, body {
     color:#f4f4f4;
 }
 
-html, body, * {
-    transition: all 375ms ease !important; 
-}
-
 body {
     overflow-x: none;
 }
@@ -50,6 +46,7 @@ p {
     font-weight: 400;
     letter-spacing: .2px;
     line-height: 1.5em;
+    transition: all 0ms !important; 
 }
 
 h1,
@@ -91,7 +88,7 @@ p {
 }
 
 span {
-    color: #f20101;
+    color: #10141C;
     font-size: 85px;
     font-weight: 700;
     letter-spacing: -.4px;
@@ -99,14 +96,23 @@ span {
     word-wrap: none;
 }
 
-span.code-txt {
-    font-weight: 400;
+a:hover:not(li > a) {
+    color: #2A5ADA !important;
+}
+
+span.par-txt {
+    font-weight: 700;
     color: black;
     font-family: 'Montserrat', sans-serif;;
 }
 
+div > p {
+    margin-top: 1.5rem; margin-bottom: 1rem;
+    margin-left: 1rem; margin-right: 1rem;
+}
+
 p#code {
-    margin: 2rem 3.75rem;
+    padding: 1rem 2rem 2.5rem 2rem;
 }
 
 
@@ -130,6 +136,7 @@ p#code {
 
 /*navbar*/
 .navbar {
+    transition: all 0ms !important; 
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -138,24 +145,30 @@ p#code {
     color: whitesmoke;
 }
 
+/*
 .brand-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     font-weight: 300;
-    letter-spacing: -1px;
-    margin: 1rem 2rem;
+    letter-spacing: -.75px;
+    margin: 1rem 2.25rem;
     word-break: none;
     word-wrap: none;
 }
-
-.brand-title:hover {
-    text-shadow: 0 0 22px #f20101;
-    color: rgb(250, 220, 220);
-    transition: 200ms all ease !important;
+*/
+.container-img {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding-top: .5em;
+    padding-left: 2em;
+    padding-bottom: .75em;
+    padding-right: 1em;
 }
 
-.brand-title:hover {
-    cursor: text;
+.container-img > img {
+    border-radius: 50%;
+    display: block;
 }
 
 @media (min-width: 1024px) {
@@ -168,7 +181,7 @@ p#code {
 }
 
 #spinner:hover{
-    font-style: italic;
+    text-decoration: none;
 }
 
 .navbar-links {
@@ -186,32 +199,39 @@ p#code {
 }
 
 .navbar-links li a {
-    transition: 100ms all !important;
+    transition: 150ms all !important;
     display: block;
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
     padding: 1.25rem;
 }
 
 .navbar-links li a:hover {
-    color: #f20101;
+    color: #d0d0d0;
     text-decoration: underline;
     /*border-bottom: 1px solid whitesmoke;*/
 }
 
 /*new toggle button*/
 .nav-toggle {
+    transition: all 0ms !important; 
     display: none;
     position: absolute;
-    top: .65em;
+    top: 1.7em; /*old .65em*/
     opacity: 1;
-    right: 1em;
+    right: 3em;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     background: transparent;
     border: 1px solid transparent;
     margin: 7px 0;
+}
+
+nav > button > span{
+    transition: all 0ms !important;
+    animation-delay: 0ms;
 }
   
 .nav-toggle:focus {
@@ -226,9 +246,10 @@ p#code {
     background: whitesmoke;
     display: block;
     -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .2s ease all;
-    transition: .2s ease all;
+    transition: all 0ms;
     border-radius: 8px;
     margin-bottom: 5.5px;
     height: 2px;
@@ -241,6 +262,8 @@ p#code {
 
 .opened .bar-top {
     -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 15% 15%;
     transform-origin: 15% 15%;
@@ -251,19 +274,27 @@ p#code {
 }
 
 .opened .bar-bot {
-    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform-origin: 15% 95%;
     transform-origin: 15% 95%;
 }
 /*end toggle*/
 
+@media screen and (min-width: 950px) {
+    .container-img > img {
+        margin-left: 3em;
+    }
+    .navbar-links > ul {
+        padding-right: 4rem;
+    }
+}
+
 @media (max-width: 860px) {
     .navbar-links li a {
-        font-size: 16px !important;
-    }
-    .brand-title {
-        font-size: 19px !important;
+        font-size: 18px !important;
     }
 }
 
@@ -312,11 +343,12 @@ span#dotted {
     color: black;
     font-size: inherit;
     font-weight: 400;
-    border-bottom: 3px dotted #f20101;
+    border-bottom: 3px dotted #10141C;
     bottom: 0;
 }
 
 section.container {
+    max-width: fit-content;
     font-size: 24px;
     margin: auto;
     display: flex;
@@ -326,12 +358,20 @@ section.container {
     position: relative;
 }
 
+#box {
+    max-width: 850px;
+}
+
+#box2 {
+    max-width: fit-content;
+}
+
 section div {
     margin: auto;
 }
 
 section.container#home {
-    padding-top: 320px;
+    padding-top: 290px;
     height: 85vh;
 }
 
@@ -342,6 +382,7 @@ section.container#about {
 section.container#contact {
     gap: 200px;
 	padding-top: 220px;
+    padding-bottom: 180px !important;
     height: 80vh;
 }
 
@@ -368,16 +409,38 @@ section.container#contact {
     position: relative;
     align-items: center;
     justify-content: center;
-    background: #f4f4f4;
+    background: #f9f9f9;
     width: 100%;
     height: calc((100vw - 50px) - 50vw - 75px);
     cursor: pointer;
     padding: 20px;
+    animation-duration: 500ms;
+    animation-name: zoomout;
 }
 
 .containerP .project:hover {
-    transition: 25ms !important;
-    outline: 2px solid #f20101;
+    outline: 1px solid #2A5ADA;
+    animation-name: zoom;
+    animation-duration: 500ms;
+    animation-fill-mode:forwards;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes zoomout {
+    from {
+        transform: scale(1.08);
+    }
+    to {
+        transform: scale(1.0);
+    }
 }
 
 .containerP .row a {
@@ -440,20 +503,6 @@ section.container#contact {
     }
 }
 /****/
-/*
-.bar {
-    background: red;
-    width: 100%;
-    height: 10px;
-    position: sticky;
-    top: 0;
-}
-.slider {
-    height: 100%;
-    background: black;
-    width: 0;
-    transition: all linear .5s
-}*/
 
 #progress-bar,
 #progress-line{
@@ -468,15 +517,17 @@ section.container#contact {
     width: 100%;
     opacity: 1;
 	height: 8px;
-	background-color: #a5a5a5;
+	background-color: rgba(255, 255, 255, 0.6575);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 	z-index: 3;
     overflow: hidden;
 }
 
 #progress-line {
-	background-color: #f20101;
+	background-color: #10141C;
 	width: 0;
-	transition: width .2s ease-out;
+	transition: width .125s ease-out;
 }
 
 /*back to top*/
@@ -484,16 +535,16 @@ section.container#contact {
     all: unset; 
     position: fixed;
     right: 31px;
-    bottom: 140px;
+    bottom: 180px;
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.04);
     opacity: 0;
     transition: 275ms all;
 }
 
 .top-btn :is(:hover, :focus) {
-    color: #1974d0; /*rgba(255, 0, 0, 0.7)*/
-    transition: 175ms all ease !important;
+    color: #444; /*rgba(255, 0, 0, 0.7)*/
+    transition: 125ms all !important;
 }
 
 @media (max-width: 581px) {
@@ -514,7 +565,7 @@ section.container#contact {
 /****/
 
 .center_wrapper {
-    padding: 10px;
+    padding: 14px;
     text-align: left;
     display: inline-block;
 }
@@ -526,7 +577,7 @@ section.container#contact {
     text-align: center;
     width: 100%;
     bottom: 0;
-    padding: 24px 0;
+    padding: 30px 0;
 }
 
 .card {
@@ -545,13 +596,13 @@ section.container#contact {
 
 .card a:hover {
     transition: all 50ms;
-    color: #f20101; /*#457B9D*/
+    color: #10141C; /*#457B9D*/
     cursor: pointer;
 }
 
 .ion-icon{
-    width: 28px !important;
-    height: 28px !important;
+    width: 30px !important;
+    height: 30px !important;
 }
 
 .footer {
@@ -567,14 +618,13 @@ section.container#contact {
 }
 
 span.foot-name {
-    font-size: inherit;
-    letter-spacing: .2px;
+    color:honeydew;
+    font-size: 18.5px;
+    letter-spacing: .6px;
     margin: .2em;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
 }
 
 span.foot-name:hover {
     cursor: text;
-    text-shadow: 0 0 12px rgba(255, 0, 0, 0.845);
 }
