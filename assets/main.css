@@ -499,17 +499,21 @@ h1.about_title {
 }
 
 .projects-grid {
-    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-}
-
-.projects-grid {
     -webkit-box-align: start;
+    -ms-flex-align: start;
+    -moz-box-align: start;
     align-items: start;
     display: grid;
     gap: 2rem;
     grid-template-rows: masonry;
     margin: 6rem calc(30% - 30vw);
     padding: 0 1rem;
+}
+
+@media (min-width: 27em) {
+    .projects-grid {
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    }
 }
 
 .projects-card {
