@@ -321,6 +321,17 @@ nav ul li a:hover {
     image-rendering: optimizeQuality;
 }
 
+@media screen and (max-width: 640px) {
+    picture > img {
+        height: 70%;
+        width: 75%;
+    }
+    .first picture {
+        width: fit-content;
+        max-height: 300px;
+    }   
+}
+
 .first p {
     margin: .75em 2em 1em .5em;
     line-height: 1.4;
@@ -351,7 +362,6 @@ nav ul li a:hover {
         width: 25vw;
     }
 }
-
 
 .second {
     display: grid;
@@ -513,6 +523,16 @@ h1.about_title {
 #image-preview {
     min-width: 55px;
     image-rendering: optimizeSpeed;
+}
+
+@media screen and (max-width: 908px) {
+    .projects-grid {
+        max-width: 700px;
+    }
+}
+
+div.project-card.flow {
+    max-width: fit-content;
 }
 
 @media screen and (max-width: 448px) {
