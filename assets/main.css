@@ -332,6 +332,7 @@ nav ul li a:hover {
     border-radius: .5em;
     height: 100%;
     max-height: inherit;
+    min-height: 80px;
     max-width: inherit;
     min-width: inherit;
     -o-object-fit: cover;
@@ -458,9 +459,10 @@ a.telegram > svg {
 /***end general / home***/
 
 /***ABOUT ME***/
-.container.flow p{
+.container.flow p {
     line-height: 1.5;
     margin-left: .5em;
+    max-width: fit-content;
 }
 
 .flow > * + * {
@@ -496,11 +498,12 @@ h1.about_title {
     display: grid;
     gap: 2rem;
     grid-template-rows: masonry;
-    margin: 6rem calc(33.333% - 27.333vw);
+    margin: 6rem calc(30% - 30vw);
     padding: 0 1rem;
 }
 
 .projects-card {
+    position: relative;
     border-radius: .5em;
     -webkit-box-shadow: 0 .25em 1em rgba(0,0,0,.1);
     box-shadow: 0 .25em 1em rgba(0,0,0,.1);
@@ -510,6 +513,16 @@ h1.about_title {
 #image-preview {
     min-width: 55px;
     image-rendering: optimizeSpeed;
+}
+
+@media screen and (max-width: 448px) {
+    #image-preview {
+        max-width: 315px !important;
+    }
+    .container.flow p {
+        font-size: 15px;
+        max-width: 300px
+    }
 }
 /***end projects***/
 
