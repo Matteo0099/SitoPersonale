@@ -509,19 +509,10 @@ h1.about_title {
     padding: 0 1rem;*/
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: 2;
     grid-gap: 3em;
     gap: 1.75em;
     padding: 2.5rem 0;
-    word-wrap:  none;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-
-@media screen and (max-width: 485px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
 }
 
 .projects-card {
