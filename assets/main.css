@@ -520,6 +520,12 @@ h1.about_title {
     padding: 2em;
 }
 
+h2.projects-title {
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-600);
+    letter-spacing: -.5px;
+}
+
 #image-preview {
     min-width: 55px;
     image-rendering: optimizeSpeed;
@@ -532,10 +538,11 @@ h1.about_title {
 }
 
 div.project-card.flow {
+    padding: 1.1em;
     max-width: fit-content;
 }
 
-@media screen and (max-width: 448px) {
+/*@media screen and (max-width: 448px) {
     #image-preview {
         max-width: 315px !important;
     }
@@ -543,7 +550,7 @@ div.project-card.flow {
         font-size: 15px;
         max-width: 300px
     }
-}
+}*/
 /***end projects***/
 
 
