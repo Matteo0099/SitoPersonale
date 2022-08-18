@@ -498,6 +498,7 @@ h1.about_title {
     color: var(--clr-primary-300);
 }
 
+/*
 .projects-grid {
     /*-webkit-box-align: start;
     -ms-flex-align: start;
@@ -508,14 +509,13 @@ h1.about_title {
     margin: 6rem calc(30% - 30vw);
     padding: 0 1rem;*/
 
-    display: grid;
-    grid-template-columns: 2;
-    grid-gap: 3em;
-    gap: 1.75em;
-    padding: 2.5rem 0;
-}
+/*}*/
 
 .projects-card {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 50%;
     border-radius: .5em;
     -webkit-box-shadow: 0 .25em 1em rgba(0,0,0,.1);
     box-shadow: 0 .25em 1em rgba(0,0,0,.1);
