@@ -335,6 +335,8 @@ nav ul li a:hover {
 .first p {
     margin: .75em 2em 1em .5em;
     line-height: 1.4;
+    color: var(--clr-neutral-900);
+    opacity: .75;
     font-weight: 400;
     font-size: var(--fs-400);
 }
@@ -473,6 +475,9 @@ a.telegram > svg {
     line-height: 1.5;
     margin-left: .5em;
     max-width: fit-content;
+    text-rendering: optimizeLegibility;
+    color: var(--clr-neutral-900);
+    opacity: .725;
 }
 
 .flow > * + * {
@@ -526,6 +531,12 @@ h1.about_title {
     padding: 2em;
 }
 
+#par1 {
+    text-rendering: optimizeLegibility;
+    color: var(--clr-neutral-900);
+    opacity: .7;
+}
+
 @media screen and (max-width: 440px) {
     #par1{
         font-size: 16px !important;
@@ -570,10 +581,13 @@ div.project-card.flow {
 
 .contact-title {
     font-weight: 500 !important;
-    color: var(--clr-neutral-800);
-    font-stretch: 100%;
+    color: var(--clr-neutral-900);
+    opacity: .7;
+    text-rendering:optimizeLegibility;
+    font-stretch:condensed;
     font-weight: 400;
     line-height: 1.6;
+    letter-spacing: .2px;
     font-size: var(--fs-400);
 }
 
@@ -596,5 +610,29 @@ div.contact-grid * + h2 {
     -webkit-box-shadow: 0 .25em 1em rgba(0,0,0,.1);
     box-shadow: 0 .25em 1em rgba(0,0,0,.1);
     padding: 2em;
+}
+
+div.page-action {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 0;
+}
+
+a.button.contact {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-neutral-100);
+    text-align: center;
+    border-radius: 22px;
+    /*shine effect*/
+    overflow: hidden;
+    position: relative;
+    /*backg color*/
+    /*background-image: (linear-gradient(270deg, var(--clr-neutral-125), var(--clr-neutral-300)));
+    background-size: 400% 400%;
+    animation: TransitionBack 1s ease infinite;
+    *//*on over*/
+    /*transition: 0.6s;
+    z-index: 999;*/
 }
 /***end contact***/
