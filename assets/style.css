@@ -32,7 +32,7 @@ html {
 */
 
 * {
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif !important;
 }
 
 body {
@@ -41,15 +41,12 @@ body {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif !important;
+    margin: 0;
 }
 
 img, video {
-    height: auto;
-    max-width: 100%;
-}
-
-img {
+    image-rendering:optimizeQuality;
     height: auto;
     max-width: 100%;
 }
@@ -67,12 +64,23 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
     vertical-align: baseline;
 }
 
+::selection {
+    background-color: #95F9C3;
+    color: #0B3866;
+}
+
+::-webkit-selection, ::-moz-selection, ::o-selection {
+    background-color: #95F9C3;
+    color: #0B3866;
+}
+
 .primary-navbar {
     padding: 1.2rem 0;
     box-shadow: none;
     z-index: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -o-backdrop-filter:blur(12px);
     min-height: 3rem;
     position: fixed;
     width: 100%;
@@ -101,7 +109,7 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
 
 .navbar-menu {
     background-color: transparent !important;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
 }
 
 .navbar-brand {
@@ -114,6 +122,7 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
 .navbar .navbar-brand a.navbar-item {
     background-color: transparent;
 }
+
 @media screen and (max-width: 1023px) {
     .navbar-brand .navbar-item, .navbar-tabs .navbar-item {
         align-items: center;
@@ -141,10 +150,6 @@ a.navbar-item, .navbar-link {
     line-height: 1.5;
     padding: 0.5rem 1.25rem !important;
     position: relative;
-}
-
-a {
-    color: #1a8cff;
 }
 
 a, .button {
@@ -271,8 +276,8 @@ span {
 }
 
 a, .button {
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out !important;
+    -webkit-transition: all .2s ease-in-out !important;
     font-weight: 400;
 }
 
@@ -282,6 +287,9 @@ a, .button {
 
 .button.is-rounded {
     border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    -webkit-border-radius: 9999px;
+    -khtml-border-radius: 9999px;
     padding-left: calc(1em + 0.25em);
     padding-right: calc(1em + 0.25em);
 }
@@ -396,6 +404,9 @@ h2.sub-title {
 .avatar {
     background-color: #0B3866;
     border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
     margin: 2rem 0;
     width: 250px;
 }
@@ -435,11 +446,17 @@ h2.sub-title {
 
 .box {
     border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -khtml-border-radius: 12px;
 }
 
 .box {
     background-color: #ffffff;
     border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
     color: #0B3866;
     display: block;
@@ -460,16 +477,16 @@ h2.sub-title {
 }
 
 .section.is-primary {
-    background-color: #6E07F3;
+    background-color: #0B3866;
     color: white;
 }
 
 .section.is-primary .title {
-    color: white;
+    color: inherit;
 }
 
 .section.is-primary .subtitle {
-    color: white;
+    color: inherit;
 }
 
 .section.skills .box .content .columns .column {
@@ -485,9 +502,14 @@ h2.sub-title {
 }
 
 .fa-stack ion-icon {
-    font-size: 34px !important;
+    font-size: 36px !important;
+    color: #0B3866 !important;
+    transition: all 250ms ease !important;
 }
 
+.fa-stack ion-icon:hover {
+    color: #95F9C3 !important;
+}
 
 svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -550,7 +572,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     padding: 3.5rem 2rem;
     margin-top: -9rem;
     background-color: #0B3866;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #0B3866;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px #0B3866;
 }
 
 @media screen and (max-width: 768px) {
@@ -561,8 +583,8 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 
 .button.is-success.is-outlined {
     background-color: transparent;
-    border-color: #5BE9B9;
-    color: #5BE9B9;
+    border-color: #95F9C3;
+    color: #95F9C3;
 }
 
 .button .icon:first-child:not(:last-child) {
@@ -631,6 +653,12 @@ footer .social-icons a.button .icon.is-small {
     width: 1.4em;
 }
 
+.button.social:hover {
+    transition: 250ms all !important;
+    color: #232323 !important;
+    background-color: #E6ECF8 !important;
+}
+
 ion-icon {
     font-size: 24px;
 }
@@ -684,3 +712,5 @@ footer .copyright {
     justify-content: center !important;
     align-items: center !important;
 }
+
+/**end form**/
