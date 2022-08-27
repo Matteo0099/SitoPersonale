@@ -5,21 +5,31 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdown.addEventListener('click', function(event) {
        event.stopPropagation();
        dropdown.classList.toggle('is-active');
-     });
- });  
+    });
+});  
+
 
 /*
-function myFunction() {
-    var element = document.getElementsByClassName("navbar-menu");
-    var burger = document.getElementsByClassName("navbar-burger");
-
-    if (burger.contains(".is-active")) {
-        element.remove("is-active");
-        burger.remove("is-active");
-    } else {
-        burger.add("is-active");
-    }
-} 
+function toggleItem(elem) {
+    onclick="#";
+    for (var i = 0; i < elem.length; i++) {
+      elem[i].addEventListener("click", function(e) {
+        var current = this;
+        for (var i = 0; i < elem.length; i++) {
+          if (current != elem[i]) {
+            elem[i].classList.remove('is-active');
+          } else if (current.classList.contains('is-active') === true) {
+            current.classList.remove('is-active');
+          } else {
+            current.classList.add('is-active')
+          }
+        }
+        e.preventDefault();
+      });
+    };
+  }
+  toggleItem(document.querySelectorAll('.navbar-menu'));
+  toggleItem(document.querySelectorAll('.navbar-burger'));
 */
 
 //canvas experiment

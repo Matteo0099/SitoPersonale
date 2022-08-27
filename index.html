@@ -24,22 +24,23 @@
   </head>
 
   <body>
-  <nav class="primary-navbar">
-    <div class="container">
-      <div class="navbar-brand">
-        <a href="#home" class="navbar-item" id="item">
-          <ion-icon name="home-outline"></ion-icon>
-        </a>
-        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+    <nav class="primary-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#home" class="navbar-item" id="item">
+            <ion-icon name="home-outline"></ion-icon>
+          </a>
+          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
         <div class="navbar-menu is-shadowless" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            <div class="dropdown">
+            
+            <div class="dropdown" id="dropdown1">
               <div class="dropdown-trigger">
                 <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                   <span>Menu</span>
@@ -50,17 +51,29 @@
               </div>
               <div class="dropdown-menu" id="dropdown-menu" role="menu">
                 <div class="dropdown-content">
-                  <a href="#about" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                  <a href="#about" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
                     About me
                   </a>
-                  <a href="#projects" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                  <a href="#projects" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
                     Projects
                   </a>
-                  <a href="#contact" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                  <a href="#contact" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
                     Contact me
                   </a>
                 </div>
               </div>
+            </div>
+
+            <div class="menu-invisible visible">
+              <a href="#about" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
+                About me
+              </a>
+              <a href="#projects" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
+                Projects
+              </a>
+              <a href="#contact" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
+                Contact me
+              </a>
             </div>
 
             <div class="navbar-item">
