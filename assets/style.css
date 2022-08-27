@@ -78,9 +78,10 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
     padding: 1.2rem 0;
     box-shadow: none;
     z-index: auto;
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(12px);
-    -o-backdrop-filter:blur(12px);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(22px) !important;
+    -o-backdrop-filter:blur(22px) !important;
+    -webkit-backdrop-filter: blur(22px) !important;
     min-height: 3rem;
     position: fixed;
     width: 100%;
@@ -226,7 +227,7 @@ a.dropdown-item:hover {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background: none;
+    background: transparent !important;
     border: none;
     cursor: pointer;
     display: block;
@@ -234,7 +235,11 @@ a.dropdown-item:hover {
     position: relative;
     width: 3.25rem;
     margin-left: auto;
-    margin-right: .5em !important;
+    margin-right: .75em !important;
+}
+
+.navbar-burger:hover {
+    background-color: #f2f2f2 !important;
 }
 
 span {
@@ -645,7 +650,7 @@ span.caption:hover {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    padding: 1em 2em;
+    padding: 1em;
 }
 
 .column2 img {
@@ -678,8 +683,8 @@ span.caption:hover {
     }
     .column2 {
         padding-top: 2em;
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 2em;
+        padding-right: 2em;
         padding-bottom: 3em;
     }
 }
