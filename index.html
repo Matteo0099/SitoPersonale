@@ -13,18 +13,21 @@
     <meta property="og:url" content="https://www.zippo107.tk">
     <link rel="stylesheet" href="/assets/style.css">
     <script src="/src/script.js" defer></script>
+    <script src="/src/closeToggle.js" defer></script>
     <!--bulma-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!--ion-icon-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" defer></script>
   </head>
 
   <body>
   <nav class="primary-navbar">
     <div class="container">
       <div class="navbar-brand">
-        <a href="#home" class="navbar-item">
+        <a href="#home" class="navbar-item" id="item">
           <ion-icon name="home-outline"></ion-icon>
         </a>
         <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
@@ -36,11 +39,32 @@
         <div class="navbar-menu is-shadowless" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            <a class="navbar-item has-text-weight-normal is-hovered" href="#contact">Contact me</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Menu</span>
+                  <span class="icon">
+                    <ion-icon name="list"></ion-icon>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#about" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                    About me
+                  </a>
+                  <a href="#projects" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                    Projects
+                  </a>
+                  <a href="#contact" class="dropdown-item has-text-weight-normal is-hovered" id="item">
+                    Contact me
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div class="navbar-item">
-              <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="contact.html">
-                Say Hello 
-              </a>
+              <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="contact.html">Contact-form </a>
             </div>
           </div>
         </div>
@@ -67,7 +91,7 @@
       </div>
     </section>
 
-    <section class="section is-small is-primary has-text-centered is-long">
+    <section class="section is-small is-primary has-text-centered is-long" id="about">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-three-fifths">
@@ -139,6 +163,44 @@
                   <li>25+ projects</li>
                   <li>2350+ community' comments</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project has-text-centered is-medium mt-5" id="projects">
+      <div class="container">
+        <div class="box">
+          <div class="content">
+            <h1 class="title">Projects</h1>
+
+            <div class="row2">
+              <div class="column2">
+                <a href="https://areacrewmonfalcone.it/" target="_blank">
+                  <img src="/public/FotoAreaCrewWebsite.jpg" class="image">
+                  <span class="caption">AreaCrewWebsite</span></a>
+              </div>
+              <div class="column2">
+                <a href="https://matteo0099.github.io/ilpiccone/" target="_blank">
+                  <img src="/public/FotoPicconieri.jpg" class="image">
+                  <span class="caption">Il Piccone</span></a>
+              </div>
+            </div>
+
+            <div class="row2">
+              <div class="column2">
+                <a href="https://matteo0099.github.io/Project7" target="_blank">
+                  <img src="/public/WebSite_Portfolio_New.jpg" class="image">
+                  <span class="caption">WebSite-Portfolio Project</span>
+                </a>
+              </div>
+              <div class="column2">
+                <a href="https://matteo0099.github.io/CardPortfolio/" target="_blank">
+                  <img src="/public/Card_Portfolio.jpg" class="image">
+                  <span class="caption">Card-Portfolio</span>
+                </a>
               </div>
             </div>
           </div>
