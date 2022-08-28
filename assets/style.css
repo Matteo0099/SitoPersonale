@@ -12,6 +12,7 @@ html {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: #ffffff;
+    color: #000000;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -37,7 +38,8 @@ html {
 
 body {
     font-size: 18px;
-    color: #0B3866;
+    color: black;
+    background-color: #fff;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
@@ -64,6 +66,10 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
     vertical-align: baseline;
 }
 
+h1, h2, h3, h4, h5 {
+    background: none !important;
+}
+
 ::selection {
     background-color: #95F9C3;
     color: #0B3866;
@@ -73,6 +79,114 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
     background-color: #95F9C3;
     color: #0B3866;
 }
+
+/*dark mode*/
+.dark-mode {
+    background: #000000;
+    background-color: black !important;
+    color: white !important;
+    z-index: 99999;
+}
+
+body.dark-mode:active {
+    color: white !important;
+    background-color: #000000 !important;
+}
+
+.container.dark {
+    display: flex;
+    padding: .375rem 1rem;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 75px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #999999;
+    border-radius: 22px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 25px;
+    padding: 0;
+    line-height: 25px;
+    font-size: 12px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 14px;
+    margin: 6px;
+    background: #fff;
+    border: 1px solid #999999;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #000;
+}
+/****end dark mode****/
 
 .primary-navbar {
     padding: 1.2rem 0;
@@ -95,6 +209,30 @@ a, abbr, acronym, address, article, aside, audio, b, big, blockquote, body, canv
     position: relative;
     width: auto;
 }  
+
+/**type writer**/
+p.typewrite {
+    min-width: 0;
+    max-width: fit-content;
+    border-bottom: 2px solid rgb(153, 153, 153, 0.5);
+    backdrop-filter: blur(12px);
+    color: #222222;
+    font-size: clamp(20px, 4vw, 24px);
+}
+
+h1 p.typewrite {
+    margin: 1.6em auto;
+    font-weight: 600;
+    flex-direction: row;
+    font-variant:inherit;
+    font-stretch: expanded;
+    font-variant-caps: petite-caps;
+}
+
+.wrap {
+    color: #222222;
+}
+/**end writer**/
 
 .primary-navbar > .container {
     align-items: stretch;
@@ -193,7 +331,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 .dropdown button {
-    background-color: white !important;
+    background-color: white;
 }
 
 .dropdown button:hover {
@@ -214,7 +352,7 @@ a.dropdown-item:hover {
 
 .dropdown button ion-icon {
     opacity: 1 !important;
-    color: #222222 !important;
+    color: #222222;
     vertical-align: middle;
     font-size: 16px !important;
 }
@@ -381,7 +519,7 @@ a, .button {
 .button:hover {
     background-color:#95F9C3 !important;
     /*border: 1px solid #95F9C3 !important;*/
-    color: #222222 !important;
+    color: #222222;
 }
 
 .navbar .navbar-menu a.button.is-primary.is-outlined {
@@ -392,8 +530,8 @@ a, .button {
 }
 
 .button.is-primary.is-outlined {
-    background-color: transparent !important;
-    color: #232323 !important;
+    background-color: #FFFFFF;
+    color: #232323;
 }
 
 .button.is-primary.is-outlined:hover {
@@ -453,19 +591,28 @@ a, .button {
 
 .title {
     padding: 1.25em .5em .1em .5em !important;
-    color: #0B3866;
+    color: black;
     font-weight: 700 !important;
     text-align: center;
-    font-size: clamp(34px, 5vw, 45px) !important;
+    font-size: clamp(34px, 5vw, 48px) !important;
+}
+
+.hero-body .title {
+    margin-bottom: .75rem !important;
+}
+
+.hero-body .sub-title {
+    color: rgb(24, 24, 24, 0.4);
+    font-weight: 400 !important;
 }
 
 h2.sub-title {
     font-style: italic;
-    font-size: 1.25rem;
-    line-height: 1.7;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 1.5;
     color: #4d4d4d;
     font-weight: 500 !important;
-    margin: .475em .25em 0em .25em !important;
+    margin: .1em .25em 0em .25em !important;
 }
 
 .subtitle {
@@ -581,7 +728,7 @@ h2.sub-title {
 
 .fa-stack ion-icon {
     font-size: 36px !important;
-    color: #0B3866 !important;
+    color: #0B3866;
     transition: all 250ms ease !important;
 }
 
@@ -609,7 +756,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 .has-text-success {
-    color: #5BE9B9 !important;
+    color: #5BE9B9;
 }
 
 .content p:not(:last-child) {

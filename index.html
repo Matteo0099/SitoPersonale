@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matteo Manià | Web-design | Web-development</title>
+    <title og:title>Matteo Manià | Web-design | Web-development</title>
     <meta og:title content="Matteo Manià front-end developer">
     <meta property="og:site_name" content="Matteo Manià">
     <meta property="og:type" content="website">
@@ -12,8 +12,11 @@
     <meta property="og:description" content="I design some things and code. I love what I do.">
     <meta property="og:url" content="https://www.zippo107.tk">
     <link rel="stylesheet" href="/assets/style.css">
+
     <script src="/src/script.js" defer></script>
     <script src="/src/closeToggle.js" defer></script>
+    <script src="/src/Typer.js" defer></script>
+    <script src="/src/Darkmode.js" defer></script>
     <!--bulma-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!--ion-icon-->
@@ -28,7 +31,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a href="#home" class="navbar-item" id="item">
-            <ion-icon name="home-outline"></ion-icon>
+            <ion-icon name="home-outline" id="ion-dark"></ion-icon>
           </a>
           <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
             <span aria-hidden="true"></span>
@@ -42,7 +45,7 @@
             
             <div class="dropdown" id="dropdown1">
               <div class="dropdown-trigger">
-                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <button class="button" id="ion-dark" aria-haspopup="true" aria-controls="dropdown-menu">
                   <span>Menu</span>
                   <span class="icon">
                     <ion-icon name="list"></ion-icon>
@@ -51,6 +54,16 @@
               </div>
               <div class="dropdown-menu" id="dropdown-menu" role="menu">
                 <div class="dropdown-content">
+                  <div class="container dark">
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                      <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+        
                   <a href="#about" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
                     About me
                   </a>
@@ -89,9 +102,15 @@
         <div class="container">
           <div class="column centered">
             <div class="column">
-              <h1 class="title">Matteo Manià</h1>
-              <h2 class="sub-title">Front-end developer</h2>
-              <h2 class="sub-title">I design and code minimal things</h2>
+              <h1 class="title" id="titolo">Matteo Manià</h1>
+              <h2 class="sub-title" id="titolo">Front-end developer</h2>
+              <!--typer-->
+              <h1 id="titolo">
+                <p class="typewrite" id="titolo" data-period="2000" data-type='[ "I design", "I develop", "I study" ]'>
+                  <span class="wrap"></span>
+                </p>
+              </h1>
+              <!--<h2 class="sub-title">I design and code minimal things</h2>-->
               <img src="/public/Programmer-2-512-737674497.png" alt="" class="avatar">
             </div>
           </div>
@@ -123,11 +142,11 @@
         <div class="box">
           <div class="content">
             <div class="columns is-centered">
-              <div class="column">
+              <div class="column" id="colonna">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="aperture-outline"></ion-icon>
                 </span> 
-                <h1 class="title is-size-4 is-spaced">Designer</h1>
+                <h1 class="title is-size-4 is-spaced" id="titolo">Designer</h1>
                 <p>I value simple and minimal content structure, clean design patterns, and thoughtful interactions.</p>
                 <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
                 <p>UX, UI, Web, Apps, Logos</p>
@@ -140,11 +159,11 @@
                 </ul>
               </div>
 
-              <div class="column">
+              <div class="column" id="colonna">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="code-slash-outline"></ion-icon>
                 </span>
-                <h1 class="title is-size-4 is-spaced">Frontend Developer</h1>
+                <h1 class="title is-size-4 is-spaced" id="titolo">Frontend Developer</h1>
                 <p>I like to code things minimal & user-interfaces, and enjoy bringing ideas to life in the browser.</p>
                 <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
                 <p>HTML, CSS, Scss, Javascript, Git</p>
@@ -160,11 +179,11 @@
                 </ul>
               </div>
 
-              <div class="column">
+              <div class="column" id="colonna">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="people-outline"></ion-icon>
                 </span>
-                <h1 class="title is-size-4 is-spaced">Mentor</h1>
+                <h1 class="title is-size-4 is-spaced" id="titolo">Mentor</h1>
                 <p>I genuinely care about people, and love helping people who work on their craft.</p>
                 <p class="list-title has-text-primary has-text-weight-normal">Experiences I draw from:</p>
                 <p>UX/UI, Product design, Freelancing</p>
@@ -187,7 +206,7 @@
       <div class="container">
         <div class="box">
           <div class="content">
-            <h1 class="title">Projects</h1>
+            <h1 class="title" id="titolo">Projects</h1>
 
             <div class="row2">
               <div class="column2">
@@ -225,15 +244,15 @@
       <div class="callout">
         <div class="columns is-centered">
         <div class="column">
-          <h1 class="title is-spaced has-text-weight-bold">Interested in collaborating with me?</h1>
-          <h2 class="subtitle is-size-5-desktop">I’m always open to discussing product design work or partnership opportunities.</h2>
-          <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" href="mailto:matteomania09@gmail.com">
+          <h1 class="title is-spaced has-text-weight-bold" id="titolo">Interested in collaborating with me?</h1>
+          <h2 class="subtitle is-size-5-desktop" id="titolo">I’m always open to discussing product design work or partnership opportunities.</h2>
+          <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" id="titolo" href="mailto:matteomania09@gmail.com">
             <span class="icon">
               <svg class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false" data-prefix="far" data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M360 144h-208C138.8 144 128 154.8 128 168S138.8 192 152 192h208C373.3 192 384 181.3 384 168S373.3 144 360 144zM264 240h-112C138.8 240 128 250.8 128 264S138.8 288 152 288h112C277.3 288 288 277.3 288 264S277.3 240 264 240zM447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.1c0 9.836 11.02 15.55 19.12 9.7l124.9-93.7h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z"></path>
               </svg>
             </span>
-            <span>Start a conversation</span>
+            <span id="titolo">Start a conversation</span>
           </a>
         </div>
         </div>
@@ -243,7 +262,7 @@
     <footer class="section is-primary is-small has-text-centered">
       <div class="container is-narrow">
         <a class="logo has-text-white" href="index.html">
-          <ion-icon name="logo-medium"></ion-icon>
+          <ion-icon name="logo-medium" id="ion-dark"></ion-icon>
         </a>
         <div class="columns is-centered"> 
           <div class="column is-one-third">
