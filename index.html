@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title og:title>Matteo Manià | Web-design | Web-development</title>
     <meta og:title content="Matteo Manià front-end developer">
+    <meta content="Matteo Manià, Matteo Mania, matteo manià, matteo mania, web-designer, monfalcone, matteo manià developer, Matteo Mania developer, matteo mania designer, Matteo Manià designer, zippo, zippo107, web-developer, sito web, sito web italia, portfolio, personal portfolio" name="keywords">
     <meta property="og:site_name" content="Matteo Manià">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Matteo Manià | Frontend Developer &amp; Design">
     <meta property="og:description" content="I design some things and code. I love what I do.">
+    <meta name="description" content="Matteo Manià | Web-developer / designer: IT: sono un giovane sviluppatore di siti web, e mi occupo dell'aspetto di un sito web. EN: I'am young developer from italy, and I work on fron-end of a website.">
     <meta property="og:url" content="https://www.zippo107.tk">
     <link rel="stylesheet" href="/assets/style.css">
-    <!--script-->
-    <script src="/src/script.js" defer></script>
-    <script src="/src/closeToggle.js" defer></script>
-    <script src="/src/Typer.js" defer></script>
-    <script src="/src/Darkmode.js" defer></script>
-    <script src="/src/Loader.js" defer></script>
     <!--bulma-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!--ion-icon-->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" defer></script>
+    <!--script-->
+    <script src="/src/script.js" defer></script>
+    <script src="/src/closeToggle.js" defer></script>
+    <script src="/src/Typer.js" defer></script>
+    <script src="/src/Darkmode.js" defer></script>
+    <script src="/src/Loader.js" defer></script>
+    <!--aos styling-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!--aos resources-->
+    <link rel="stylesheet" href="/assets/AOS/aos.css">
+    <script src="assets/AOS/aos.js" defer></script>
   </head>
 
-  <body onload="myFunction();">
+  <body>
     <nav class="primary-navbar">
       <div class="container">
+        
         <div class="navbar-brand">
           <a href="#home" class="navbar-item" id="item">
             <ion-icon name="home-outline" id="ion-dark"></ion-icon>
@@ -39,10 +47,10 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
+
         <div class="navbar-menu is-shadowless" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
-            
             <div class="dropdown" id="dropdown1">
               <div class="dropdown-trigger">
                 <button class="button" id="ion-dark" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -110,11 +118,8 @@
                   <span class="wrap"></span>
                 </p>
               </h1>
-              
-            
-    
               <!--<h2 class="sub-title">I design and code minimal things</h2>-->
-              <img src="/public/Programmer-2-512-737674497.png" alt="" class="avatar">
+              <img src="/public/Programmer-2-512-737674497.png" alt="" class="avatar" data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
             </div>
           </div>
         </div>
@@ -129,11 +134,15 @@
     <section class="section is-small is-primary has-text-centered is-long" id="about">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-three-fifths">
-            <h1 class="title is-spaced is-size-1-desktop is-size-4-mobile">Hi, I’m Matt. Nice to meet you.</h1>
-            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">I start design 2 years ago, I've done some work for local companies, like 2 big projects, other a 20 personal project.
-              I love solve problems with coding, it is very helpful for all. I'm in love with css, beacuse with it, you can 
-              do everything you'll do.
+          <div class="column is-three-fifths" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <h1 class="title is-spaced is-size-1-desktop is-size-4-mobile">
+              Hi, I’m Matt. Nice to meet you.
+            </h1>
+            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
+              I start design 2 years ago, I've done some work for local companies,
+              like 2 big projects, other a 20 personal project.
+              I love solve problems with coding, it is very helpful for all. 
+              I'm in love with css, beacuse with it, you can do everything you'll do.
             </h2>
           </div>
         </div>
@@ -145,7 +154,8 @@
         <div class="box">
           <div class="content">
             <div class="columns is-centered">
-              <div class="column" id="colonna">
+              
+              <div class="column" id="colonna" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="aperture-outline"></ion-icon>
                 </span> 
@@ -162,7 +172,7 @@
                 </ul>
               </div>
 
-              <div class="column" id="colonna">
+              <div class="column" id="colonna" data-aos="fade-up" data-aos-duration="1400">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="code-slash-outline"></ion-icon>
                 </span>
@@ -182,7 +192,7 @@
                 </ul>
               </div>
 
-              <div class="column" id="colonna">
+              <div class="column" id="colonna" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <span class="fa-stack fa-2x">
                   <ion-icon name="people-outline"></ion-icon>
                 </span>
@@ -207,17 +217,17 @@
 
     <section class="section project has-text-centered is-medium mt-5" id="projects">
       <div class="container">
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-duration="1400">
           <div class="content">
             <h1 class="title" id="titolo">Projects</h1>
 
             <div class="row2">
-              <div class="column2">
+              <div class="column2" data-aos="flip-left" data-aos-duration="1000">
                 <a href="https://areacrewmonfalcone.it/" target="_blank">
                   <img src="/public/FotoAreaCrewWebsite.jpg" class="image">
                   <span class="caption">AreaCrewWebsite</span></a>
               </div>
-              <div class="column2">
+              <div class="column2" data-aos="flip-right" data-aos-duration="1400">
                 <a href="https://matteo0099.github.io/ilpiccone/" target="_blank">
                   <img src="/public/FotoPicconieri.jpg" class="image">
                   <span class="caption">Il Piccone</span></a>
@@ -225,19 +235,20 @@
             </div>
 
             <div class="row2">
-              <div class="column2">
+              <div class="column2" data-aos="flip-left" data-aos-duration="1800">
                 <a href="https://matteo0099.github.io/Project7" target="_blank">
                   <img src="/public/WebSite_Portfolio_New.jpg" class="image">
                   <span class="caption">WebSite-Portfolio Project</span>
                 </a>
               </div>
-              <div class="column2">
+              <div class="column2" data-aos="flip-right" data-aos-duration="2000">
                 <a href="https://matteo0099.github.io/CardPortfolio/" target="_blank">
                   <img src="/public/Card_Portfolio.jpg" class="image">
                   <span class="caption">Card-Portfolio</span>
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -245,19 +256,19 @@
 
     <section class="section contact has-text-centered is-long mt-5" id="contact">
       <div class="callout">
-        <div class="columns is-centered">
-        <div class="column">
-          <h1 class="title is-spaced has-text-weight-bold" id="titolo">Interested in collaborating with me?</h1>
-          <h2 class="subtitle is-size-5-desktop" id="titolo">I’m always open to discussing product design work or partnership opportunities.</h2>
-          <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" id="titolo" href="mailto:matteomania09@gmail.com">
-            <span class="icon">
-              <svg class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false" data-prefix="far" data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor" d="M360 144h-208C138.8 144 128 154.8 128 168S138.8 192 152 192h208C373.3 192 384 181.3 384 168S373.3 144 360 144zM264 240h-112C138.8 240 128 250.8 128 264S138.8 288 152 288h112C277.3 288 288 277.3 288 264S277.3 240 264 240zM447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.1c0 9.836 11.02 15.55 19.12 9.7l124.9-93.7h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z"></path>
-              </svg>
-            </span>
-            <span id="titolo">Start a conversation</span>
-          </a>
-        </div>
+        <div class="columns is-centered" data-aos="zoom-in-down" data-aos-duration="500">
+          <div class="column">
+            <h1 class="title is-spaced has-text-weight-bold" id="titolo">Interested to collaborating with me?</h1>
+            <h2 class="subtitle is-size-5-desktop" id="titolo">I’m always open to discussing about design work <br> or partnership opportunities.</h2>
+            <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" id="titolo" href="mailto:matteomania09@gmail.com">
+              <span class="icon">
+                <svg class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false" data-prefix="far" data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                  <path fill="currentColor" d="M360 144h-208C138.8 144 128 154.8 128 168S138.8 192 152 192h208C373.3 192 384 181.3 384 168S373.3 144 360 144zM264 240h-112C138.8 240 128 250.8 128 264S138.8 288 152 288h112C277.3 288 288 277.3 288 264S277.3 240 264 240zM447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.1c0 9.836 11.02 15.55 19.12 9.7l124.9-93.7h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z"></path>
+                </svg>
+              </span>
+              <span>Start conversation</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -267,11 +278,13 @@
         <a class="logo has-text-white" href="index.html">
           <ion-icon name="logo-medium" id="ion-dark"></ion-icon>
         </a>
+
         <div class="columns is-centered"> 
           <div class="column is-one-third">
             <h1 class="title is-size-5-touch has-text-weight-normal">Matt'designs</h1>
           </div>
         </div>
+
         <div class="social-icons">
           <p class="field">
             <a class="button social is-medium" href="https://www.instagram.com/itz_matteomania/" target="_blank">
@@ -294,5 +307,11 @@
           <div class="copyright">Zippo107 &copy; 2022 | all rights reserved</div>
       </div>
     </footer>
+
+    <!--Aos library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body> 
 </html>
