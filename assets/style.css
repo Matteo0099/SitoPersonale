@@ -705,7 +705,7 @@ h2.sub-title {
 
 .fa-stack ion-icon {
     font-size: 36px !important;
-    color: #0B3866;
+    color: #0B3866 !important;
     transition: all 250ms ease !important;
 }
 
@@ -833,6 +833,37 @@ span.caption:hover {
 
 /*end projects*/
 
+/**backtotop**/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    /*outline: none*/; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    /*color: white*/; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+  
+#myBtn:hover {
+    color: #1a8cff;
+    opacity: .8; /* Add a dark-grey background on hover */
+}
+
+@media screen and (max-width: 768px) {
+    #myBtn {
+        right:0;
+        padding: 10px;
+        bottom: 50px;
+    }
+}
+/**/
+
 .section.call-to-action {
     padding: 5rem 1.5rem 2rem;
 }
@@ -907,7 +938,7 @@ footer.section.is-small {
 
 footer .title {
     font-size: 1.6rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 300px;
     opacity: 0.8;
 }
@@ -929,6 +960,33 @@ footer .social-icons a.button {
 }
 
 footer .social-icons a.button .icon.is-small {
+    height: 1.4em;
+    width: 1.4em;
+}
+
+/*second footer*/
+footer.second {
+    bottom: 0;
+}
+
+footer .social-pers {
+    margin: 0 auto 1rem;
+}
+
+
+footer .social-pers a.button.is-medium {
+    font-size: 1.05rem;
+}
+
+footer .social-pers a.button {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 22px;
+    margin: .35rem .4rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+footer .social-pers a.button .icon.is-small {
     height: 1.4em;
     width: 1.4em;
 }
