@@ -201,22 +201,33 @@ body.dark-mode:active {
 }  
 
 /**type writer**/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
 p.typewrite {
+    font-family: 'Rubik', sans-serif !important;
     min-width: 0;
     max-width: fit-content;
     border-bottom: 2px solid rgb(153, 153, 153, 0.5);
     backdrop-filter: blur(12px);
     color: #222222;
-    font-size: clamp(20px, 4vw, 24px);
+    font-size: clamp(20px, 4vw, 25px);
 }
 
+/*
+.column h1#titolo {
+    font-family: 'Rubik', sans-serif !important;
+}*/
+
 h1 p.typewrite {
+    font-family: 'Rubik', sans-serif !important;
     margin: 1.6em auto;
     font-weight: 600;
     flex-direction: row;
-    font-variant:inherit;
-    font-stretch: expanded;
-    font-variant-caps: petite-caps;
+    letter-spacing: .4px;
+}
+
+.typewrite span {
+    font-family: 'Rubik', sans-serif !important;
 }
 
 .wrap {
@@ -544,6 +555,7 @@ a, .button {
 }
 
 .hero {
+    min-height: 100vh;
     text-align: center !important;
     align-items: stretch;
     display: flex;
@@ -620,7 +632,7 @@ h2.sub-title {
 }
 
 .hero-foot {
-    padding: 0rem 1.5rem;
+    padding: 0rem 1.5rem 1.2rem 1.5rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -631,7 +643,7 @@ h2.sub-title {
 }
 
 .hero-foot img.bottom {
-    margin-bottom: -0.2rem;
+    margin-bottom: 0; /*-.2rem*/
 }
 
 .section.skills {

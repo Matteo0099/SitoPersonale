@@ -2,7 +2,7 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 9) || 2000;
+    this.period = parseInt(period, 9) || 1500;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -43,7 +43,7 @@ TxtType.prototype.tick = function() {
 
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
