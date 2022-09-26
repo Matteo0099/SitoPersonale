@@ -147,13 +147,11 @@ html, body {
     font-family: 'SF Pro display';
     padding: 0;
     text-rendering: optimizeLegibility;
-}
-
-body, html { 
     min-height: 100vh;
     /*for dark mode*/
     color: var(--color-dark);
     background-color: var(--color-white);
+    z-index: 0;
 }
 
 @media (prefers-reduced-motion) {
@@ -228,16 +226,17 @@ i, i.ti { font-size: 1.75em; }
     flex-direction: row;
 }
 
-.navbar-left, .navbar-right {  margin: 1.5rem 2rem; }
+.navbar-left { margin-left: 3rem; margin-top: 1.5rem; }
+.navbar-right { margin-right: 3rem; margin-top: 1.5rem; }
 
 @media screen and (min-width: 675px) { .navbar-left, .navbar-right { margin: 1.5rem 3rem; }}
-@media screen and (min-width: 1440px) { .navbar-left, .navbar-right { margin: 1.5rem 6rem; }}
+@media screen and (min-width: 1440px) { .navbar-left, .navbar-right { margin: 1.5rem 10rem; }}
 
-.container {
+main {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 220px);
+    height: 80vh;
     display: flex;
     justify-content: center; /*centers items on the line (the x-axis by default)*/
     align-items: center; /*centers items on the cross-axis (y by default)*/
@@ -253,14 +252,13 @@ i, i.ti { font-size: 1.75em; }
     max-width: 768px;
     border-radius: 22px;
     margin: auto 1rem;
+    z-index: 99999;
 }
 
 .card > * { color: var(--clr-pr-gray-900); }
 
 @media screen and (min-width: 550px) { .card { min-width: 550px; } }
 @media screen and (min-height: 800px) { .card { min-height: 400px; } }
-
-.card-content { margin: 1rem auto; }
 
 a:hover { color: var(--clr-pr-blue-700); transition: .25s ease;}
 
@@ -292,6 +290,31 @@ h1.hi { animation: color-change 5s infinite; font-weight: 900; }
 h2.title {
     font-weight: bold;
     font-size: clamp(21px, 3vw, 28px);
+}
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 21px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 17px; }
+    h6 { font-size: 16px; }
+
+    a { font-size: 18px; }
+
+    footer, footer a {
+        font-size: 12.5px !important;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .card {
+        max-height: 425px;
+        line-height: 1.2;
+    }
+    i.ti {
+        font-size: 20px;
+    }
 }
 
 /*fancy-link (title)*/
