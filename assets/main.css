@@ -389,10 +389,11 @@ footer {
     z-index: 9;
     width: 100%;
     height: fit-content;
-    background-color: var(--clr-pr-btn-default-active-text);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center; 
+    color: inherit;
 }
 
 footer p { grid-area: paragraph; }
