@@ -1,329 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title og:title>Matteo Manià | Web-design | Web-development</title>
-    <meta og:title content="Matteo Manià front-end developer">
-    <meta content="Matteo Manià, Matteo Mania, matteo manià, matteo mania, web-designer, monfalcone, matteo manià developer, Matteo Mania developer, matteo mania designer, Matteo Manià designer, zippo, zippo107, web-developer, sito web, sito web italia, portfolio, personal portfolio" name="keywords">
-    <meta property="og:site_name" content="Matteo Manià">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Matteo Manià | Frontend Developer &amp; Design">
-    <meta property="og:description" content="I design some things and code. I love what I do.">
-    <meta name="description" content="Matteo Manià | Web-developer / designer: IT: sono un giovane sviluppatore di siti web, e mi occupo dell'aspetto di un sito web. EN: I'am young developer from italy, and I work on fron-end of a website.">
-    <meta property="og:url" content="https://www.zippo107.tk">
-    <link rel="stylesheet" href="/assets/style.css">
-    <!--bulma-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <!--ion-icon-->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js" defer></script>
-    <!--script-->
-    <script src="/src/script.js" defer></script>
-    <script src="/src/closeToggle.js" defer></script>
-    <script src="/src/Typer.js" defer></script>
-    <script src="/src/Darkmode.js" defer></script>
-    <script src="/src/Loader.js" defer></script>
-    <script src="/src/backToTop.js" defer></script>
-    <!--aos styling-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <!--aos resources-->
-    <link rel="stylesheet" href="/assets/AOS/aos.css">
-    <script src="assets/AOS/aos.js" defer></script>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title og:title>Matteo Manià | Web-design | Web-development</title>
+        <meta og:title content="Matteo Manià front-end developer">
+        <meta content="Matteo Manià, Matteo Mania, matteo manià, matteo mania, web-designer, monfalcone, matteo manià developer, Matteo Mania developer, matteo mania designer, Matteo Manià designer, zippo, zippo107, web-developer, sito web, sito web italia, portfolio, personal portfolio" name="keywords">
+        <meta property="og:site_name" content="Matteo Manià">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Matteo Manià | Frontend Developer &amp; Design">
+        <meta property="og:description" content="I design some things and code. I love what I do.">
+        <meta name="og:description" content="Matteo Manià | Web-developer / designer: IT: sono un giovane sviluppatore di siti web, e mi occupo dell'aspetto di un sito web. EN: I'am young developer from italy, and I work on fron-end of a website.">
+        <meta property="og:url" content="https://www.matteomania.tk">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
 
-  <body>
-    <nav class="primary-navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="#home" class="navbar-item" id="item">
-            <ion-icon name="home-outline" id="ion-dark"></ion-icon>
-          </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div class="navbar-menu is-shadowless" id="navMenu">
-          <div class="navbar-start"></div>
-          <div class="navbar-end">
-            <div class="dropdown" id="dropdown1">
-              <div class="dropdown-trigger">
-                <button class="button is-active is-focus is-hovered bg-t" id="ion-dark" aria-haspopup="true" aria-controls="dropdown-menu">
-                  <span>Menu</span>
-                  <span class="icon">
-                    <ion-icon name="list"></ion-icon>
-                  </span>
+    <body>
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="/public/LogoTondo.png" alt="" class="icon" role="img" alt="Zippo">
+            </div>
+            <div class="navbar-right">
+                <button class="dark-mode-btn" id="dark-button">
+                        <svg viewBox="0 0 400 400" class="color-mode" id="colorMode">
+                            <circle r="195" cx="200" cy="200" fill="white" stroke="#000" stroke-width="10" />
+                            <path d=" M 200 375 A 175 175 0 0 1 200 25" />
+                            <path d=" M 200 300 A 100 100 0 0 1 200 100" fill="#FFF" />
+                            <path d=" M 200 100 A 100 100 180 0 1 200 300" />
+                        </svg>
                 </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                <div class="dropdown-content">
-                  <div class="container dark" title="dark-mode">
-                    <div class="onoffswitch">
-                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
-                      <label class="onoffswitch-label" for="myonoffswitch">
-                        <span class="onoffswitch-inner"></span>
-                        <span class="onoffswitch-switch"></span>
-                      </label>
-                    </div>
-                  </div>
-        
-                  <a href="#about" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                    About me
-                  </a>
-                  <a href="#projects" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                    Projects
-                  </a>
-                  <a href="#contact" class="dropdown-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                    Contact me
-                  </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-title"> 
+                    <h1 class="hi"> Hi !</h1>
+                    <h2 class="title underline">I'm Matteo Manià</h2>
                 </div>
-              </div>
+                <div class="card-content">
+                    <p>
+                        I'm 17 yo young developer <br> 
+                        I love working on Pc' since when I was 13; <br>
+                        In all the things I do I give my best.
+                    </p>
+
+                    <h3 class="contact">You can contact me: </h3>
+                    <a href="mailto:matteomania09@gmail.com" alt="email" title="email" role="button" target="_blank" class="email">
+                        <i class="ti ti-mail"></i><span class="email-text">matteomania09@gmail.com</span> 
+                    </a>
+                </div>
+                <div class="card-footer">
+                    <ul class="social-list" role="list">
+                        <li>
+                            <a href="https://www.instagram.com/itz_matteomania/" role="button" target="_blank">
+                                <i class="ti ti-brand-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/robin.ticke.50/" role="button" target="_blank">
+                                <i class="ti ti-brand-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Matteo0099" role="button" target="_blank">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="menu-invisible visible">
-              <a href="#about" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                About me
-              </a>
-              <a href="#projects" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                Projects
-              </a>
-              <a href="#contact" class="navbar-item has-text-weight-normal is-hovered" id="item" onclick="openNav()">
-                Contact me
-              </a>
-            </div>
-
-            <div class="navbar-item">
-              <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="contact.html">Contact-form </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section class="hero" id="home">
-      <div class="hero-body">
-        <div class="container">
-          <div class="column centered">
-            <div class="column">
-              <h1 class="title" id="titolo">Matteo Manià</h1>
-              <h2 class="sub-title" id="titolo">Front-end developer</h2>
-              <!--typer-->
-              <h1 id="titolo">
-                <p class="typewrite" id="titolo" data-period="1500" data-type='[ "I design", "I develop", "I study" ]'>
-                  <span class="wrap"></span>
-                </p>
-              </h1>
-              <!--<h2 class="sub-title">I design and code minimal things</h2>-->
-              <img src="/public/Programmer-2-512-737674497.png" alt="" class="avatar" data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-foot">
-        <div class="container">
-          <img src="/public/Progetto logo mio sito.png" alt="" class="bottom">
-        </div>
-      </div>
-    </section>
-
-    <section class="section is-small is-primary has-text-centered is-long" id="about">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-three-fifths" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <h1 class="title is-spaced is-size-1-desktop is-size-4-mobile">
-              Hi, I’m Matt. Nice to meet you.
-            </h1>
-            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
-              I start design 2 years ago, I've done some work for local companies,
-              like 2 big projects, other a 20 personal project.
-              I love coding and design what I thought; 
-              I'm in love with css and most of the things I do, are with css!
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section skills has-text-centered">
-      <div class="container is-narrow">
-        <div class="box">
-          <div class="content">
-            <div class="columns is-centered">
-              <div class="column" id="colonna" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <span class="fa-stack fa-2x">
-                  <ion-icon name="aperture-outline"></ion-icon>
-                </span> 
-                <h1 class="title is-size-4 is-spaced" id="titolo">Designer</h1>
-                <p>I value simple and minimal content structure, clean design patterns, and thoughtful interactions.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
-                <p>UX/UI, Web, Logos</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
-                <ul>
-                  <li>Adobe Photoshop</li>
-                  <li>Font Awesome</li>
-                  <li>Sketch</li>
-                </ul>
-              </div>
-
-              <div class="column" id="colonna" data-aos="fade-up" data-aos-duration="1400">
-                <span class="fa-stack fa-2x">
-                  <ion-icon name="code-slash-outline"></ion-icon>
-                </span>
-                <h1 class="title is-size-4 is-spaced" id="titolo">Frontend Developer</h1>
-                <p>I like to code things minimal & user-interfaces, and enjoy bringing ideas to life in the browser.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
-                <p>
-                  HTML, CSS, Javascript <br>
-                </p>
-                <p class="list-title has-text-primary has-text-weight-normal">FrameWorks I use</p>
-                <p>
-                  Bootstrap, Bulma, Jquery
-                </p>
-                <p class="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
-                <ul>
-                  <li>VS code</li>
-                  <li>Eclipse IDE</li>
-                  <li>Github</li>
-                  <li>Replit</li>
-                </ul>
-              </div>
-
-              <div class="column" id="colonna" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <span class="fa-stack fa-2x">
-                  <ion-icon name="people-outline"></ion-icon>
-                </span>
-                <h1 class="title is-size-4 is-spaced" id="titolo">Mentor</h1>
-                <p>I genuinely care about people, and love helping people who work on their craft.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Experiences I draw from:</p>
-                <p>UX/UI, Product design and Freelancing</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Mentor Stats:</p>
-                <ul>
-                  <li>2 years experience</li>
-                  <li>25+ courses</li>
-                  <li>2,000+ hours coding</li>
-                  <li>15+ projects</li>
-                  <li>850+ community' comments</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section project has-text-centered is-medium mt-5" id="projects">
-      <div class="container">
-        <div class="box" data-aos="zoom-in" data-aos-duration="1400">
-          <div class="content">
-            <h1 class="title" id="titolo">Projects</h1>
-
-            <div class="row2">
-              <div class="column2">
-                  <a href="https://areacrewmonfalcone.it/" target="_blank">
-                  <img src="/public/FotoAreaCrewWebsite.jpg" class="image">
-                  <span class="caption">AreaCrewWebsite</span></a>
-              </div>
-              <div class="column2">
-                  <a href="https://matteo0099.github.io/ilpiccone/" target="_blank">
-                  <img src="/public/FotoPicconieri.jpg" class="image">
-                  <span class="caption">Il Piccone</span></a>
-              </div>
-            </div>
-
-            <div class="row2">
-              <div class="column2">
-                  <a href="https://matteo0099.github.io/Project7" target="_blank">
-                  <img src="/public/WebSite_Portfolio_New.jpg" class="image">
-                  <span class="caption">WebSite-Portfolio Project</span>
-                </a>
-              </div>
-              <div class="column2">
-                  <a href="https://matteo0099.github.io/CardPortfolio/" target="_blank">
-                  <img src="/public/Card_Portfolio.jpg" class="image">
-                  <span class="caption">Card-Portfolio</span>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact has-text-centered is-long mt-5" id="contact">
-      <div class="callout">
-        <div class="columns is-centered">
-          <div class="column">
-            <h1 class="title is-spaced has-text-weight-bold" id="titolo" data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease">Interested to collaborating with me?</h1>
-            <h2 class="subtitle is-size-5-desktop" id="titolo" data-aos="zoom-in" data-aos-duration="400" data-aos-easing="ease-in-sine">I’m always open to discussing about design work <br> or partnership opportunities.</h2>
-            
-            <div class="flip" data-aos="flip-down" data-aos-duration="750" data-aos-easing="ease-in-sine">
-              <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" id="titolo" href="mailto:matteomania09@gmail.com">
-                <span class="icon">
-                  <svg class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false" data-prefix="far" data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                    <path fill="currentColor" d="M360 144h-208C138.8 144 128 154.8 128 168S138.8 192 152 192h208C373.3 192 384 181.3 384 168S373.3 144 360 144zM264 240h-112C138.8 240 128 250.8 128 264S138.8 288 152 288h112C277.3 288 288 277.3 288 264S277.3 240 264 240zM447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.1c0 9.836 11.02 15.55 19.12 9.7l124.9-93.7h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z"></path>
-                  </svg>
-                </span>
-                <span>Start conversation</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-      </svg>
-    </button> 
-
-    <footer class="section is-primary is-small has-text-centered">
-      <div class="container is-narrow">
-        <div class="flip" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="650">
-          <a class="logo has-text-white" href="index.html">
-            <ion-icon name="logo-medium" id="ion-dark"></ion-icon>
-          </a>
-        </div>
-      
-        <div class="columns is-centered"> 
-          <div class="column is-one-third">
-            <h1 class="title is-size-5-touch has-text-weight-normal">Matt'designs</h1>
-          </div>
         </div>
 
-        <div class="social-icons">
-          <p class="field">
-            <a class="button social is-medium" href="https://www.instagram.com/itz_matteomania/" target="_blank">
-              <ion-icon name="logo-instagram" class="ion-icon"></ion-icon>
-            </a>
-
-            <a class="button social is-medium" href="https://www.facebook.com/robin.ticke.50/" target="_blank">
-              <ion-icon name="logo-facebook" class="ion-icon"></ion-icon>
-            </a>
-
-            <a class="button social is-medium" href="https://discord.com/users/676456013326581782" target="_blank">
-              <ion-icon name="logo-discord" class="ion-icon"></ion-icon>
-            </a>
-
-            <a class="button social is-medium" href="https://github.com/Matteo0099" target="_blank">
-              <ion-icon name="logo-github" class="ion-icon"></ion-icon>
-            </a>
-          </p>
-        </div>
-          <div class="copyright">Zippo107 &copy; 2022 | all rights reserved</div>
-      </div>
-    </footer>
-
-    <!--Aos library-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body> 
+        <footer class="footer">
+            <p>All rights deserved.<span>Copyright &copy; 2022 <a href="https://matteomania.tk"> Matteo Manià</a></span></p>
+        </footer>
+        
+        <script src="src/script.js"></script>
+        <script src="src/rotate.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    </body>
 </html>
