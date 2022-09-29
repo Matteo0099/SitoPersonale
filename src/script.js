@@ -4,33 +4,32 @@
 let = dark = document.querySelector(".dark-mode-btn");
 
 const enableDark = () => {
-    document.body.classList.add("dark");
-    localStorage.setItem("dark", "enabled");
+  document.body.classList.add("dark");
+  localStorage.setItem("dark", "enabled");
 };
 
 const disableDark = () => {
-    document.body.classList.remove("dark");
-    localStorage.setItem("dark", null);
+  document.body.classList.remove("dark");
+  localStorage.setItem("dark", null);
 };
 
 dark.addEventListener("click", () => {
-    dark = localStorage.getItem("dark");
+  dark = localStorage.getItem("dark");
+  // var that search the SVG'class
+  var darkOn = document.querySelector(".dark-on");
+  var darkOff = document.querySelector(".dark-off");
 
-    if (dark !== "enabled") {
-        enableDark();
-    } else {
-        disableDark();
-    }
-});
-
-//Checked out
-if (dark === "enabled") {
+  if (dark !== "enabled") {
     enableDark();
-}
-
-/*
-colorMode.addEventListener('click', () => {
-    const current = document.body.style.getPropertyValue("--dark-mode") - 0;
-    document.body.style.setProperty("--dark-mode", 1 - current);
+    darkOff.style.display = "none";
+    darkOn.style.display = "block";
+  } else {
+    disableDark();
+    darkOff.style.display = "block";
+    darkOn.style.display = "none";
+  }
 });
-*/
+
+if (dark === "enabled") {
+  enableDark();
+}

@@ -14,71 +14,181 @@
         <meta name="og:description" content="Matteo Manià | Web-developer / designer: IT: sono un giovane sviluppatore di siti web, e mi occupo dell'aspetto di un sito web. EN: I'am young developer from italy, and I work on fron-end of a website.">
         <meta property="og:url" content="https://www.matteomania.tk">
         <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="src/Canvas.js" defer></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
     </head>
 
-    <body>
-        <div class="navbar">
-            <div class="navbar-left">
-                <img src="/public/LogoTondo.png" alt="" class="icon" role="img" alt="Zippo">
-            </div>
-            <div class="navbar-right">
-                <button class="dark-mode-btn" id="dark-button">
-                        <svg viewBox="0 0 400 400" class="color-mode" id="colorMode">
-                            <circle r="195" cx="200" cy="200" fill="white" stroke="#000" stroke-width="10" />
-                            <path d=" M 200 375 A 175 175 0 0 1 200 25" />
-                            <path d=" M 200 300 A 100 100 0 0 1 200 100" fill="#FFF" />
-                            <path d=" M 200 100 A 100 100 180 0 1 200 300" />
-                        </svg>
-                </button>
-            </div>
+    <body id="fullPage">
+        <div class="nav-container" id="home">
+            <button class="dark-mode-btn" type="button" role="button"> 
+                <!--icon for (off dark)-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down dark-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <line x1="12" y1="5" x2="12" y2="5.01"></line>
+                    <line x1="17" y1="7" x2="17" y2="7.01"></line>
+                    <line x1="19" y1="12" x2="19" y2="12.01"></line>
+                    <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                    <line x1="12" y1="19" x2="12" y2="19.01"></line>
+                    <line x1="7" y1="17" x2="7" y2="17.01"></line>
+                    <line x1="5" y1="12" x2="5" y2="12.01"></line>
+                    <line x1="7" y1="7" x2="7" y2="7.01"></line>
+                 </svg>
+                <!--icon for (on dark)-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon dark-on" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                </svg>
+            </button>
         </div>
 
         <main>
-            <div class="card">
-                <div class="card-title"> 
-                    <h1 class="hi"> Hi !</h1>
-                    <h2 class="title underline">I'm Matteo Manià</h2>
+            <div class="container vertical-scrolling">
+                <div class="caption">
+                    <h1 id="hi" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="100"
+                    data-aos-offset="0">Hi,</h1>
+                    <h1 id="title" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="350">I'm Matteo Manià</h1>
+                    <span>Web-designer, developer</span>
                 </div>
-                <div class="card-content">
-                    <p>
-                        I'm 17 yo young developer <br> 
-                        I love working on Pc' since when I was 13; <br>
-                        In all the things I do I give my best.
-                    </p>
-
-                    <h3 class="contact">You can contact me: </h3>
-                    <a href="mailto:matteomania09@gmail.com" alt="email" title="email" role="button" target="_blank" class="email">
-                        <i class="ti ti-mail"></i><span class="email-text">matteomania09@gmail.com</span> 
+                <div class="container buttons">
+                    <a href="#projects">
+                        <button class="projects">
+                            Projects    
+                        </button>
+                    </a>
+                    <a href="#about">
+                        <button class="about-me">
+                            About me
+                        </button>
                     </a>
                 </div>
-                <div class="card-footer">
-                    <ul class="social-list" role="list">
+            </div>
+        </main>
+        
+        <section id="about" class="vertical-scrolling">
+            <div class="container">
+                <div class="box">
+                    <h1>About me</h1>
+                    <div class="card">
+                        <p>I'm Matteo Manià, a 17y.o. developer from Italy 
+                            I study ITC, development and web-design.
+                        </p>
+                    </div>
+                    <!-- The Timeline -->
+                    <ul class="timeline">
+                        <!-- Item 1 -->
                         <li>
-                            <a href="https://www.instagram.com/itz_matteomania/" role="button" target="_blank">
-                                <i class="ti ti-brand-instagram"></i>
-                            </a>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">2014-2022</span>
+                                    <span class="time-wrapper"><span class="time">Schools</span></span>
+                                </div>
+                                <div class="desc">My current employment. Way better than the position before!</div>
+                            </div>
                         </li>
+                        
+                        <!-- Item 2 -->
                         <li>
-                            <a href="https://www.facebook.com/robin.ticke.50/" role="button" target="_blank">
-                                <i class="ti ti-brand-facebook"></i>
-                            </a>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">2020-2022</span>
+                                    <span class="time-wrapper"><span class="time">Web-design</span></span>
+                                </div>
+                                <div class="desc">My first Passion/work. All the stuff I've learned and projects I've been working on.</div>
+                            </div>
                         </li>
+                    
+                        <!-- Item 3 -->
                         <li>
-                            <a href="https://github.com/Matteo0099" role="button" target="_blank">
-                                <i class="ti ti-brand-github"></i>
-                            </a>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">2019-2023</span>
+                                    <span class="time-wrapper"><span class="time">Develop Skills</span></span>
+                                </div>
+                                <div class="desc">All my skills in the programming environment</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <footer class="footer">
-            <p>All rights deserved.<span>Copyright &copy; 2022 <a href="https://matteomania.tk"> Matteo Manià</a></span></p>
+
+        <section id="projects" class="vertical-scrolling">
+            <div class="container">
+                <h1>My Projects</h1>
+
+                <div class="container-projects">
+                    <div class="column-1 box1">
+                        <a href="https://areacrewmonfalcone.it" target="_blank">
+                            <h1>AreaCrewWebsite</h1>
+                            <img src="public/AreaCrewWebsite.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="column-2 box1">
+                        <a href="https://cssreset.tk" target="_blank">
+                            <h1>CSSreset V2.0</h1>
+                            <img src="public/CSSresetv2.0.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="contact" class="vertical-scrolling">
+            <div class="container">
+                <div class="box-cnt">
+                    <h1>Contact me</h1>
+                </div>
+            </div>
+        </section>
+
+        <footer class="vertical-scrolling">
+            <div>
+                <ul>
+                  <li><a href="https://www.instagram.com/itz_matteomania/" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/robin.ticke.50/" target="_blank">Facebook</a></li>
+                  <li><a href="https://github.com/Matteo0099" target="_blank">Github</a></li>
+                  <li><a href="https://discordapp.com/users/676456013326581782" target="_blank">Discord</a></li>
+                  <li><a href="https://www.twitch.tv/zippo_107" target="_blank">Twitch</a></li>
+                  <li>
+                    <p>👋</p>
+                  </li>
+                </ul>
+            </div>
+            
+            <div class="container">
+                <form action="#" method="post">
+                    <input type="text" name="Message" placeholder="Message">
+                    <a href="mailto:matteomania09@gmail.com">
+                        <button class="send">
+                            Send
+                        </button>
+                    </a>
+                </form>
+                <a href="#home" class="turn">
+                    go top ↑
+                </a>
+            </div>
         </footer>
-        
+
         <script src="src/script.js"></script>
-        <script src="src/rotate.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+        <script src="src/Scrolling.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="src/jQuery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     </body>
 </html>
