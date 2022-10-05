@@ -9,3 +9,4 @@ HTMLCanvasElement(document.body, {
   width:300,
   height:300
 });
+

@@ -119,6 +119,11 @@ a:hover {
     color: var(--button-hover);
 }
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
 img.logo {
     width: 50px;
     height: 50px;
@@ -165,12 +170,18 @@ main .container {
 
 /*dark mode*/
 body.dark {
+    transition: all .33s ease-in-out;
     color: var(--text-primary);
     background-color: var(--text-dark);
 }
 
+body {
+    transition: all .33s ease-in-out;
+}
+
 /*styling button*/
 .dark-mode-btn {
+    transition: all .2s;
     border: none;
     vertical-align: middle;
     background-position: center;
@@ -213,6 +224,8 @@ button svg.icon.dark-on{
 section h1 {
     margin: 1rem auto;
     font-size: clamp(24px, 5vw, 30px);
+    font-weight: bold;
+    text-shadow: 3px 5px 14px rgba(86, 86, 86, 0.2);
 }
 
 section {
@@ -224,16 +237,40 @@ section {
 }
 
 section#about {
-    margin-top: 150px;
+    margin-top: 125px;
 }
 
 section#projects {
-    margin-top: 250px;
+    margin: 150px auto;
 }
 
 section#contact {
-    min-height: 33vh;
+    min-height: 6vh;
     margin-top: 75px;
+    transform: translateY(22px);
+}
+
+section#projects h1 {
+    margin: 2.5rem auto;
+}
+
+section#contact h1 {
+    text-shadow: 3px 8px 14px rgba(255, 255, 255, 0.17);
+}
+
+section#contact > .container {
+    width: 300px;
+    background-color: var(--background-dark);
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    /*border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;*/
+    padding: 4px;
+}
+
+.container > .box-cnt {
+    color: var(--background-white);
+    text-shadow: 3px 5px 10px rgba(0,0,0, .8);
 }
 
 .container > * {
@@ -268,24 +305,22 @@ section#contact {
 }
 
 .container.buttons {
-    /*background-color: var(--background-dark);*/
     margin: 0;
-    gap: 10px;
+    gap: 18px;
     flex-direction: row;
 }
 
 button {
-    /*ackground-color: var(--button-primary);*/
     border: none;
     background-color: hsl(0, 0%, 99.97%);
     font-family: inherit;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 button.projects {
     cursor: pointer;
-    padding: 13px;
+    padding: 14px;
     border-radius: 6px;
     outline: 2px solid #939393;
 }
@@ -301,8 +336,9 @@ button.projects:active {
 button.about-me {
     background-color: var(--button-primary);
     color: #fefefe;
-    padding: 14px;
+    padding: 15px;
     border-radius: 6px;
+    outline: 1px solid var(--button-primary);
 }
  
 button.about-me a {
@@ -335,6 +371,7 @@ button.about-me:active {
     margin: 0.125em auto;
     animation: color-change 6.5s infinite;
 }
+
 
 /*keyframes*/
 @keyframes color-change {
@@ -608,7 +645,7 @@ button.about-me:active {
     .direction-l .desc,
     .direction-r .desc {
         position: relative;
-        margin: 1em 1em 0 1em;
+        margin: 1em 2em 0 2em;
         padding: 1em;
         
         z-index: 15;
@@ -656,7 +693,7 @@ button.about-me:active {
     background-color: #e9ecef;
     padding: 10px;
     border-radius: 12px;
-    border: 1px solid rgb(116, 113, 113);
+    border: 1px solid hsl(0, 1%, 67%);
     margin: 1rem;
     box-shadow: 1px 1px 1px #000;
 }
@@ -776,13 +813,15 @@ footer .container {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 125px;
+    min-height: 150px;
     padding-bottom: 40px;
-    padding-left: 20px;
 }
 
 form {
     align-self: center;
+    text-align: center;
+    flex-direction: row;
+    max-width: fit-content;
 }
 
 form input {
@@ -812,8 +851,9 @@ form input:focus {
 button.send {
     background-color: hsl(134, 47%, 45%);
     color: var(--text-primary);
-    padding: 13px;
+    padding: 12px;
     border-radius: 6px;
+    transform: translateY(0.95px);
 }
 
 button.send:active {
@@ -825,16 +865,25 @@ button.send:hover {
 }
 
 a.turn {
-    padding-left: 20px;
-    text-decoration: none;
+    padding-left: 23px;
     box-shadow: none;
 }
 
+a i.ti {
+    color: hsl(0, 0%, 67%);
+}
+
+a i.ti:hover {
+    color: var(--background-white);
+}
+
 a.turn:hover {
-    color: #999;
     background-color: transparent;
-    background: none;
     box-shadow: none;
+}
+
+footer.vertical-scrolling > div {
+    padding-top: 4rem;
 }
 
 /**end footer**/
