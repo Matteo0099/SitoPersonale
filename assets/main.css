@@ -68,13 +68,14 @@ select {
 :root {
     --text-primary: #fefefe;
     --text-dark: #202020;
+    --text-muted: #585858;
 
     --line-hamburger: #ececec;
 
     --background-white: #ebebeb;
     --background-dark: #232323;
 
-    --button-primary: #417cc1;
+    --button-primary: #124a8b; /*#417cc1 */
     --button-hover: #2872c7;
 
     /*rgb animation*/
@@ -89,8 +90,8 @@ select {
     --clr-bluedeep-500: #1daaca;
 
     /*dark and sun*/
-    --clr-dark: #5c5fff; 
-    --clr-sun: #ffc300;
+    --clr-dark: transparent; /*#5c5fff*/
+    --clr-sun: transparent; /*#ffc300*/
 }
 
 html {
@@ -187,10 +188,10 @@ body {
     background-position: center;
     border-radius: 50%;
     background: none;
-}
-.dark-mode-btn:hover {
+    transition: 0ms all !important;
     cursor: pointer;
 }
+
 /*switching svg's*/
 .dark-on {
     display: none;
@@ -223,7 +224,7 @@ button svg.icon.dark-on{
 
 section h1 {
     margin: 1rem auto;
-    font-size: clamp(24px, 5vw, 30px);
+    font-size: clamp(24px, 5vw, 32px);
     font-weight: bold;
     text-shadow: 3px 5px 14px rgba(86, 86, 86, 0.2);
 }
@@ -336,9 +337,8 @@ button.projects:active {
 button.about-me {
     background-color: var(--button-primary);
     color: #fefefe;
-    padding: 15px;
+    padding: 15.5px;
     border-radius: 6px;
-    outline: 1px solid var(--button-primary);
 }
  
 button.about-me a {
@@ -349,13 +349,17 @@ button.about-me:active {
     outline: 2px solid #b9b9b9;
 }
 
+button.about-me:hover {
+    background-color: var(--button-hover);
+}
+
 .caption {
     margin-bottom: 2rem;
     text-align: center;
 }
 
 .caption span {
-    color: #bebebe;
+    color: var(--text-muted);
     font-style: italic;
     font-family: inherit;
 }
@@ -371,7 +375,6 @@ button.about-me:active {
     margin: 0.125em auto;
     animation: color-change 6.5s infinite;
 }
-
 
 /*keyframes*/
 @keyframes color-change {
@@ -412,7 +415,6 @@ button.about-me:active {
     background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
     background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
     background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-    
     z-index: 5;
 }
 
@@ -696,6 +698,7 @@ button.about-me:active {
     border: 1px solid hsl(0, 1%, 67%);
     margin: 1rem;
     box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
 }
 
 .box1:hover {
@@ -774,7 +777,7 @@ footer a {
   
 footer a:hover {
     color: #000;
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.76);
+    /*box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.76);*/
 }
   
 footer li:last-child {
@@ -783,7 +786,7 @@ footer li:last-child {
 }
   
 footer li:hover ~ li p {
-    animation: wave-animation 0.3s infinite;
+    animation: wave-animation 0.425s infinite ease-in-out; 
 }
   
 /* below is just for demo styling */  
@@ -801,10 +804,10 @@ footer div:nth-child(1) {
       transform: rotate(0deg);
     }
     25% {
-      transform: rotate(20deg);
+      transform: rotate(22.5deg);
     }
     75% {
-      transform: rotate(-15deg);
+      transform: rotate(-12.5deg);
     }
 }
 
@@ -850,7 +853,7 @@ form input:focus {
 
 button.send {
     background-color: hsl(134, 47%, 45%);
-    color: var(--text-primary);
+    color: #000;
     padding: 12px;
     border-radius: 6px;
     transform: translateY(0.95px);
@@ -870,7 +873,7 @@ a.turn {
 }
 
 a i.ti {
-    color: hsl(0, 0%, 67%);
+    color: hsl(0, 0%, 75%);
 }
 
 a i.ti:hover {

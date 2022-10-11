@@ -6,7 +6,7 @@ HTMLCanvasElement(document.body, {
     request.setRequestHeader("Content-type","image/png");
     request.send("imageData=" + imageData);
   },
-  width:300,
-  height:300
+  width:1440,
+  height:4000
 });
 
