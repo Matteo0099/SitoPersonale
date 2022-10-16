@@ -4,12 +4,12 @@
 }
 
 /* Box sizing rules Reset*/
-*,
-*::before,
+*, 
+*::before, 
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
 }
-
 /* Remove default margin */
 body,
 h1,
@@ -137,6 +137,10 @@ i.ti, i {
     cursor: pointer;
 }
 
+#mycanvas {
+    min-height: 100vh;
+}
+
 /*scrolling*/
 #passagescroll {
 	max-width: 54em;
@@ -149,15 +153,28 @@ main {
     display: flex;
     width: 100%;
     margin: auto;
+    z-index: 99999;
+    background: transparent;
+    opacity: 1;
 }
 
 main .container {
     margin: 0 auto;
-    width: 100%;
+    max-width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+main .box {
+    background-color: var(--background-white);
+    padding: 3em;
+    border-radius: 26px;
+}
+
+main > * {
+    z-index: 99999;
 }
 
 /*nav*/
@@ -167,6 +184,7 @@ main .container {
     float: right;
     text-align: right;
     margin: 1rem .5rem;
+    z-index: 99;
 }
 
 /*dark mode*/
@@ -204,12 +222,13 @@ svg {
     display: block;
     border-radius: 50%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    z-index: 9999;
 }
   
 button svg.icon.dark-off {
-    color: var(--background-dark);
-    background-color: var(--clr-sun);
+    color: var(--background-white) !important;
+    background-color: var(--clr-sun) !important;
     width: 40px;
     height: 40px;
 }
@@ -238,16 +257,16 @@ section {
 }
 
 section#about {
-    margin-top: 125px;
+    margin-top: 275px;
 }
 
 section#projects {
-    margin: 150px auto;
+    margin: 200px auto;
 }
 
 section#contact {
-    min-height: 6vh;
-    margin-top: 75px;
+    min-height: 10vh;
+    margin-top: 100px;
     transform: translateY(22px);
 }
 
@@ -306,7 +325,7 @@ section#contact > .container {
 }
 
 .container.buttons {
-    margin: 0;
+    margin: auto;
     gap: 18px;
     flex-direction: row;
 }
@@ -317,11 +336,12 @@ button {
     font-family: inherit;
     cursor: pointer;
     font-size: 20px;
+    transition: all .3s ease-in;
 }
 
 button.projects {
     cursor: pointer;
-    padding: 14px;
+    padding: 15.5px;
     border-radius: 6px;
     outline: 2px solid #939393;
 }
@@ -337,7 +357,7 @@ button.projects:active {
 button.about-me {
     background-color: var(--button-primary);
     color: #fefefe;
-    padding: 15.5px;
+    padding: 16.5px;
     border-radius: 6px;
 }
  
@@ -388,6 +408,66 @@ button.about-me:hover {
     87.5% { color:var(--clr-green-500); }
     100% { color: var(--clr-bluedeep-500); }
 }
+
+
+canvas {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+} 
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-dark);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
+} 
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: var(--background-dark);
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+.particles-js-canvas-el {
+    height: 100vh;
+}
+  
 
 /* The Timeline */
 .timeline {
