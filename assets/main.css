@@ -168,9 +168,10 @@ main .container {
 }
 
 main .box {
-    background-color: var(--background-white);
-    padding: 3em;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3.2733em;
     border-radius: 26px;
+    margin: auto 1em;
 }
 
 main > * {
@@ -266,8 +267,14 @@ section#projects {
 
 section#contact {
     min-height: 10vh;
-    margin-top: 100px;
+    margin-top: 205px;
     transform: translateY(22px);
+}
+
+@media screen and (min-width: 767px) { 
+    section#contact {
+        margin-top: 290px;
+    }
 }
 
 section#projects h1 {
@@ -343,11 +350,11 @@ button.projects {
     cursor: pointer;
     padding: 15.5px;
     border-radius: 6px;
-    outline: 2px solid #939393;
+    outline: 2px solid #888888;
 }
 
 button.projects:hover {
-    outline: 2px solid #747474;
+    outline: 2px solid #2c2c2c;
 }
 
 button.projects:active {
@@ -385,15 +392,33 @@ button.about-me:hover {
 }
 
 .caption #hi {
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: expanded;
+    letter-spacing: .755px;
 } 
 
 .caption #title {
-    font-size: clamp(33px, 6vw, 48px);
-    font-weight: bold;
-    letter-spacing: .6px;
+    font-size: clamp(35px, 6vw, 53px);
+    font-weight: 900;
+    letter-spacing: .6733px;
     margin: 0.125em auto;
     animation: color-change 6.5s infinite;
+}
+
+/**resize card for small devices, (tested up from 767px to 297px) width.**/
+@media screen and (max-width: 400px) {
+    .container.buttons .projects, .container.buttons .about-me {
+        font-size: 12.75px;
+        text-transform: uppercase;
+    }
+    main .box {
+        margin: auto .5em;
+        padding: 1.75em;
+    }
+    .container.buttons {
+        gap: 13.5px;
+    }
 }
 
 /*keyframes*/
@@ -408,7 +433,6 @@ button.about-me:hover {
     87.5% { color:var(--clr-green-500); }
     100% { color: var(--clr-bluedeep-500); }
 }
-
 
 canvas {
     display: flex;
@@ -441,7 +465,6 @@ canvas {
     text-indent: 4px;
     line-height: 14px;
     padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -467,7 +490,7 @@ canvas {
 .particles-js-canvas-el {
     height: 100vh;
 }
-  
+/** end canvas **/
 
 /* The Timeline */
 .timeline {
