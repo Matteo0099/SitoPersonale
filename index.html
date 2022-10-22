@@ -19,48 +19,41 @@
     </head>
 
     <body id="fullPage">
+        <!--home tag-->
         <div id="home"></div>
-            <div class="nav-container">
-                <button class="dark-mode-btn" type="button" role="button"> 
-                    <!--icon for (off dark)-->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down dark-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <line x1="12" y1="5" x2="12" y2="5.01"></line>
-                        <line x1="17" y1="7" x2="17" y2="7.01"></line>
-                        <line x1="19" y1="12" x2="19" y2="12.01"></line>
-                        <line x1="17" y1="17" x2="17" y2="17.01"></line>
-                        <line x1="12" y1="19" x2="12" y2="19.01"></line>
-                        <line x1="7" y1="17" x2="7" y2="17.01"></line>
-                        <line x1="5" y1="12" x2="5" y2="12.01"></line>
-                        <line x1="7" y1="7" x2="7" y2="7.01"></line>
-                    </svg>
-                    <!--icon for (on dark)-->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon dark-on" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div id="particles-js"></div> <!-- stats - count particles -->
-
-            <main>
-                <div class="container vertical-scrolling">
+        <div id="particles-js"></div> <!--particles-->
+            <!--main card-->
+            <main data-aos="fade-down"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="850" 
+                  data-aos-duration="850"
+                  data-aos-delay="100">
+               <div class="container">
                     <div class="box">
-                        <div class="caption">
-                            <h1 id="hi" 
-                            data-aos="fade-zoom-in"
-                            data-aos-easing="ease-in-back"
-                            data-aos-delay="100"
-                            data-aos-offset="0">Hi,</h1>
-                            <h1 id="title" 
-                            data-aos="fade-zoom-in"
-                            data-aos-easing="ease-in-back"
-                            data-aos-delay="350">I'm Matteo Manià</h1>
-                            <span>Web-designer, developer</span>
+                        <div class="nav-button-container">
+                            <button class="dark-mode-btn" type="button" role="button"> 
+                                <!--icon for (off dark)-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down dark-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <line x1="12" y1="5" x2="12" y2="5.01"></line>
+                                    <line x1="17" y1="7" x2="17" y2="7.01"></line>
+                                    <line x1="19" y1="12" x2="19" y2="12.01"></line>
+                                    <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                    <line x1="12" y1="19" x2="12" y2="19.01"></line>
+                                    <line x1="7" y1="17" x2="7" y2="17.01"></line>
+                                    <line x1="5" y1="12" x2="5" y2="12.01"></line>
+                                    <line x1="7" y1="7" x2="7" y2="7.01"></line>
+                                </svg>
+                                <!--icon for (on dark)-->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon dark-on" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                                </svg>
+                            </button>
                         </div>
+                        <h1 class="title" id="title">Matteo Manià</h1>
+                        <p class="paragraph">web-developer & designer</p>
                         <div class="container buttons">
                             <a href="#projects">
                                 <button class="projects">
@@ -74,14 +67,14 @@
                             </a>
                         </div>
                     </div>
-                </div>
+               </div>
             </main>
             
             <section id="about" class="vertical-scrolling">
                 <div class="container">
                     <div class="box">
                         <h1>About me</h1>
-                        <div class="card">
+                        <div class="card" data-aos="flip-right" data-aos-duration="750" data-aos-delay="125">
                             <p>I'm Matteo Manià, a 17y.o. developer from Italy 
                                 I study ITC, development and web-design.
                             </p>
@@ -89,7 +82,7 @@
                         <!-- The Timeline -->
                         <ul class="timeline">
                             <!-- Item 1 -->
-                            <li>
+                            <li data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200">
                                 <div class="direction-r">
                                     <div class="flag-wrapper">
                                         <span class="flag">2014-2022</span>
@@ -100,7 +93,7 @@
                             </li>
                             
                             <!-- Item 2 -->
-                            <li>
+                            <li data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="500">
                                 <div class="direction-l">
                                     <div class="flag-wrapper">
                                         <span class="flag">2020-2022</span>
@@ -111,7 +104,7 @@
                             </li>
                         
                             <!-- Item 3 -->
-                            <li>
+                            <li data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="800">
                                 <div class="direction-r">
                                     <div class="flag-wrapper">
                                         <span class="flag">2019-2023</span>
@@ -128,14 +121,14 @@
             <section id="projects" class="vertical-scrolling">
                 <div class="container">
                     <h1>My Projects</h1>
-                    <div class="container-projects">
-                        <div class="column-1 box1">
+                    <div class="container-projects" data-aos="zoom-in">
+                        <div class="column-1 box1" data-aos-duration="400" data-aos="zoom-in" data-aos-delay="250">
                             <a href="https://areacrewmonfalcone.it" target="_blank">
                                 <h1>AreaCrewWebsite</h1>
                                 <img src="public/AreaCrewWebsite.jpg" alt="">
                             </a>
                         </div>
-                        <div class="column-2 box1">
+                        <div class="column-2 box1" data-aos-duration="500" data-aos="zoom-in" data-aos-delay="500">
                             <a href="https://cssreset.tk" target="_blank">
                                 <h1>CSSreset V2.0</h1>
                                 <img src="public/CSSresetv2.0.jpg" alt="">
@@ -156,14 +149,12 @@
             <footer class="vertical-scrolling">
                 <div>
                     <ul>
-                    <li><a href="https://www.instagram.com/itz_matteomania/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/robin.ticke.50/" target="_blank">Facebook</a></li>
-                    <li><a href="https://github.com/Matteo0099" target="_blank">Github</a></li>
-                    <li><a href="https://discordapp.com/users/676456013326581782" target="_blank">Discord</a></li>
-                    <li><a href="https://www.twitch.tv/zippo_107" target="_blank">Twitch</a></li>
-                    <li>
-                        <p>👋</p>
-                    </li>
+                        <li data-aos-delay="150" data-aos="fade-left"><a href="https://www.instagram.com/itz_matteomania/" target="_blank">Instagram</a></li>
+                        <li data-aos-delay="300" data-aos="fade-left"><a href="https://www.facebook.com/robin.ticke.50/" target="_blank">Facebook</a></li>
+                        <li data-aos-delay="450" data-aos="fade-left"><a href="https://github.com/Matteo0099" target="_blank">Github</a></li>
+                        <li data-aos-delay="600" data-aos="fade-left"><a href="https://discordapp.com/users/676456013326581782" target="_blank">Discord</a></li>
+                        <li data-aos-delay="750" data-aos="fade-left"><a href="https://www.twitch.tv/zippo_107" target="_blank">Twitch</a></li>
+                        <li data-aos-delay="900" data-aos="fade-left"> <p>👋</p> </li>
                     </ul>
                 </div>
                 

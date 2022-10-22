@@ -148,7 +148,7 @@ i.ti, i {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 92.733vh;
     align-items: center;
     display: flex;
     width: 100%;
@@ -158,41 +158,53 @@ main {
     opacity: 1;
 }
 
-main .container {
-    margin: 0 auto;
-    max-width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 main .box {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 3.2733em;
-    border-radius: 26px;
-    margin: auto 1em;
+    box-shadow: 0px 0px 21px 7px rgba(190,190,190, .4);
+    -webkit-box-shadow: 0px 0px 21px 7px rgba(190,190,190, .4);
+    -moz-box-shadow: 0px 0px 21px 7px rgba(190,190,190, .4);
+    color: var(--text-primary);
+    border-radius: 12px;
+    padding: 2.673rem 3.7333rem;
+    backdrop-filter: blur(12px);
 }
 
 main > * {
     z-index: 99999;
 }
 
-/*nav*/
-.nav-container {
+main .paragraph {
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.673);
+}
+
+main .container {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    float: right;
-    text-align: right;
-    margin: 1rem .5rem;
-    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    padding: .5em;
+}
+
+main h1.title {
+    font-size: clamp(45px, 1vw, 64px);
+}
+
+.nav-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+    right: 0;
+    margin-left: auto;
 }
 
 /*dark mode*/
 body.dark {
     transition: all .33s ease-in-out;
     color: var(--text-primary);
-    background-color: var(--text-dark);
+    background-color: var(--background-dark);
 }
 
 body {
@@ -203,12 +215,14 @@ body {
 .dark-mode-btn {
     transition: all .2s;
     border: none;
-    vertical-align: middle;
     background-position: center;
+    pointer-events: all;
     border-radius: 50%;
     background: none;
     transition: 0ms all !important;
     cursor: pointer;
+    margin-bottom: 1rem;
+    padding: 0;
 }
 
 /*switching svg's*/
@@ -237,8 +251,8 @@ button svg.icon.dark-off {
 button svg.icon.dark-on{
     color: var(--background-white);
     background-color: var(--clr-dark);
-    width: 39px;
-    height: 39px;
+    width: 40px;
+    height: 40px;
 }
 /**end dark**/
 
@@ -246,7 +260,8 @@ section h1 {
     margin: 1rem auto;
     font-size: clamp(24px, 5vw, 32px);
     font-weight: bold;
-    text-shadow: 3px 5px 14px rgba(86, 86, 86, 0.2);
+    text-shadow: 0px 3px 28px var(--text-primary);
+    opacity: .8733;
 }
 
 section {
@@ -339,67 +354,53 @@ section#contact > .container {
 
 button {
     border: none;
-    background-color: hsl(0, 0%, 99.97%);
+    background: none;
+    color: var(--text-primary);
     font-family: inherit;
     cursor: pointer;
     font-size: 20px;
+    padding: 17px;
     transition: all .3s ease-in;
 }
 
 button.projects {
     cursor: pointer;
-    padding: 15.5px;
     border-radius: 6px;
     outline: 2px solid #888888;
 }
 
-button.projects:hover {
-    outline: 2px solid #2c2c2c;
-}
-
-button.projects:active {
-    outline: 3px solid #b9b9b9;
-}
-
 button.about-me {
-    background-color: var(--button-primary);
-    color: #fefefe;
-    padding: 16.5px;
+    background-color: var(--background-white);
+    color: var(--text-dark);
     border-radius: 6px;
+    outline: 2px solid var(--background-white);
 }
  
 button.about-me a {
     color: var(--text-primary);
 }
 
-button.about-me:active {
-    outline: 2px solid #b9b9b9;
+.container.buttons button:hover {
+    transition: 250ms all !important;
+    background-color: var(--text-muted);
+    color: var(--text-primary);
 }
 
-button.about-me:hover {
-    background-color: var(--button-hover);
-}
-
-.caption {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.caption span {
+.muted {
     color: var(--text-muted);
     font-style: italic;
     font-family: inherit;
 }
 
-.caption #hi {
+#hi {
     font-size: 28px;
     font-weight: 900;
     font-stretch: expanded;
     letter-spacing: .755px;
 } 
-
-.caption #title {
-    font-size: clamp(35px, 6vw, 53px);
+ 
+#title {
+    font-size: clamp(34px, 6vw, 58px);
     font-weight: 900;
     letter-spacing: .6733px;
     margin: 0.125em auto;
@@ -839,7 +840,7 @@ footer ul {
     justify-items: center;
     margin: auto;
     list-style: none;
-    min-height: 3rem;
+    min-height: 1.25rem;
     padding-right: 40px;
 }
   
@@ -876,10 +877,11 @@ footer a {
     color: white;
     text-decoration: none;
     box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+    font-size: 16px
 }
   
 footer a:hover {
-    color: #000;
+    animation: color-change 4s infinite;
     /*box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.76);*/
 }
   
@@ -920,7 +922,7 @@ footer .container {
     align-items: center;
     width: 100%;
     min-height: 150px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 form {
