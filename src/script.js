@@ -1,32 +1,35 @@
 // JS code
-//var element = document.getElementsByClassName("arrow");
-//element.scrollIntoView({behavior: "smooth"});
+// SOURCE CODE BY ZIPPO107 COPYRIGHT 2022
 
-// Define selector for selecting
-// anchor links with the hash
-let anchorSelector = 'a[href^="#"]';
+let = dark = document.querySelector(".dark-mode-btn");
 
-// Collect all such anchor links
-let anchorList =
-  document.querySelectorAll(anchorSelector);
+const enableDark = () => {
+  document.body.classList.add("dark");
+  localStorage.setItem("dark", "enabled");
+};
 
-// Iterate through each of the links
-anchorList.forEach(link => {
-  link.onclick = function (e) {
+const disableDark = () => {
+  document.body.classList.remove("dark");
+  localStorage.setItem("dark", null);
+};
 
-    // Prevent scrolling if the
-    // hash value is blank
-    e.preventDefault();
+dark.addEventListener("click", () => {
+  dark = localStorage.getItem("dark");
+  // var that search the SVG'class
+  var darkOn = document.querySelector(".dark-on");
+  var darkOff = document.querySelector(".dark-off");
 
-    // Get the destination to scroll to
-    // using the hash property
-    let destination =
-      document.querySelector(this.hash);
-
-    // Scroll to the destination using
-    // scrollIntoView method
-    destination.scrollIntoView({
-      behavior: 'smooth'
-    });
+  if (dark !== "enabled") {
+    enableDark();
+    darkOff.style.display = "none";
+    darkOn.style.display = "block";
+  } else {
+    disableDark();
+    darkOff.style.display = "block";
+    darkOn.style.display = "none";
   }
 });
+
+if (dark === "enabled") {
+  enableDark();
+}
