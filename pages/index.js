@@ -16,6 +16,13 @@ import AreaCrew from "../public/AreaCrew.jpg";
 import CssReset from "../public/CssReset.jpg";
 import {useState} from "react";
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
