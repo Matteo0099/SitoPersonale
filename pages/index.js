@@ -16,13 +16,6 @@ import AreaCrew from "../public/AreaCrew.jpg";
 import CssReset from "../public/CssReset.jpg";
 import {useState} from "react";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -30,6 +23,7 @@ export default function Home() {
       <Head>
         <title>Matteo Manià | Web-designer</title>
         <meta name="description" content="Hi! I'm Matteo Manià, that's my website. you can contact me!" />
+        {/*<Image rel="icon" src={Logo} />*/}
       </Head>
 
       <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40'>    
