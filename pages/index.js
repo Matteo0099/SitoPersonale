@@ -23,7 +23,6 @@ export default function Home() {
       <Head>
         <title>Matteo Manià | Web-designer</title>
         <meta name="description" content="Hi! I'm Matteo Manià, that's my website. you can contact me!" />
-        <Image rel="icon" src={Logo} />
       </Head>
 
       <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40'>    
