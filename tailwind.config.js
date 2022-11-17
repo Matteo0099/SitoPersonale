@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
+        SourceSansPro: "Source Sans Pro",
       },
     },
   },
