@@ -7,7 +7,7 @@ import {
   AiFillMessage, 
 } from "react-icons/ai";
 import Image from "next/image";
-import Logo from "../public/favicon.ico";
+import Logo from "../public/fav.png";
 import Face from "../public/Face.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
@@ -23,10 +23,11 @@ export default function Home() {
       <Head>
         <title>Matteo Manià | Web-designer</title>
         <meta name="description" content="Hi! I'm Matteo Manià, that's my website. you can contact me!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 transition ease-in-out duration-200 font-SourceSansPro'>    
+      <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 transition ease-in-out duration-200 font-Raleway'>    
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <div className='relative rounded-full w-12 h-12 overflow-hidden'>
@@ -43,13 +44,11 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          
           <div className='text-center mx-auto pt-8 px-2 md:pt-32 md:p-6'>
-            <h2 className='text-4xl py-2 text-teal-600 font-semibold dark:text-teal-400 md:text-5xl'>Matteo Manià</h2>
+            <h2 className='text-4xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-5xl'>Matteo Manià</h2>
             <h3 className='text-xl py-2  dark:text-gray-200  md:text-2xl'>Developer & Designer</h3>
             <p className='text-base py-5 leading-8 text-gray-800  dark:text-teal-400 m:text-md'>I'm a student that love coding.</p>
           </div>
-
           <div className='text-5xl flex justify-center gap-10 md:gap-14 pt-6 px-2 md:pt-3 md:p-10 text-gray-600 dark:text-gray-400'>
             <a href="https://www.instagram.com/itz_matteomania/" className='hover:text-gray-700 dark:hover:text-gray-100'>
               <AiFillInstagram />
@@ -94,8 +93,7 @@ export default function Home() {
           </div>
         </section>
 
-
-        <section className='min-h-screen'>
+        <section className='min-h-screen pb-5 mb-5'>
           <div>
             <h3 className="text-4xl py-1 mt-5 pt-5 dark:text-gray-200 text-center font-bold">My services</h3>
           </div>
@@ -109,7 +107,7 @@ export default function Home() {
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="pt-4 pb-2 text-teal-600">Design Tools I Use</h4>
+              <h4 className="pt-4 pb-2 text-teal-600 font-semibold">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 italic">Photoshop</p>
               <p className="text-gray-800 py-1 italic">Illustrator</p>
               <p className="text-gray-800 py-1 italic">Figma</p>
@@ -124,7 +122,7 @@ export default function Home() {
                 Do you have an idea for your next great website? Let's make it a
                 reality.
               </p>
-              <h4 className="pt-4 pb-2 text-teal-600">Design Tools I Use</h4>
+              <h4 className="pt-4 pb-2 text-teal-600 font-semibold">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 italic">Photoshop</p>
               <p className="text-gray-800 py-1 italic">Illustrator</p>
               <p className="text-gray-800 py-1 italic">Figma</p>
@@ -137,7 +135,7 @@ export default function Home() {
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
               </p>
-              <h4 className="pt-4 pb-2 text-teal-600">Design Tools I Use</h4>
+              <h4 className="pt-4 pb-2 text-teal-600 font-semibold">Design Tools I Use</h4>
               <p className="text-gray-800 py-1 italic">Photoshop</p>
               <p className="text-gray-800 py-1 italic">Illustrator</p>
               <p className="text-gray-800 py-1 italic">Figma</p>
@@ -148,9 +146,9 @@ export default function Home() {
 
         <section className='min-h-screen flex flex-col mt-5 pt-5 pb-16 md:pb-24'>
           <div className='flex-1 mt-5 pt-5 flex-col justify-center mx-auto align-middle text-center container max-w-5xl'>
+          <h3 className='text-4xl py-1 mt-5 pt-5 text-black dark:text-gray-200 text-center font-bold'>Portfolio</h3>
             <div className='mx-auto bg-gradient-to-t from-white to-slate-50 rounded-lg shadow-lg p-6'>  
-              <h3 className='text-4xl py-1 mt-5 pt-5 dark:text-gray-200 text-center font-bold'>Portfolio</h3>
-              <p className="text-base md:text-lg md:leading-8 pt-6 pb-2 leading-8 text-gray-800 dark:text-gray-200 text-center">
+              <p className="text-base md:text-lg md:leading-8 pt-6 pb-2 leading-8 text-gray-800 text-center">
                 Since the beginning of my journey as a freelance designer and
                 developer, I've done remote work for
                 <span className="text-teal-500"> agencies </span>
@@ -162,8 +160,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          <div className="flex flex-col gap-10 py-28 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 py-32 md:py-24 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 shadow-2xl rounded-lg">
               <a href="https://areacrewmonfalcone.it">
                 <Image
