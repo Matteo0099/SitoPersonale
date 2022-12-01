@@ -2,18 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './font.css';
 
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
 }
+
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Satoshi', sans-serif;
   }  
   
   body {
