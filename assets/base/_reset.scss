@@ -35,17 +35,14 @@ q {
  */
 @mixin disableAnimation {
     transform: none !important;
-
     transition: none !important;
     transition-property: none !important;
     transition-duration: 0s !important;
     transition-delay: 0s !important;
-
     animation: none !important;
     animation-duration: 0s !important;
     animation-delay: 0s !important;
     animation-iteration-count: 1 !important;
-
     scroll-behavior: auto !important;
 }
 
@@ -53,17 +50,13 @@ q {
  * Disable animation depends on Browser or Operation System configuration
  */
 @mixin acDisableAnimation {
-    @media (prefers-reduced-motion: reduce) {
-        @include disableAnimation;
-    }
+    @media (prefers-reduced-motion: reduce) { @include disableAnimation; }
 }
 
 /**
  * Accessability. Black and White Mode
  */
-@mixin acModeBW {
-    filter: grayscale(100%);
-}
+@mixin acModeBW { filter: grayscale(100%); }
 
 /**
  * Accessability. Inverse Mode
@@ -83,9 +76,7 @@ q {
         appearance: none;
     }
 
-    ::-moz-meter-bar {
-        -moz-appearance: none;
-    }
+    ::-moz-meter-bar { -moz-appearance: none; }
 
     :-moz-meter-optimum::-moz-meter-bar,
     :-moz-meter-sub-optimum::-moz-meter-bar,
@@ -126,10 +117,8 @@ q {
     }
 
     /* Polyfill */
-    progress[role]:after {
-        background-image: none;
-        /* removes default background from polyfill */
-    }
+    /* removes default background from polyfill */
+    progress[role]:after { background-image: none; }
 
     /* Ensure fallback text doesn't appear in polyfill */
     progress[role] strong {
@@ -179,8 +168,7 @@ a:not([class]) {
  * http://meyerweb.com/eric/tools/css/reset/
  * v2.0-modified | 20110126
  * License: none (public domain)
- */
-
+*/
 html,
 body,
 div,
@@ -271,9 +259,7 @@ video {
 }
 
 /* make sure to set some focus styles for accessibility */
-:focus {
-    outline: 0;
-}
+:focus { outline: 0; }
 
 /* HTML5 display-role reset for older browsers */
 main,
@@ -347,9 +333,7 @@ textarea {
 }
 
 input {
-    &:focus {
-        outline: none;
-    }
+    &:focus { outline: none; }
 }
 
 /**
@@ -376,17 +360,13 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  */
 
-[hidden] {
-    display: none;
-}
+[hidden] { display: none; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
-a:hover {
-    outline: none;
-}
+a:hover { outline: none; }
 
 /* Make images easier to work with */
 img {
@@ -397,9 +377,7 @@ img {
 }
 
 /* Make pictures easier to work with */
-picture {
-    display: inline-block;
-}
+picture { display: inline-block; }
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -407,9 +385,7 @@ picture {
  */
 
 button,
-input {
-    line-height: normal;
-}
+input { line-height: normal; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -419,9 +395,7 @@ input {
  */
 
 button,
-select {
-    text-transform: none;
-}
+select { text-transform: none; }
 
 button,
 html input[type="button"],
@@ -439,21 +413,15 @@ input[type="submit"] {
  */
 
 button[disabled],
-html input[disabled] {
-    cursor: default;
-}
+html input[disabled] { cursor: default; }
 
-[disabled] {
-    pointer-events: none;
-}
+[disabled] { pointer-events: none; }
 
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
  */
 input[type="checkbox"],
-input[type="radio"] {
-    padding: 0;
-}
+input[type="radio"] { padding: 0; }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -715,17 +683,12 @@ progress {
 /*
  * Add the correct display in all browsers.
  */
-summary {
-    display: list-item;
-}
+summary { display: list-item; }
 
 /*
  * Misc
  * ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
-template {
-    display: none;
-}
+template { display: none; }
