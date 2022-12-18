@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" id="one">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Manià | aka:zippo107 | developer | web-design </title>
+    <meta name="description" content="Hi! I'm a web-developer, I love coding and do sport.">
+    <meta name="keywords" content="Matteo Manià, personal website, portfolio, webdeveloper">
+    <link rel="icon" href="./public/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!--preloader-->
+    <div class="full__page" onload="animate();">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="circle-1 circle">
+                    <div class="circle-2 circle">
+                        <div class="circle-3 circle">
+                            <div class="circle-4 circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav__bar">
+        <div class="nav__container">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <!--class only for the first-->
+                    <a href="#one" class="nav__link" alt="button" role="button">
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#two" alt="button" role="button">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#three" alt="button" role="button">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="button__darkMode">
+                <button onclick="toggleMode();" id="darkmode-button" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page 1 -->
+    <div class="page landing__section" id="one" role="navigation">
+        <section>
+            <div class="about__section">
+                <div class="img__container">
+                    <img src="./public/Face.png" alt="">
+                </div>
+                <div class="text__container">
+                    <h1 class="title__container">
+                        Matteo Manià
+                    </h1>
+                    <p class="paragraph__container">
+                        Hi! my name is Matteo, and I'm a young developer. <br>
+                        I started design and develop websites in 2020.<br>
+                        My passion about coding is always growing, and <br>
+                        creating content on the web has become my strong point, <br>
+                        placing that one step at school obviously :)
+                    </p>
+                    <div class="button__container">
+                        <a href="" class="btn btn-5">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="copy__par">Matteo Manià | 2022 &copy; all rights reserved</p>
+    </div>
+
+    <!-- page 2 -->
+    <div class="page project__section" id="two">
+        <div class="container__center">
+            <h1 class="title">
+                My projects
+            </h1>
+        </div>
+        <!--projects-->
+        <section class="blog-post-teasers">
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/AreaCrew.jpg" alt="" />
+                    <figcaption>
+                        <h1>
+                            <a href="https://www.areacrewmonfalcone.it" target="_blank">AreaCrew-BMX website</a>
+                        </h1>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/CssReset.jpg" alt="" />
+                    <figcaption>
+                        <h1>
+                            <a href="https://www.cssreset.tk" target="_blank">A custom CSS-Reset</a>
+                        </h1>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/PcConfig.jpg" alt="">
+                    <figcaption>
+                        <h1>
+                            <a href="https://pcs-configurator.netlify.app/" target="_blank">Configurator for PC</a>
+                        </h1>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/Typer.jpg" alt="">
+                    <figcaption>
+                        <h1><a href="https://typer-racer.netlify.app/" target="_blank">Typer racer</a></h1>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/Xjxstudio.jpg" alt="">
+                    <figcaption>
+                        <h1><a href="https://www.xjxstudios.tk/" target="_blank">Videomaker Friend' websites</a>
+                        </h1>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="blog-post-teaser">
+                <figure>
+                    <img src="./public/PortfolioCard.jpg" alt="">
+                    <figcaption>
+                        <h1><a href="https://matteo0099.github.io/Card/" target="_blank">Minimal portfolio card</a>
+                        </h1>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        <footer>
+            <p class="copy__par">Matteo Manià | 2022 &copy; all rights reserved</p>
+        </footer>
+    </div>
+
+    <!-- page 3 -->
+    <div class="page contact__section" id="three">
+        <section class="contact__section">
+            <div class="container__footer">
+                <div class="paragraph__footer">
+                    <h1>Contact</h1>
+                    <p>You can find me on these social networks!</p>
+                </div>
+                <div class="social__list">
+                    <ul class="list">
+                        <li class="list__item" role="button">
+                            <a href="https://www.instagram.com/itz_matteomania/" target="_blank" alt="social"
+                                title="Instagram" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item" role="button">
+                            <a href="https://discord.com/users/676456013326581782" target="_blank" alt="social"
+                                title="Discord" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-discord" width="36" height="36"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="9" cy="12" r="1"></circle>
+                                    <circle cx="15" cy="12" r="1"></circle>
+                                    <path d="M7.5 7.5c3.5 -1 5.5 -1 9 0"></path>
+                                    <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
+                                    <path
+                                        d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-1 2.5">
+                                    </path>
+                                    <path
+                                        d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l1 2.5">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item" role="button">
+                            <a href="https://www.reddit.com/user/matty0507" target="_blank" alt="social" title="Reddit"
+                                type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-reddit" width="36" height="36"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z">
+                                    </path>
+                                    <path d="M12 8l1 -5l6 1"></path>
+                                    <circle cx="19" cy="4" r="1"></circle>
+                                    <circle cx="9" cy="13" r=".5" fill="currentColor"></circle>
+                                    <circle cx="15" cy="13" r=".5" fill="currentColor"></circle>
+                                    <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item" role="button">
+                            <a href="https://github.com/Matteo0099" target="_blank" alt="social" title="Github"
+                                type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-github" width="36" height="36"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mail__container">
+                    <div class="button__mail">
+                        <a href="mailto:matteomania09@gmail.com" role="button" class="link__mail btn btn-5">
+                            <button class="link__button first" type="button">
+                                <span>
+                                    Send an
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail"
+                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                        <polyline points="3 7 12 13 21 7"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="copy__par">Matteo Manià | 2022 &copy; all rights reserved</p>
+        </footer>
+    </div>
+    <script src="./src/script.js" defer></script>
+</body>
+</html>
