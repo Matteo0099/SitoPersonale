@@ -1,8 +1,9 @@
 //open nav
-//toggle
+//toggle 
 function openNav() {
 	console.log("open nav")
 	document.getElementById("nav-page").classList.toggle("visible")
+    console.log("close nav")
 	document.getElementById("nav").classList.toggle("invisible")
 	document.getElementById("body").classList.toggle("no-overflow")
 }
@@ -10,7 +11,7 @@ function openNav() {
 /**
  * preloader 
 **/
-/*
+
 var loader = document.querySelector('.loader-wrap');
 var loader__container = document.querySelector('.full__page');
 var loadingscreen = document.querySelector('.loader');
@@ -34,7 +35,7 @@ function animate() {
         clearInterval(TotalLoading);
         console.log("loaded!");
     }
-}*/
+}
 
 /**
  * toggle Dark-mode

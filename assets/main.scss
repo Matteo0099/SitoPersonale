@@ -9,6 +9,7 @@
 @import "./components/contact_section";
 @import "./components/footer";
 @import "./components/scroll-bar";
+@import "./components/pre-loader";
 
 html,
 body {
@@ -19,6 +20,7 @@ body {
     line-height: 150%;
     transition: 125ms ease-out;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 body.no-overflow {
