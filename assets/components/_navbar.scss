@@ -1,0 +1,330 @@
+/**************  navbar  *************/
+.center.nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto !important;
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    background: var(--bg-graySuperLight);
+    // padding: 0 100px 0 100px !important;
+    position: fixed;
+    z-index: 3;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    nav {
+        background-color: var(--bg-graySuperLight);
+        backdrop-filter: blur(6px);
+    }
+}
+
+nav .inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid var(--gradient-1-blck);
+}
+
+nav img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+nav .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50px;
+    height: max-content;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+nav .hamburger .line {
+    pointer-events: all;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-1-blck);
+}
+
+.nav-page {
+    background: var(--gradient-2-gray);
+    color: var(--text-primary) !important;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    opacity: 1;
+}
+
+.nav-page.visible {
+    display: flex;
+}
+
+nav.invisible {
+    display: none;
+}
+
+button {
+    transition: all 1s ease;
+    border: none;
+    background: none;
+}
+
+.nav-page nav .inner,
+.nav-page footer .inner {
+    border-color: var(--gradient-1-blck);
+}
+
+.nav-page footer .inner .message,
+.nav-page footer .inner .social-media a > svg path,
+.nav-page footer .inner .social-media ion-icon {
+    color: var(--gradient-1-blck);
+}
+
+.nav-page footer .inner .social-media a > svg:hover path,
+.nav-page footer .inner .social-media ion-icon:hover {
+    color: var(--text-primary);
+}
+
+.nav-page nav {
+    transition: all 0.5s ease;
+    background: transparent;
+    position: revert;
+    // padding-top: 32px !important;
+}
+
+.nav-page nav .hamburger .line {
+    background: var(--gradient-1-blck);
+    position: relative;
+}
+
+.nav-page nav .hamburger .line.top {
+    transform: rotate(45deg);
+    top: 6px;
+}
+
+.nav-page nav .hamburger .line.bottom {
+    transform: rotate(-45deg);
+    bottom: 6px;
+}
+
+.nav-page .links {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 6px 118px;
+    margin: 150px auto 0 auto;
+}
+
+@media screen and (max-height: 915px) {
+    .nav-page .links {
+        margin: 15px auto 0 auto !important;
+        padding: 3px 6px !important;
+    }
+}
+
+.nav-page .links a {
+    max-width: fit-content;
+    font-size: 56px !important;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*styling nav link*/
+.link {
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--text-primary);
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: "";
+    /* show by default */
+}
+
+.link--iocaste {
+    font-family: lust-fine, sans-serif;
+    overflow: hidden;
+    padding: 7px 0;
+}
+
+.link__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.link__graphic--slide {
+    top: 2px;
+    stroke-width: 2px;
+    transition: transform 0.7s;
+    transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.link:hover .link__graphic--slide {
+    transform: translate3d(-66.6%, 0, 0);
+}
+
+.link__graphic--stroke path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.link:hover .link__graphic--stroke path {
+    stroke-dashoffset: 0;
+}
+
+.link__graphic--arc {
+    top: 73%;
+    left: -23%;
+}
+
+.link__graphic--arc path {
+    transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link:hover .link__graphic--arc path {
+    transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+    transition-duration: 0.3s;
+}
+
+.link__graphic--scribble {
+    top: 100%;
+}
+
+.link__graphic--scribble path {
+    transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link:hover .link__graphic--scribble path {
+    transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+    transition-duration: 0.3s;
+}
+/** finish style link **/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px 20px;
+    margin: auto !important;
+}
+
+footer .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--background-color);
+}
+
+footer .inner .message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 1px;
+}
+
+footer .inner .social-media {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 11px;
+}
+
+footer .inner .social-media > svg,
+footer .inner .social-media svg {
+    width: 48px;
+    height: 48px;
+    color: var(--text-primary);
+    // outline: 2px solid var(--text-primary);
+    // outline-offset: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--text-primary);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    padding: 0;
+}
+
+footer .inner a {
+    border-radius: 100%;
+}
+
+footer .inner .social-media svg {
+    padding: 4px;
+}
+
+footer .inner .social-media a:hover svg {
+    background-color: #000;
+    color: #fff;
+    stroke: #fff;
+    border: 2px solid #000;
+}
+
+footer .inner .social-media a:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 767px) {
+    nav,
+    .nav-page nav {
+        margin: 0 !important;
+    }
+    nav,
+    .nav-page nav {
+        padding: 0 12px !important;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .nav-page .links {
+        gap: 5px !important;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .nav-page .links {
+        gap: 1px !important;
+        padding-left: 35px !important;
+        padding-bottom: -20px;
+    }
+    .nav-page .links a {
+        font-size: 30px !important;
+    }
+}

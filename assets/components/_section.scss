@@ -1,0 +1,58 @@
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    margin-top: 200px;
+    margin: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 1024px;
+}
+
+section .container {
+    width: 100%;
+    max-width: 90%;
+    margin-left: auto;
+}
+
+//first
+section.about {
+    margin-top: 210px;
+    min-height: 50vh;
+}
+
+//second
+section.about__me {
+    margin-top: 150px;
+    min-height: 50vh;
+}
+
+//third
+section.project__sect {
+    margin-top: 150px;
+    min-height: 75vh;
+}
+
+//fourth
+section.contact__me {
+    margin-top: 200px;
+    min-height: 50vh;
+}
+
+@media screen and (max-width: 767px) {
+    section .container {
+        width: 100%;
+        max-width: 100%;
+        margin-right: auto;
+    }
+    section.about {
+        margin-top: 125px;
+    }
+    section.about__me,
+    section.project__sect {
+        margin-top: 175px;
+    }
+    section.contact__me {
+        margin-bottom: 125px;
+    }
+}
