@@ -10,6 +10,7 @@ function openNav() {
 
 /**
  * preloader 
+ * 4 cicle loader animation 
 **/
 
 var loader = document.querySelector('.loader-wrap');
@@ -17,15 +18,15 @@ var loader__container = document.querySelector('.full__page');
 var loadingscreen = document.querySelector('.loader');
 var TotalLoading = setInterval(animate, 100);  //interval
 //about 3 seconds  3+3 < 99
-var count = 3;   //initial
-var costantGrowth = 3;
-const max = 99; //max count
+var count = 5;   //initial
+var costantGrowth = 5;
+const max = 100; //max count
 
 console.log("loading...");
 
 function animate() {
     count += costantGrowth;
-    //console.log(count);
+    console.log(count);
     //stop count
     if (count == max || count > max) {
         loader.style.display = "none";
@@ -40,7 +41,7 @@ function animate() {
 /**
  * toggle Dark-mode
 */
-
+/*
 window.onload = function () {
     setMode();
 };
@@ -71,3 +72,4 @@ function toggleMode() {
         // btn.innerHTML = 'Light mode';
     }
 }
+*/
