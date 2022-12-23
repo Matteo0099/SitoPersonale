@@ -128,10 +128,22 @@ section.contact__me .links {
             transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
         }
         &:hover {
-            --spacing: 4px;
+            --spacing: 2px;
             --stroke: var(--line-active);
             --stroke-delay: 0.1s;
             --offset: 180px;
         }
+    }
+}
+
+/** animation padding contact(footer) **/
+@media (min-width: 767px) {
+    h1.contact__title {
+        padding-left: 0 !important;
+    }
+}
+@media (max-width: 767px) {
+    h1.contact__title {
+        padding-left: 1rem !important;
     }
 }
