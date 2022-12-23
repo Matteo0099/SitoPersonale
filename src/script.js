@@ -41,11 +41,6 @@ function animate() {
 /**
  * Parallax Image scroll
 */
-<<<<<<< Updated upstream
-/*
-window.onload = function () {
-    setMode();
-=======
 let image_parallax = document.querySelectorAll('.image-parallax');
 let hero_parallax = document.querySelectorAll('.about .container');
 let contactTitle_parallax = document.querySelectorAll('.contact__title');
@@ -78,6 +73,11 @@ window.addEventListener('scroll', function () {
  * preference user theme browser
 */
 // The default settings
+
+window.onload = function () {
+    setMode();
+}
+
 const swiperSettings = {
     loop: true,
     navigation: {
@@ -87,33 +87,14 @@ const swiperSettings = {
     pagination: {
         el: ".swiper-pagination"
     }
->>>>>>> Stashed changes
 };
 
-// Grab a reference to the media query.
-const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+function setMode() {
+    // Grab a reference to the media query.
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-// if the user asked for no anmiations:
-if (!mediaQuery || mediaQuery.matches) {
-    swiperSettings.effect = "fade";
-    swiperSettings.speed = 0;
-    swiperSettings.autoplay = false;
-} else {
-    swiperSettings.effect = "slide";
-    swiperSettings.speed = 300;
-    swiperSettings.autoplay = { delay: 2500 };
-}
-
-// Initialize the slider with the correct settings
-let swiper = new Swiper(".swiper-container", swiperSettings);
-
-// Listen for changes in the media query.
-mediaQuery.addEventListener("change", () => {
-    // Unset the slider instance.
-    swiper.destroy();
-
-    // if the user asked for no anmiations.
-    if (mediaQuery.matches) {
+    // if the user asked for no anmiations:
+    if (!mediaQuery || mediaQuery.matches) {
         swiperSettings.effect = "fade";
         swiperSettings.speed = 0;
         swiperSettings.autoplay = false;
@@ -123,27 +104,43 @@ mediaQuery.addEventListener("change", () => {
         swiperSettings.autoplay = { delay: 2500 };
     }
 
-    // re-initialize the slider with the correct settings.
-    swiper = new Swiper(".swiper-container", swiperSettings);
-});
+    // Initialize the slider with the correct settings
+    let swiper = new Swiper(".swiper-container", swiperSettings);
 
-// double check 
-// Check if the media query matches or is not available.
-if (!mediaQuery || mediaQuery.matches) {
-    doSomethingWithoutAnimation();
-} else {
-    doSomethingWithAnimation();
-}
-<<<<<<< Updated upstream
-*/
-=======
+    // Listen for changes in the media query.
+    mediaQuery.addEventListener("change", () => {
+        // Unset the slider instance.
+        swiper.destroy();
 
-// Ads an event listener to check for changes in the media query's value.
-mediaQuery.addEventListener("change", () => {
-    if (mediaQuery.matches) {
+        // if the user asked for no anmiations.
+        if (mediaQuery.matches) {
+            swiperSettings.effect = "fade";
+            swiperSettings.speed = 0;
+            swiperSettings.autoplay = false;
+        } else {
+            swiperSettings.effect = "slide";
+            swiperSettings.speed = 300;
+            swiperSettings.autoplay = { delay: 2500 };
+        }
+
+        // re-initialize the slider with the correct settings.
+        swiper = new Swiper(".swiper-container", swiperSettings);
+    });
+
+    // double check 
+    // Check if the media query matches or is not available.
+    if (!mediaQuery || mediaQuery.matches) {
         doSomethingWithoutAnimation();
     } else {
         doSomethingWithAnimation();
     }
-});
->>>>>>> Stashed changes
+
+    // Ads an event listener to check for changes in the media query's value.
+    mediaQuery.addEventListener("change", () => {
+        if (mediaQuery.matches) {
+            doSomethingWithoutAnimation();
+        } else {
+            doSomethingWithAnimation();
+        }
+    });
+}
