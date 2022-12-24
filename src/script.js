@@ -12,7 +12,6 @@ function openNav() {
  * preloader 
  * 4 cicle loader animation 
 **/
-
 var loader = document.querySelector('.loader-wrap');
 var loader__container = document.querySelector('.full__page');
 var loadingscreen = document.querySelector('.loader');
@@ -43,7 +42,6 @@ function animate() {
 */
 let image_parallax = document.querySelectorAll('.image-parallax');
 let hero_parallax = document.querySelectorAll('.about .container');
-let contactTitle_parallax = document.querySelectorAll('.contact__title');
 
 //scroll on page
 window.addEventListener('scroll', function () {
@@ -61,86 +59,4 @@ window.addEventListener('scroll', function () {
             item.style.transform = "translateY(" + elementToMove.top * .1 * 0.625 + "px)";
         }
     });
-    contactTitle_parallax.forEach((item) => {
-        let elementToMove = item.getBoundingClientRect();
-        if (win_pos > elementToMove.top) {
-            item.style.transform = "translateY(" + elementToMove.top * .1 * 0.875 + "px)";
-        }
-    });
 });
-
-/**
- * preference user theme browser
-*/
-// The default settings
-
-window.onload = function () {
-    setMode();
-}
-
-const swiperSettings = {
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-        el: ".swiper-pagination"
-    }
-};
-
-function setMode() {
-    // Grab a reference to the media query.
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-    // if the user asked for no anmiations:
-    if (!mediaQuery || mediaQuery.matches) {
-        swiperSettings.effect = "fade";
-        swiperSettings.speed = 0;
-        swiperSettings.autoplay = false;
-    } else {
-        swiperSettings.effect = "slide";
-        swiperSettings.speed = 300;
-        swiperSettings.autoplay = { delay: 2500 };
-    }
-
-    // Initialize the slider with the correct settings
-    let swiper = new Swiper(".swiper-container", swiperSettings);
-
-    // Listen for changes in the media query.
-    mediaQuery.addEventListener("change", () => {
-        // Unset the slider instance.
-        swiper.destroy();
-
-        // if the user asked for no anmiations.
-        if (mediaQuery.matches) {
-            swiperSettings.effect = "fade";
-            swiperSettings.speed = 0;
-            swiperSettings.autoplay = false;
-        } else {
-            swiperSettings.effect = "slide";
-            swiperSettings.speed = 300;
-            swiperSettings.autoplay = { delay: 2500 };
-        }
-
-        // re-initialize the slider with the correct settings.
-        swiper = new Swiper(".swiper-container", swiperSettings);
-    });
-
-    // double check 
-    // Check if the media query matches or is not available.
-    if (!mediaQuery || mediaQuery.matches) {
-        doSomethingWithoutAnimation();
-    } else {
-        doSomethingWithAnimation();
-    }
-
-    // Ads an event listener to check for changes in the media query's value.
-    mediaQuery.addEventListener("change", () => {
-        if (mediaQuery.matches) {
-            doSomethingWithoutAnimation();
-        } else {
-            doSomethingWithAnimation();
-        }
-    });
-}

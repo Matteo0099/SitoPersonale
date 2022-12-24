@@ -6,14 +6,16 @@
     width: 100%;
     min-height: 100px;
     position: relative;
+    background: #ff0066;
 }
 
 nav {
     display: flex;
-    max-width: 1024px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto !important;
-    background: var(--bg-graySuperLight);
+    background: transparent;
     // padding: 0 100px 0 100px !important;
     position: fixed;
     z-index: 3;
@@ -21,19 +23,19 @@ nav {
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     nav {
-        background-color: var(--bg-graySuperLight);
         backdrop-filter: blur(6px);
     }
 }
 
 nav .inner {
+    margin: 0 4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
-    border-bottom: 1px solid var(--gradient-1-blck);
+    border-bottom: 1px solid var(--gradient-3-light) !important;
 }
 
 nav img {
@@ -56,12 +58,12 @@ nav .hamburger .line {
     pointer-events: all;
     width: 100%;
     height: 3px;
-    background: var(--gradient-1-blck);
+    background: var(--gradient-3-light);
 }
 
 .nav-page {
-    background: var(--gradient-2-gray);
-    color: var(--text-primary) !important;
+    background: #202731;
+    color: var(--gradient-3-light) !important;
     width: 100%;
     height: 100%;
     display: none;
@@ -71,6 +73,9 @@ nav .hamburger .line {
     position: fixed;
     z-index: 5;
     opacity: 1;
+    .links > *, .footer > * {
+        color: var(--gradient-3-light) !important;
+    }
 }
 
 .nav-page.visible {
@@ -111,7 +116,7 @@ button {
 }
 
 .nav-page nav .hamburger .line {
-    background: var(--gradient-1-blck);
+    background: var(--gradient-3-light);
     position: relative;
 }
 
@@ -185,7 +190,8 @@ button {
     left: 0;
     pointer-events: none;
     fill: none;
-    stroke: #000;
+    // stroke: #000;
+    stroke: #ffff;
     stroke-width: 1px;
 }
 
@@ -272,11 +278,12 @@ footer .inner .social-media > svg,
 footer .inner .social-media svg {
     width: 48px;
     height: 48px;
-    color: var(--text-primary);
+    color: var(--gradient-3-light);
+    stroke: var(--gradient-3-light);
     // outline: 2px solid var(--text-primary);
     // outline-offset: 8px;
     border-radius: 50%;
-    border: 2px solid var(--text-primary);
+    border: 2px solid var(--gradient-3-light);
     cursor: pointer;
     transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
     padding: 0;
@@ -309,6 +316,15 @@ footer .inner .social-media a:hover {
     nav,
     .nav-page nav {
         padding: 0 12px !important;
+    }
+    nav .inner {
+        margin: 0;
+    }
+    .nav-page .links {
+        gap: 32px !important;
+        .link--iocaste {
+            padding: 10px 0;
+        }
     }
 }
 

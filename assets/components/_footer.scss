@@ -4,11 +4,16 @@ footer:not(.nav-page footer){
 }
 
 main footer {
+    padding: 25px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6px;
     border-top: 2px solid var(--gradient-1-blck);
+    background: #202731;
+}
+
+footer > *:not(path) {
+    color: var(--gradient-3-light) !important;
 }
 
 footer .inner {
@@ -16,7 +21,7 @@ footer .inner {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    vertical-align: middle;
+    margin: 0 auto;
     padding-top: 20px;
     //border-top: 1px solid var(--gradient-2-gray);
 }
@@ -41,7 +46,6 @@ footer .inner .social-media {
 footer .inner .social-media > svg, footer .inner .social-media ion-icon {
     width: 40px;
     height: 40px;
-    color: var(--gradient-1-blck);
     cursor: pointer;
 }
 
@@ -50,12 +54,12 @@ footer .inner .social-media > svg, footer .inner .social-media ion-icon {
 // }
 
 footer .inner .social-media ion-icon:hover, footer .inner .social-media a > svg:hover path {
-    color: var(--gradient-1-blck);
+    color: var(--gradient-3-light);
 }
 
 footer .inner {
     a {
-        color: var(--gradient-1-blck);
+        color: var(--gradient-3-light);
         text-decoration: none;
         font-size: 28px;
         width: fit-content;
@@ -67,10 +71,14 @@ footer .inner {
     }
 }
 
+footer .social-media svg:not(.nav-page svg){
+    color: var(--gradient-3-light);
+    border: 2px solid var(--gradient-3-light);
+}
+
 @media screen and (max-width: 767px) {
     footer {
         margin: 0 !important;
-        padding: 0 !important;
     }
     footer .inner .message {
         display: none;
@@ -87,7 +95,7 @@ footer .inner {
 section.contact__me .links {
     display: flex;
     flex-direction: column;
-    margin-top: 4.5rem;
+    padding: 4rem 0;
     gap: 52px;
     font-size: 23px;
 }
@@ -95,7 +103,7 @@ section.contact__me .links {
 .contact__title {
     margin: 0;
     font-size: clamp(18px, 6vw, 28px) !important;
-    color: #2b3044 !important;
+    color: var(--gradient-3-light) !important;
 }
 
 .contact__title.hello {
