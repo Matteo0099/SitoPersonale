@@ -12,14 +12,15 @@ function openNav() {
  * preloader 
  * 4 cicle loader animation 
 **/
-var loader = document.querySelector('.loader-wrap');
-var loader__container = document.querySelector('.full__page');
-var loadingscreen = document.querySelector('.loader');
+var loader = document.querySelector('.preloader');
+var loader__container = document.querySelector('.holder');
+var loadingscreen = document.querySelector('.full__page');
 var TotalLoading = setInterval(animate, 100);  //interval
 //about 3 seconds  3+3 < 99
-var count = 5;   //initial
-var costantGrowth = 5;
-const max = 100; //max count
+var count = 1;   //initial
+var costantGrowth = 0.1;
+const max = 4; //max count
+//if 1->4 with 0.1 (1 sec = 0.1*10) = 4(4sec)
 
 console.log("loading...");
 
