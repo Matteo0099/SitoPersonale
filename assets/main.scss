@@ -1,7 +1,6 @@
 /* font */
 @import "../css/font.css";
 /*the first file with all settings and main wrapper*/
-//this
 /*reset, global and utilities*/
 @import "./base/reset";
 @import "./base/root";
@@ -24,6 +23,8 @@ body {
     transition: 125ms ease-out;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 body.no-overflow {
@@ -41,7 +42,6 @@ main {
 
 .wrapper {
     width: 100%;
-    // max-width: 1024px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,6 @@ h5 {
     max-width: fit-content;
     margin: 0;
     margin-left: 1rem;
-    // color: var(--text);
     a {
         display: inline-block;
         position: relative;
@@ -117,9 +116,6 @@ h5 {
 
 .hello:not(.hello.first) {
     max-width: fit-content;
-    // margin: 0;
-    // margin-left: 1rem;
-    // color: var(--text);
     a {
         display: inline-block;
         position: relative;
@@ -152,7 +148,6 @@ h5 {
 }
 
 .hello:hover {
-    // color: #2b3044 !important;
     opacity: .8;
 }
 
@@ -201,7 +196,6 @@ h5 {
     padding-bottom: 2rem;
     margin: 0;
     font-size: clamp(35px, 5vw, 250px);
-    // color: rgba(0, 0, 0, 0.07);
 }
 
 .container > h4 {
