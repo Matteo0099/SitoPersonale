@@ -1,3 +1,46 @@
+let outline = document.querySelector('.outline');
+let cursor = document.querySelector('.cursor');
+let links = document.querySelectorAll('a');
+let btn = document.querySelectorAll('button');
+
+document.addEventListener('mousemove', function (e) {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    outline.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`; //alt96
+    cursor.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
+
+    //ciclo sui link per l'effetto hover
+    links.forEach((link) => {
+        link.addEventListener("mouseover", function () {
+            outline.classList.add('hover-crs');
+            cursor.classList.add('hover-crs');
+        });
+        link.addEventListener("mouseleave", function () {
+            outline.classList.remove('hover-crs');
+            cursor.classList.remove('hover-crs');
+        });
+        if (e.target !== this) {
+            e.stopPropagation();
+            localStorage.clear();
+        }
+    });
+    btn.forEach((button) => {
+        button.addEventListener("mouseover", function () {
+            outline.classList.add('hover-crs');
+            cursor.classList.add('hover-crs');
+        });
+        button.addEventListener("mouseleave", function () {
+            outline.classList.remove('hover-crs');
+            cursor.classList.remove('hover-crs');
+        });
+        if (e.target !== this) {
+            e.stopPropagation();
+            localStorage.clear();
+        }
+    });
+});
+
 //open nav
 //toggle 
 function openNav() {

@@ -174,13 +174,13 @@ button {
 }
 
 .link::before {
-    content: "";     /* show by default */
+    content: "";     
 }
 
 .link--iocaste {
-    font-family: lust-fine, sans-serif;
+    font-family: inherit;
     overflow: hidden;
-    padding: 7px 0;
+    padding: 10px 0;
 }
 
 .link__graphic {

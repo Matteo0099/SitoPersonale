@@ -40,6 +40,58 @@ main {
     flex-direction: column;
 }
 
+/** cursor **/
+@media only screen and (min-width: 1024px) {
+    .outline {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid #000 !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate(-64px, -64px);
+        pointer-events: none;
+    }
+
+    .cursor {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        transform: translate(-8px, -8px);
+        pointer-events: none;
+        opacity: 1;
+        visibility: inherit;
+        display: block;
+        user-select: none;
+            -webkit-user-select: none;
+                -moz-user-select: none;
+                    -ms-user-select: none;
+    }
+
+    .outline.hover-crs {
+        mix-blend-mode: difference;
+        background: rgb(119, 119, 119);
+        border-color: rgb(119, 119, 119);
+        width: 100px;
+        height: 100px;
+        opacity: 0.4;
+    }
+
+    .cursor.hover {
+        width: 0px;
+        height: 0px;
+    }
+    /** end cursor **/
+}
+
 .wrapper {
     width: 100%;
     min-height: 100vh;
@@ -148,7 +200,7 @@ h5 {
 }
 
 .hello:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .mobile {
@@ -179,7 +231,7 @@ h5 {
 
 .title {
     font-weight: 500;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .text {
@@ -285,12 +337,24 @@ h5 {
 }
 
 @keyframes shaker {
-	0% { transform:  rotate(0deg) translate(1px, 1px) }
-	20% { transform: rotate(-0.375deg) translate(-1px, -2px) }
-	40% { transform: rotate(0deg) translate(-2px, 0px); }
-	60% { transform: rotate(0.375deg) translate(2px, 0px); }
-	80% { transform: rotate(0deg) translate(-1px, 2px); }
-	100% { transform: rotate(-0.375deg) translate(1px, 1px); }
+    0% {
+        transform: rotate(0deg) translate(1px, 1px);
+    }
+    20% {
+        transform: rotate(-0.375deg) translate(-1px, -2px);
+    }
+    40% {
+        transform: rotate(0deg) translate(-2px, 0px);
+    }
+    60% {
+        transform: rotate(0.375deg) translate(2px, 0px);
+    }
+    80% {
+        transform: rotate(0deg) translate(-1px, 2px);
+    }
+    100% {
+        transform: rotate(-0.375deg) translate(1px, 1px);
+    }
 }
 
 @media (max-width: 767px) {
