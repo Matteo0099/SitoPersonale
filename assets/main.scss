@@ -10,7 +10,6 @@
 @import "./components/contact_section";
 @import "./components/footer";
 @import "./components/scroll-bar";
-@import "./components/pre-loader";
 
 html,
 body {
@@ -18,13 +17,16 @@ body {
     color: var(--gradient-3-light);
     min-height: 100vh;
     max-width: 100%;
-    font-size: 20px;
-    line-height: 150%;
+    line-height: 150%;  /*1.5*/
     transition: 125ms ease-out;
-    -webkit-font-smoothing: antialiased;
+        -webkit-transition: 125ms ease-out;
+            -moz-transition: 125ms ease-out;
+    font-smooth:antialiased;
+        -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
-    font-size: 1rem;
+    font-size: 1rem; /*=16px*/
     font-weight: 500;
+    color-scheme: dark; //dark mode default
 }
 
 body.no-overflow {
@@ -51,8 +53,12 @@ main {
         top: 0;
         left: 0;
         z-index: 999999;
-        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 270ms cubic-bezier(0.15, 0.5, 0.35, 1) 0ms;
+            -webkit-transition: all 270ms cubic-bezier(0.15, 0.5, 0.35, 1) 0ms;
+                -moz-transition: all 270ms cubic-bezier(0.15, 0.5, 0.35, 1) 0ms;
         transform: translate(-64px, -64px);
+            -webkit-transform: translate(-64px, -64px);
+                -moz-transform: translate(-64px, -64px);
         pointer-events: none;
     }
 
@@ -66,9 +72,13 @@ main {
         left: 0;
         z-index: 999999;
         transform: translate(-8px, -8px);
+            -webkit-transform: translate(-8px, -8px);
+                -moz-transform: translate(-8px, -8px);
         pointer-events: none;
         opacity: 1;
         visibility: inherit;
+        backface-visibility: inherit;
+            -webkit-backface-visibility: inherit;
         display: block;
         user-select: none;
             -webkit-user-select: none;
@@ -77,9 +87,11 @@ main {
     }
 
     .outline.hover-crs {
-        mix-blend-mode: difference;
+        // mix-blend-mode: difference;
+        mix-blend-mode:luminosity;
         background: rgb(119, 119, 119);
         border-color: rgb(119, 119, 119);
+        border: 2px solid rgb(119, 119, 119);
         width: 100px;
         height: 100px;
         opacity: 0.4;
@@ -142,13 +154,16 @@ h5 {
         color: inherit;
         margin: 0 var(--spacing, 0px);
         transition: margin 0.25s;
+            -webkit-transition: margin 0.25s;  
+                -moz-transition: margin 0.25s; 
         svg {
             width: 175px;
-            height: 175px;
+            height: 155px;
             position: absolute;
             left: 50%;
             bottom: 0;
             transform: translate(-50%, 77px) translateZ(0);
+                -moz-transform: translate(-50%, 68px) translateZ(0);
             fill: none;
             stroke: var(--stroke, var(--line));
             stroke-linecap: round;
@@ -156,12 +171,29 @@ h5 {
             stroke-dasharray: var(--offset, 70px) 272px;
             stroke-dashoffset: 361px;
             transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+                -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;  
+                    -moz-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
         }
         &:hover {
             --spacing: 4px;
             --stroke: var(--line-active);
             --stroke-delay: 0.1s;
             --offset: 180px;
+        }
+        @media screen and (min-width: 1200px) {
+            & {
+                width: 113px;
+                height: 40px;
+                fill: none;
+                stroke: var(--stroke, var(--line));
+                stroke-linecap: round;
+                stroke-width: 1.5px;
+                stroke-dasharray: var(--offset, 70px) 272px;
+                stroke-dashoffset: 361px;
+                transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+                    -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;  
+                        -moz-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+            }
         }
     }
 }
@@ -175,13 +207,16 @@ h5 {
         color: inherit;
         margin: 0 var(--spacing, 0px);
         transition: margin 0.25s;
+            -webkit-transition: margin 0.25s;  
+                -moz-transition: margin 0.25s; 
         svg {
-            width: 300px;
+            width: 250px;
             height: 150px;
             position: absolute;
             left: 50%;
             bottom: 0;
             transform: translate(-50%, 68px) translateZ(0);
+                -webkit-transform: translate(-50%, 68px) translateZ(0);
             fill: none;
             stroke: var(--stroke, var(--line));
             stroke-linecap: round;
@@ -189,6 +224,8 @@ h5 {
             stroke-dasharray: var(--offset, 70px) 272px;
             stroke-dashoffset: 361px;
             transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+                -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;  
+                    -moz-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
         }
         &:hover {
             --spacing: 4px;
@@ -230,7 +267,7 @@ h5 {
 }
 
 .title {
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 4rem;
 }
 
@@ -284,7 +321,9 @@ h5 {
     padding: 10px;
     background-color: var(--color-bg-photo);
     outline: 2.25px solid var(--gradient-2-gray);
-    transition: outline 175ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: outline 175ms var(--cubic-brezier);
+        -webkit-transition: outline 175ms var(--cubic-brezier);
+            -moz-transition: outline 175ms var(--cubic-brezier);
 }
 
 .project.container .col:hover {
@@ -355,6 +394,27 @@ h5 {
     100% {
         transform: rotate(-0.375deg) translate(1px, 1px);
     }
+}
+
+@-webkit-keyframes shaker {
+    0% {
+        transform: rotate(0deg) translate(1px, 1px);
+    }
+    20% {
+        transform: rotate(-0.375deg) translate(-1px, -2px);
+    }
+    40% {
+        transform: rotate(0deg) translate(-2px, 0px);
+    }
+    60% {
+        transform: rotate(0.375deg) translate(2px, 0px);
+    }
+    80% {
+        transform: rotate(0deg) translate(-1px, 2px);
+    }
+    100% {
+        transform: rotate(-0.375deg) translate(1px, 1px);
+    } 
 }
 
 @media (max-width: 767px) {

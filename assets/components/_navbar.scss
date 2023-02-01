@@ -16,7 +16,6 @@ nav {
     width: 100%;
     margin: 0 auto !important;
     background: transparent;
-    // padding: 0 100px 0 100px !important;
     position: fixed;
     z-index: 3;
 }
@@ -24,6 +23,7 @@ nav {
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     nav {
         backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
     }
 }
 
@@ -87,7 +87,9 @@ nav.invisible {
 }
 
 button {
-    transition: all 1s ease;
+    transition: all 1s var(--cubic-bezier);
+        -webkit-transition: all 1s var(--cubic-bezier);
+            -moz-transition: all 1s var(--cubic-bezier);
     border: none;
     background: none;
 }
@@ -110,9 +112,10 @@ button {
 
 .nav-page nav {
     transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
     background: transparent;
     position: revert;
-    // padding-top: 32px !important;
 }
 
 .nav-page nav .hamburger .line {
@@ -150,7 +153,9 @@ button {
     font-size: 56px !important;
     text-decoration: none;
     color: var(--text-primary);
-    transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 500ms var(--cubic-bezier);
+        -webkit-transition: 500ms var(--cubic-bezier);
+            -moz-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /*styling nav link*/
@@ -197,6 +202,8 @@ button {
     top: 2px;
     stroke-width: 2px;
     transition: transform 0.7s;
+        -webkit-transition: transform 0.7s;
+            -moz-transition: transform 0.7s;
     transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
 }
 
@@ -220,6 +227,8 @@ button {
 
 .link__graphic--arc path {
     transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+        -webkit-transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+            -moz-transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .link:hover .link__graphic--arc path {
@@ -233,6 +242,8 @@ button {
 
 .link__graphic--scribble path {
     transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+        -webkit-transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+            -moz-transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .link:hover .link__graphic--scribble path {
@@ -282,6 +293,8 @@ footer .inner .social-media svg {
     border: 2px solid var(--gradient-3-light);
     cursor: pointer;
     transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            -moz-transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
     padding: 0;
 }
 

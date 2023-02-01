@@ -3,6 +3,11 @@
 	color: var(--white);
 }
 
+::-moz-selection {
+  background: var(--black);
+	color: var(--white);
+}
+
 .nav-page ::selection {
 	background: var(--white);
 	color: var(--black);
@@ -26,4 +31,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--black);
 }
-

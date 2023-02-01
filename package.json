@@ -1,0 +1,19 @@
+{
+  "name": "sitopersonale",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matteo0099/SitoPersonale.git"
+  },
+  "author": "Matteo0099",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Matteo0099/SitoPersonale/issues"
+  },
+  "homepage": "https://github.com/Matteo0099/SitoPersonale#readme"
+}

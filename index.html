@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js">--> <!--<![endif]-->
 <html lang="en" id="one">
 <head>
     <meta charset="utf-8">
@@ -11,6 +11,9 @@
     <title>Matteo Manià | aka:zippo107 | developer | web-design </title>
     <meta name="description" content="Hi! I'm a web-developer, I love coding and do sport.">
     <meta name="keywords" content="Matteo Manià, personal website, portfolio, webdeveloper">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <link rel="icon" href="./public/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/main.css">
 </head>
@@ -19,24 +22,6 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <!--preloader-->
-    <div class="full__page" onload="animate();">
-        <div class="holder">
-            <div class="preloader">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-        </div>
-    </div>
-
     <!-- cursor custom -->
     <div class="cursor"></div>
     <div class="outline"></div>
@@ -44,10 +29,10 @@
     <div class="center nav" id="home">
         <nav id="nav">
             <div class="inner">
-                <a href="/">
+                <a href="/" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                     <img src="./public/fav.png" alt="logo" title="logo">
                 </a>
-                <button class="hamburger" id="hamburger" onclick="openNav();">
+                <button class="hamburger" id="hamburger" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                     <div class="line top"></div>
                     <div class="line bottom"></div>
                 </button>
@@ -58,10 +43,10 @@
         <div class="nav-page" id="nav-page">
             <nav>
                 <div class="inner">
-                    <a href="/">
+                    <a href="/" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                         <img src="./public/fav.png">
                     </a>
-                    <button class="hamburger" id="hamburger" onclick="openNav();">
+                    <button class="hamburger" id="hamburger" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                         <div class="line top"></div>
                         <div class="line bottom"></div>
                     </button>
@@ -69,25 +54,25 @@
             </nav>
 
             <div class="links">
-                <a href="#home" onclick="openNav();" class="link link--iocaste">
+                <a href="#home" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" class="link link--iocaste">
                     <span>Home</span>
                     <svg class="link__graphic link__graphic--slide" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                         <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                     </svg>
                 </a>
-                <a href="#about" onclick="openNav();" class="link link--iocaste">
+                <a href="#about" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" class="link link--iocaste">
                     <span>About</span>
                     <svg class="link__graphic link__graphic--slide" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                         <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                     </svg>
                 </a>
-                <a href="#project" onclick="openNav();" class="link link--iocaste">
+                <a href="#project" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" class="link link--iocaste">
                     <span>Project</span>
                     <svg class="link__graphic link__graphic--slide" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                         <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                     </svg>
                 </a>
-                <a href="#contact" onclick="openNav();" class="link link--iocaste">
+                <a href="#contact" onclick="openNav();" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" class="link link--iocaste">
                     <span>Contact</span>
                     <svg class="link__graphic link__graphic--slide" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                         <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
@@ -98,7 +83,7 @@
             <footer>
                 <div class="inner">
                     <div class="social-media">
-                        <a href="https://www.instagram.com/itz_matteomania/" target="_blank" title="instagram">
+                        <a href="https://www.instagram.com/itz_matteomania/" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <rect x="4" y="4" width="16" height="16" rx="4"></rect>
@@ -106,19 +91,19 @@
                                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/robin.ticke.50/" target="_blank" title="facebook">
+                        <a href="https://www.facebook.com/robin.ticke.50/" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
                             </svg>
                         </a>
-                        <a href="https://github.com/Matteo0099" target="_blank" title="github">
+                        <a href="https://github.com/Matteo0099" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="github">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
                             </svg>
                         </a>
-                        <a href="https://www.reddit.com/user/matty0507" target="_blank" title="reddit">
+                        <a href="https://www.reddit.com/user/matty0507" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="reddit">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z"></path>
@@ -140,7 +125,7 @@
             <section class="about">
                 <div class="container">
                     <p class="hello first">
-                        <a href="javascript:void(0)" aria-disabled="true">
+                        <a href="javascript:void(0)" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" aria-disabled="true">
                             Hi!
                             <svg viewBox="0 0 70 36">
                                 <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -160,7 +145,7 @@
             <section class="about__me" id="about">
                 <div class="container">
                     <h1 class="about__title hello">
-                        <a href="javascript:void(0)" aria-disabled="true">
+                        <a href="javascript:void(0)" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" aria-disabled="true">
                             About
                             <svg viewBox="0 0 70 36">
                                 <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -183,7 +168,7 @@
             <section class="project__sect" id="project">
                 <div class="container">
                     <h1 class="project__title hello">
-                        <a href="javascript:void(0)" aria-disabled="true">
+                        <a href="javascript:void(0)" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" aria-disabled="true">
                             Projects
                             <svg viewBox="0 0 70 36">
                                 <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -195,14 +180,14 @@
                         <div class="row">
                             <div class="col image-parallax">  
                                 <a href="https://github.com/Matteo0099/" target="_blank">
-                                    <div class="project">
+                                    <div class="project" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                         <img src="./public/CssReset.jpg" title="CSS-reset">
                                     </div>
                                 </a>
                             </div>
                             <div class="col image-parallax">
                                 <a href="https://github.com/Matteo0099/AreacrewWebsite" target="_blank">
-                                    <div class="project">
+                                    <div class="project" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                         <img src="./public/AreaCrew.jpg" title="AreaCrew-web">
                                     </div>
                                 </a>
@@ -211,14 +196,14 @@
                         <div class="row">
                             <div class="col image-parallax">
                                 <a href="https://github.com/Matteo0099/" target="_blank">
-                                    <div class="project">
+                                    <div class="project" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                         <img src="./public/PcConfig.jpg" title="Pc-Configurator">
                                     </div>
                                 </a>
                             </div>
                             <div class="col image-parallax">
                                 <a href="https://github.com/Matteo0099/" target="_blank">
-                                    <div class="project">
+                                    <div class="project" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                         <img src="./public/Typer.jpg" title="Typer-test">
                                     </div>
                                 </a>
@@ -233,7 +218,7 @@
             <section class="contact__me" id="contact">
                 <div class="container">
                     <h1 class="project__title hello">
-                        <a href="javascript:void(0)" aria-disabled="true">
+                        <a href="javascript:void(0)" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" aria-disabled="true">
                             Contact
                             <svg viewBox="0 0 70 36">
                                 <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -242,7 +227,7 @@
                     </h1>
                     <div class="links" id="list-footer">
                         <h1 class="contact__title hello">
-                            <a href="mailto:matteomania09@gmail.com" target="_blank" aria-disabled="true">
+                            <a href="mailto:matteomania09@gmail.com" target="_blank" aria-disabled="true" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                 mm@gmail.com
                                 <svg viewBox="0 0 70 36">
                                     <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -250,7 +235,7 @@
                             </a>
                         </h1>
                         <h1 class="contact__title hello">
-                            <a href="https://discord.com/users/676456013326581782" target="_blank" class="fancy-link">
+                            <a href="https://discord.com/users/676456013326581782" target="_blank" class="fancy-link" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                 zippo107#7422
                                 <svg viewBox="0 0 70 36">
                                     <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -268,7 +253,7 @@
                     </div>
                     <div class="social-media">
                         <div class="social-media">
-                            <a href="https://www.instagram.com/itz_matteomania/" target="_blank">
+                            <a href="https://www.instagram.com/itz_matteomania/" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <rect x="4" y="4" width="16" height="16" rx="4"></rect>
@@ -276,19 +261,19 @@
                                     <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
                                 </svg>
                             </a>
-                            <a href="https://www.facebook.com/robin.ticke.50/" target="_blank">
+                            <a href="https://www.facebook.com/robin.ticke.50/" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
                                 </svg>
                             </a>
-                            <a href="https://github.com/Matteo0099" target="_blank" title="github">
+                            <a href="https://github.com/Matteo0099" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="github">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
                                 </svg>
                             </a>
-                            <a href="https://www.reddit.com/user/matty0507" target="_blank" title="reddit">
+                            <a href="https://www.reddit.com/user/matty0507" target="_blank" onmouseenter="mouseCursor(event);" onmouseleave="mouseCursor(event);" title="reddit">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z"></path>
