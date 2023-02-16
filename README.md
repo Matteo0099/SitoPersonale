@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# Readme
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Vue 3 + Vite + Tailwindcss
 
-## Recommended IDE Setup
+**<h3>Hi! This is my website, made with Vuejs, Vitejs and Tailwindcss!</h3>**
+**<p>setup:</p>**
+> cd SitoPersonale <br>
+> npm install <br>
+> npm run build <br>
+> npm run dev <br>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+***or:***
+> $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY <br>
+> Cloning into `Spoon-Knife`... <br>
+> remote: Counting objects: 10, done. <br>
+> remote: Compressing objects: 100% (8/8), done. <br>
+> remove: Total 10 (delta 1), reused 10 (delta 1) <br>
+> Unpacking objects: 100% (10/10), done. <br>
