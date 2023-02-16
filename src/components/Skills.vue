@@ -10,7 +10,7 @@
                         <a href="https://javascript.info/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹JavaScript (ES6+)
                         </a>
                     </li>
@@ -19,7 +19,7 @@
                         <a href="https://www.typescriptlang.org/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹TypeScript
                         </a>
                     </li>
@@ -28,7 +28,7 @@
                         <a href="https://vuejs.org/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹Vue js
                         </a>
                     </li>
@@ -39,7 +39,7 @@
                         <a href="https://getbootstrap.com/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹Bootstrap
                         </a>
                     </li>
@@ -48,7 +48,7 @@
                         <a href="https://nodejs.org/en/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹Node.js
                         </a>
                     </li>
@@ -57,7 +57,7 @@
                         <a href="https://www.php.net/" target="_blank" class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-gradient-to-br from-pink-400 to-red-600
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-300">
+                            before:transition before:ease-in-out before:duration-300 darkLink">
                             ▹Php
                         </a>
                     </li>
