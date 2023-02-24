@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-full h-96 mt-64">
+    <section class="min-h-full h-80 mt-40">
         <div class="container max-w-2xl flex justify-center items-center mx-auto flex-col py-6 text-gray-900">
             <h1 class="font-normal text-gray-100 text-lg sm:text-2xl py-3 my-2 mx-auto">Some tecnologies recently i
                 working for...</h1>

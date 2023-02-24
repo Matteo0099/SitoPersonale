@@ -4,6 +4,7 @@ import Hero from './components/HeroSect.vue'
 import About from './components/About.vue'
 import Skills from './components/Skills.vue'
 import Project from './components/Project.vue'
+import Form from './components/Form.vue'
 import Footer from './components/Footer.vue'
 </script>
 
@@ -14,6 +15,7 @@ import Footer from './components/Footer.vue'
     <About></About>
     <Skills></Skills>
     <Project></Project>
+    <Form></Form>
     <Footer></Footer>
   </main>
 </template>
@@ -27,6 +29,7 @@ export default {
     About,
     Skills,
     Project,
+    Form,
     Footer
   }
 }

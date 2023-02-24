@@ -1,6 +1,6 @@
 <template>
     <section class="min-h-full" id="about">
-        <div class=" max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-4">
+        <div class="max-w-md mx-4 sm:mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-4">
             <img class="w-full h-56 object-cover object-center" src="../../public/Face.png" alt="avatar">
             <div class="py-4 px-6">
                 <h1 class="text-2xl font-semibold text-gray-800">
