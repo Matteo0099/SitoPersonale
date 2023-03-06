@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <main class="font-sans m-0 p-0 min-h-screen scroll-smooth">
+  <main class="font-sans m-0 p-0 min-h-screen scroll-smooth scroll-p-5">
     <Nav></Nav>
     <Hero></Hero>
     <About></About>
