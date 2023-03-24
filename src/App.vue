@@ -9,15 +9,20 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <main class="font-sans m-0 p-0 min-h-screen scroll-smooth scroll-p-5">
-    <Nav></Nav>
-    <Hero></Hero>
-    <About></About>
-    <Skills></Skills>
-    <Project></Project>
-    <Form></Form>
-    <Footer></Footer>
-  </main>
+  <div>
+    <main class="font-sans m-0 p-0 min-h-screen scroll-smooth scroll-p-5">
+      <Nav></Nav>
+      <Hero></Hero>
+      <About></About>
+      <Skills></Skills>
+      <Project></Project>
+      <Form></Form>
+      <Footer></Footer>
+      <div id="adsgoeshere" 
+          style="background: #1d1f29; padding-top:60px; text-align: center;" 
+          v-html="adsenseContent"></div>
+    </main>
+  </div>
 </template>
 
 <script>

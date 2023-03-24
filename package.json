@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "postscribe": "^2.0.8",
     "swiper": "^9.1.0",
     "vue": "^3.2.45"
   },
