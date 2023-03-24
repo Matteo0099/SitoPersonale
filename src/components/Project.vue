@@ -17,22 +17,22 @@
         <!-- all slides -->
         <swiper-slide>
             <a href="https://www.areacrewmonfalcone.it" class="transition-all">
-                <img src="../../public/AreaCrew.jpg" loading="lazy" width="780" height="390"/>
+                <img src="/AreaCrew.jpg" loading="lazy" width="780" height="390"/>
             </a>
         </swiper-slide>
         <swiper-slide>
             <a href="https://www.cssreset.tk">
-                <img src="../../public/CssReset.jpg" loading="lazy" width="780" height="390"/>
+                <img src="/CssReset.jpg" loading="lazy" width="780" height="390"/>
             </a>
         </swiper-slide>
         <swiper-slide>
             <a href="https://pcs-configurator.netlify.app/">
-                <img src="../../public/PcConfig.jpg" loading="lazy" width="780" height="390"/>
+                <img src="/PcConfig.jpg" loading="lazy" width="780" height="390"/>
             </a>
         </swiper-slide>
         <swiper-slide>
             <a href="https://typer-racer.netlify.app/">
-                <img src="../../public/Typer.jpg" loading="lazy" width="780" height="390"/>
+                <img src="/Typer.jpg" loading="lazy" width="780" height="390"/>
             </a>
         </swiper-slide>
     </swiper>
