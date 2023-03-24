@@ -18,6 +18,12 @@ import Footer from './components/Footer.vue'
       <Project></Project>
       <Form></Form>
       <Footer></Footer>
+      <div class="container">
+        <ins class="adsbygoogle" style="display:block" 
+            data-ad-client="ca-pub-5370518478483298" data-ad-slot="4824315952"
+            data-ad-format="auto" data-full-width-responsive="true">
+        </ins>
+      </div>
     </main>
   </div>
 </template>
@@ -27,12 +33,23 @@ export default {
   name: 'App',
   components: {
     Nav,
-    Hero, 
+    Hero,
     About,
     Skills,
     Project,
     Form,
     Footer
+  },
+  mounted() {
+    this.adsenseAddLoad();
+  },
+  methods: {
+    adsenseAddLoad() {
+      let inlineScript = document.createElement("script");
+      inlineScript.type = "text/javascript";
+      inlineScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});'
+      document.getElementsByTagName('body')[0].appendChild(inlineScript);
+    }
   }
 }
 </script>
