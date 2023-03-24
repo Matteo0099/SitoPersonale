@@ -18,9 +18,6 @@ import Footer from './components/Footer.vue'
       <Project></Project>
       <Form></Form>
       <Footer></Footer>
-      <div id="adsgoeshere" 
-          style="background: #1d1f29; padding-top:60px; text-align: center;" 
-          v-html="adsenseContent"></div>
     </main>
   </div>
 </template>
