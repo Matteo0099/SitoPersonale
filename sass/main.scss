@@ -201,11 +201,7 @@ a {
     min-height: 150vh !important;
 }
 .et-slide.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    min-height: 55vh;
+    min-height: 100vh;
     padding: 0;
 }
 
@@ -566,7 +562,7 @@ a {
 .contact-title {
     width: 100%;
     text-align: center;
-    margin: 2rem auto;
+    margin-top: 28rem;
 }
 
 .footer-distributed .footer-links .link-1:before {
