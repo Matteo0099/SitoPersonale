@@ -1,24 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/public/fav.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matteo Manià | WebDeveloper | Programmer </title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
-     crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matteo Manià | Web Developer | Design5</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./sass/base/reset.css">
+    <link rel="icon" type="image" href="./public/img/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
-    crossorigin="anonymous"></script>
-  <!-- Example ad unit -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5370518478483298" data-ad-slot="1234567890"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+<body class="vertical-scroll">
+    <!-- Hero -->
+    <section class="et-hero-tabs" id="home">
+        <div class="container">
+            <h1>Matteo Manià</h1>
+            <h3>
+                <span id="holder"></span>
+                <span class="blinking-cursor"></span>
+            </h3>
+        </div>
+
+        <!-- stats - count particles -->
+        <div id="particles-js"></div>
+
+        <div class="scroll">
+            <a href="#about" class="et-hero-tab">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#home">Home</a>
+            <a class="et-hero-tab" href="#about">About</a>
+            <a class="et-hero-tab" href="#project">Project</a>
+            <a class="et-hero-tab" href="#contact">Contact</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+        <!-- ABOUT -->
+        <section class="et-slide about" id="about">
+            <div class="container__flex">
+                <h1>About</h1>
+                <h3>something about me</h3>
+                <div class="flex__row card2">
+                    <div class="image-container">
+                        <img src="./public/img/Face.png" class="img" alt="">
+                    </div>
+                    <div class="text-right">
+                        <p>
+                            I'm web developer and designer,
+                            I specialize in using various
+                            programming languages such as C, C++,
+                            Java, JavaScript, CSS, HTML, SCSS,
+                            Vue.js, Next.js, Vite.js, and Node.js.
+                        </p>
+                        <p>
+                            Passionate about creating functional and clean web designs.
+                        </p>
+                        <ul class="flex">
+                            <li><i class="ti ti-brand-vue" title="vuejs"></i></li>
+                            <li><i class="ti ti-brand-javascript" title="js"></i></li>
+                            <li><i class="ti ti-brand-typescript" title="typescript"></i></li>
+                            <li><i class="ti ti-json" title="json"></i></li>
+                            <li><i class="ti ti-brand-css3" title="css3"></i></li>
+                            <li><i class="ti ti-brand-html5" title="html5"></i></li>
+                            <li><i class="ti ti-brand-tailwind" title="tailwindcss"></i></li>
+                            <li><i class="ti ti-brand-bootstrap" title="bootstrap"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECT -->
+        <section class="et-slide project" id="project">
+            <h1>Project</h1>
+            <h3>...all my projects</h3>
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./public/img/AreaCrew.jpg">
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">Areacrew</h2>
+                            <p class="card_text">The official website of AreaCrew. AreaCrew is a bmx-crew that is born
+                                in Italy since 2018.</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./public/img/CssReset.jpg">
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">CssReset & Normalize</h2>
+                            <p class="card_text">All browser have some issues with layout,support and
+                                accessibility.there's my version of reset.css and a normalize.css for style.</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./public/img/PcConfig.jpg">
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">PcConfigurator(shop)</h2>
+                            <p class="card_text">I created a special version of a pc configurator, with the shop
+                                integrated. It will be useful for the shops.</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./public/img/Typer.jpg">
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">Typewriter race</h2>
+                            <p class="card_text">The speed with which you write is important in order not to waste time.
+                                You can type as much as possible with the type-racer!</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- CONTACT -->
+        <section class="et-slide contact" id="contact">
+            <h1 class="contact-title">Contact</h1>
+            <footer class="footer-distributed">
+                <div class="footer-right">
+                    <a href="https://www.instagram.com/itz_matteomania/" class="brand-inst"><i class="ti ti-brand-instagram"></i></a>
+                    <a href="https://github.com/Matteo0099" class="brand-git"><i class="ti ti-brand-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matteo-mani%C3%A0-ba3a4b271/" class="brand-link"><i class="ti ti-brand-linkedin"></i></a>
+                    <a href="https://www.reddit.com/user/matty0507" class="brand-red"><i class="ti ti-brand-reddit"></i></a>
+                </div>
+    
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a class="link-1" href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#project">Project</a>
+                        <a href="#contact">Contact</a>
+                    </p>
+                    <p>Matteo Manià &copy; 2023</p>
+                </div>
+            </footer> 
+        </section>
+    </main>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <!-- MAIN JS -->
+    <script src="./src/main.js" defer></script>
+    <!-- PARTICLES JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script> <!-- stats.js lib -->
+    <!-- THREE JS -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js" defer></script>
+    <!-- CODE FOR PARTICLES -->
+    <script src="./src/Particles.js" defer></script>
+    <!-- icons -->
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"></script>
 </body>
 </html>

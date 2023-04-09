@@ -1,24 +1,11 @@
 {
-  "name": "my-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "minimal-website",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "test": "localhost:5500"
   },
-  "dependencies": {
-    "postscribe": "^2.0.8",
-    "swiper": "^9.1.0",
-    "vue": "^3.2.45"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6",
-    "vite": "^4.1.0"
-  }
+  "author": "Matteo Manià",
+  "license": "MIT"
 }
