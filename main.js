@@ -4,3 +4,9 @@ import './sass/main.css?url'
 import './src/main.js?url'
 import './src/Particles.js?url'
 import './src/JqueryV3.js?url'
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+    // ...
+})
+  
