@@ -1,9 +1,9 @@
-import './sass/base/reset.css?url'
-import './sass/main.css?url'
+import './sass/base/reset.css'
+import './sass/main.css'
 //script
-import './src/main.js?url'
-import './src/Particles.js?url'
-import './src/JqueryV3.js?url'
+import './src/main.js'
+import './src/Particles.js'
+import './src/JqueryV3.js'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
