@@ -1,11 +1,14 @@
 {
-  "name": "minimal-website",
-  "version": "1.0.0",
-  "description": "personal website",
-  "main": "index.js",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "localhost:5500"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "Matteo Manià",
-  "license": "MIT"
+  "devDependencies": {
+    "vite": "^4.2.0"
+  }
 }
