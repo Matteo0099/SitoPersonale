@@ -7,5 +7,11 @@
     "test": "localhost:5500"
   },
   "author": "Matteo Manià",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.0",
+    "three": "^0.151.3",
+    "three-gltf-loader": "^1.111.0",
+    "three-orbitcontrols": "^2.110.3"
+  }
 }
