@@ -180,6 +180,45 @@ a {
   padding: 0;
 }
 
+.blurred-img, .blurred-canvas {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blurred-img::before, .blurred-canvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2.5s infinite;
+  background-color: var(--text-color);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.blurred-img.loaded::before, .blurred-canvas.loaded::before {
+  animation: none;
+  content: none;
+}
+
+.blurred-img img, .blurred-canvas .canvas1 {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.blurred-img.loaded img, .blurred-canvas .canvas1 {
+  opacity: 1;
+}
+
 canvas {
   width: 100%;
   height: 100%;
@@ -575,22 +614,25 @@ canvas {
 }
 
 .brand-inst {
-  background-color: #E4405F;
+  background-color: #e4405f;
 }
 
 .brand-red {
-  background-color: #FF5700;
+  background-color: #ff5700;
 }
 
 .brand-link {
-  background-color: #0061FF;
+  background-color: #0061ff;
 }
 
 .brand-git {
-  background-color: #34465D;
+  background-color: #34465d;
 }
 
-.brand-git, .brand-link, .brand-red, .brand-inst {
+.brand-git,
+.brand-link,
+.brand-red,
+.brand-inst {
   font-size: 1.2rem;
 }
 

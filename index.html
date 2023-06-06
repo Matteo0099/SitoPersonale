@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,7 +71,9 @@
                 <h3>something about me</h3>
                 <div class="flex__row card2">
                     <div class="image-container">
-                        <img src="./public/img/Face.png" class="img" alt="">
+                        <div class="blurred-img">
+                            <img src="./public/img/Face.png" loading="lazy" class="img" alt="">
+                        </div>
                     </div>
                     <div class="text-right">
                         <p>
@@ -105,7 +108,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <img src="./public/img/AreaCrew.jpg">
+                            <div class="blurred-img">
+                                <img src="./public/img/AreaCrew.jpg" loading="lazy">
+                            </div>
                         </div>
                         <div class="card_content">
                             <h2 class="card_title">Areacrew</h2>
@@ -118,7 +123,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <img src="./public/img/CssReset.jpg">
+                            <div class="blurred-img">
+                                <img src="./public/img/CssReset.jpg" loading="lazy">
+                            </div>
                         </div>
                         <div class="card_content">
                             <h2 class="card_title">CssReset & Normalize</h2>
@@ -131,7 +138,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <img src="./public/img/PcConfig.jpg">
+                            <div class="blurred-img">
+                                <img src="./public/img/PcConfig.jpg" loading="lazy">
+                            </div>
                         </div>
                         <div class="card_content">
                             <h2 class="card_title">PcConfigurator(shop)</h2>
@@ -144,7 +153,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <img src="./public/img/Typer.jpg">
+                            <div class="blurred-img">
+                                <img src="./public/img/Typer.jpg" loading="lazy">
+                            </div>
                         </div>
                         <div class="card_content">
                             <h2 class="card_title">Typewriter race</h2>
@@ -159,7 +170,9 @@
         <section class="threejs">
             <h1 class="title">Magic cube with three.js</h1>
             <!-- the car container for threejs-->
-            <div id="canvas-container"></div>
+            <div class="blurred-canvas">
+                <div id="canvas-container" class="canvas1" loading="lazy"></div>
+            </div>
             <!-- <canvas id="myCanvas"></canvas> -->
         </section>
         <!-- CONTACT -->
@@ -189,6 +202,7 @@
         </section>
     </main>
 
+    <script src="./src/LazyLoading.js"></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
     <!-- MAIN JS -->
