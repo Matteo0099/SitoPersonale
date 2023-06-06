@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Matteo Manià | Web Developer | Design5</title>
-    <meta name="description" content="">
+    <meta name="description"
+        content="Hi, I'Matteo Manià and i'm a web-developer and programmer. I love maths and science.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="./sass/base/reset.css">
-    <link rel="icon" type="image" href="./public/img/fav.png">
+    <link rel="icon" type="image" href="./public/img/fav.Face.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,7 +48,7 @@
         <div id="particles-js"></div>
 
         <div class="scroll">
-            <a href="#about" class="et-hero-tab">
+            <a href="#about" class="et-hero-tab" aria-label="scroll">
                 <div class="mouse">
                     <div class="wheel"></div>
                 </div>
@@ -54,10 +56,10 @@
         </div>
 
         <div class="et-hero-tabs-container">
-            <a class="et-hero-tab" href="#home">Home</a>
-            <a class="et-hero-tab" href="#about">About</a>
-            <a class="et-hero-tab" href="#project">Project</a>
-            <a class="et-hero-tab" href="#contact">Contact</a>
+            <a class="et-hero-tab" href="#home" aria-label="Home">Home</a>
+            <a class="et-hero-tab" href="#about" aria-label="About">About</a>
+            <a class="et-hero-tab" href="#project" aria-label="Projec">Project</a>
+            <a class="et-hero-tab" href="#contact" aria-label="Contact">Contact</a>
             <span class="et-hero-tab-slider"></span>
         </div>
     </section>
@@ -71,8 +73,9 @@
                 <h3>something about me</h3>
                 <div class="flex__row card2">
                     <div class="image-container">
-                        <div class="blurred-img">
-                            <img src="./public/img/Face.png" loading="lazy" class="img" alt="">
+                        <div class="blurred-img" aria-label="Image">
+                            <img src="./public/img/Face.webp" alt="image" title="link" role="img" loading="lazy"
+                                class="img">
                         </div>
                     </div>
                     <div class="text-right">
@@ -108,8 +111,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <div class="blurred-img">
-                                <img src="./public/img/AreaCrew.jpg" loading="lazy">
+                            <div class="blurred-img" aria-label="Image">
+                                <img src="./public/img/AreaCrew.webp" alt="image" title="link" role="img"
+                                    loading="lazy">
                             </div>
                         </div>
                         <div class="card_content">
@@ -123,8 +127,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <div class="blurred-img">
-                                <img src="./public/img/CssReset.jpg" loading="lazy">
+                            <div class="blurred-img" aria-label="Image">
+                                <img src="./public/img/CssReset.webp" alt="image" title="link" role="img"
+                                    loading="lazy">
                             </div>
                         </div>
                         <div class="card_content">
@@ -138,8 +143,9 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <div class="blurred-img">
-                                <img src="./public/img/PcConfig.jpg" loading="lazy">
+                            <div class="blurred-img" aria-label="Image">
+                                <img src="./public/img/PcConfig.webp" alt="image" title="link" role="img"
+                                    loading="lazy">
                             </div>
                         </div>
                         <div class="card_content">
@@ -153,8 +159,8 @@
                 <li class="cards_item">
                     <div class="card">
                         <div class="card_image">
-                            <div class="blurred-img">
-                                <img src="./public/img/Typer.jpg" loading="lazy">
+                            <div class="blurred-img" aria-label="Image">
+                                <img src="./public/img/Typer.webp" alt="image" title="link" role="img" loading="lazy">
                             </div>
                         </div>
                         <div class="card_content">
@@ -170,7 +176,7 @@
         <section class="threejs">
             <h1 class="title">Magic cube with three.js</h1>
             <!-- the car container for threejs-->
-            <div class="blurred-canvas">
+            <div class="blurred-canvas" aria-label="cube 3d">
                 <div id="canvas-container" class="canvas1" loading="lazy"></div>
             </div>
             <!-- <canvas id="myCanvas"></canvas> -->
@@ -191,10 +197,10 @@
 
                 <div class="footer-left">
                     <p class="footer-links">
-                        <a class="link-1" href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#project">Project</a>
-                        <a href="#contact">Contact</a>
+                        <a class="link-1" href="#home" aria-label="lnik">Home</a>
+                        <a href="#about" aria-label="lnik">About</a>
+                        <a href="#project" aria-label="lnik">Project</a>
+                        <a href="#contact" aria-label="lnik">Contact</a>
                     </p>
                     <p>Matteo Manià &copy; 2023</p>
                 </div>
