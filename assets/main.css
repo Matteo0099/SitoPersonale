@@ -120,6 +120,10 @@ body, html, main {
   min-height: 100%;
 }
 
+header {
+  margin: 3.5rem 0 0 0;
+}
+
 .toggle-dark {
   cursor: pointer;
   position: fixed;
@@ -159,81 +163,19 @@ body, html, main {
   text-align: center
 }
 
-swiper-container {
-  margin: 0.5rem 0 0;
-  padding: 1rem 0;
-  width: 100%;
-  max-width: 550px;
-  height: 100%;
-  min-height: 330px;
-  overflow: hidden
-}
-
-swiper-container .container-image {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  border-radius: 10px
-}
-
-.container-image.nd, .container-image.rd, .container-image.st, .container-image.th {
-  background-position: center center;
-  background-size: cover;
-  aspect-ratio: 5 / 3;
-}
-
-.container-image.st {
-  background-image: url('../public/pr/AreaCrew.jpg')
-}
-
-.container-image.nd {
-  background-image: url('../public/pr/login-ejs.png')
-}
-
-.container-image.rd {
-  background-image: url('../public/pr/CssReset.jpg')
-}
-
-.container-image.th {
-  background-image: url('../public/pr/PcConfig.jpg')
-}
-
-swiper-slide .container-image:hover {
-  opacity: 0.85;
-  transition: all 300ms cubic-bezier(.215, .61, .355, 1)
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: inherit;
-  border: 1px solid currentColor;
-  color: currentColor;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover
-}
-
 .hero-content {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0 auto;
   padding-top: 2.5rem
 }
 
-.hero-content>.container {
+main .container {
   margin: 0 auto;
   width: 100%;
   min-height: 100%;
@@ -268,6 +210,7 @@ swiper-slide img {
     align-items: center;
     max-width: 300px
   }
+
   .photo-about img {
     width: 100%;
     max-width: 280px !important;
@@ -372,6 +315,69 @@ swiper-slide img {
 
 .link:hover>a:not(:hover) {
   opacity: 0.5
+}
+
+swiper-container {
+  margin: 0.5rem 0 0;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  min-height: 330px;
+  overflow: hidden
+}
+
+swiper-container .container-image {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 10px
+}
+
+.container-image.nd, .container-image.rd, .container-image.st, .container-image.th {
+  background-position: center center;
+  background-size: cover;
+  aspect-ratio: 5 / 3;
+}
+
+.container-image.st {
+  background-image: url('../public/pr/AreaCrew.jpg')
+}
+
+.container-image.nd {
+  background-image: url('../public/pr/login-ejs.png')
+}
+
+.container-image.rd {
+  background-image: url('../public/pr/CssReset.jpg')
+}
+
+.container-image.th {
+  background-image: url('../public/pr/PcConfig.jpg')
+}
+
+swiper-slide .container-image:hover {
+  opacity: 0.85;
+  transition: all 300ms cubic-bezier(.215, .61, .355, 1)
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: inherit;
+  border: 1px solid currentColor;
+  color: currentColor;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
 }
 
 .flex-container {
