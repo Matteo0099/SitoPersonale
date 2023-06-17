@@ -1,0 +1,108 @@
+/* 
+*   CSS Reset V2.0 with <3 by Matteo Manià 
+*   ----------------------------------- 
+*   Is a "modern" css-reset that you can use in your project!
+*   ----------------------------------- 
+*   MIT license 2022 all right deserved. 
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  font: inherit
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit
+}
+
+html, body {
+  min-height: 100vh;
+  line-height: 100%
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+input, button, textarea, select {
+  font: inherit
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+ol, ul, ul[role='list'], ol[role='list'] {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer
+}
+
+button {
+  background: none;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+q, blockquote {
+  quotes: none
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none
+}
+
+cite, fieldset {
+  border-width: 0;
+  padding: 0
+}
+
+article, aside, details, figcaption, figure, hgroup, section, summary {
+  display: block
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+
+  html:focus-within {
+    scroll-behavior: auto !important;
+  }
+}
