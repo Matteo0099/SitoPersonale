@@ -109,7 +109,7 @@ main .container {
 }
 
 .spotify {
-  background-image: url('../public/spotify_logo.webp');
+  background-image: url('https://matteomania.netlify.app/public/spotify_logo.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,20 +265,21 @@ swiper-container .container-image {
   aspect-ratio: 5 / 3;
 }
 
+/*https://matteomania.netlify.app/public/pr*/
 .container-image.st {
-  background-image: url('../public/pr/AreaCrew.webp')
+  background-image: url('https://matteomania.netlify.app/public/pr/AreaCrew.webp')
 }
 
 .container-image.nd {
-  background-image: url('../public/pr/login-ejs.webp')
+  background-image: url('https://matteomania.netlify.app/public/pr/login-ejs.webp')
 }
 
 .container-image.rd {
-  background-image: url('../public/pr/CssReset.webp')
+  background-image: url('https://matteomania.netlify.app/public/pr/CssReset.webp')
 }
 
 .container-image.th {
-  background-image: url('../public/pr/PcConfig.webp')
+  background-image: url('https://matteomania.netlify.app/public/pr/PcConfig.webp')
 }
 
 swiper-slide .container-image:hover {
