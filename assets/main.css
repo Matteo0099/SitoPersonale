@@ -1,6 +1,3 @@
-@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
-@import url('https://cssreset.tk/css-reset-v2/resetV2.css');
-
 @font-face {
   font-family: var(--ff-fam);
   font-style: normal;
@@ -64,13 +61,6 @@
   font-weight: 700
 }
 
-*, *::after, *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font: inherit
-}
-
 :root {
   --ff-fam: 'IBM Plex Sans', sans-serif;
   --txt-primary: #101010;
@@ -92,11 +82,12 @@
 
 body, html {
   color-scheme: light dark;
-  font-family: var(--ff-fam);
+  font-family: var(--ff-fam) !important;
   color: var(--txt-primary);
   background: var(--bg-primary);
   transition: var(--tt-short);
-  line-height: 1.15
+  line-height: 1.15 !important;
+  image-rendering: optimizeSpeed;
 }
 
 body.dark {
@@ -107,7 +98,7 @@ body.dark {
 
 img, picture, svg, video {
   display: block;
-  max-width: 100%
+  max-width: 100%;
 }
 
 a, button {
@@ -118,10 +109,6 @@ a, button {
 
 body, html, main {
   min-height: 100%;
-}
-
-header {
-  margin: 3.5rem 0 0 0;
 }
 
 .toggle-dark {
@@ -253,7 +240,7 @@ main .container {
   max-width: 285px;
   width: 100%;
   padding: 1rem;
-  margin: auto
+  margin: 3.25rem auto
 }
 
 .card>* {
@@ -270,7 +257,7 @@ main .container {
 .card>.title {
   font-weight: 700;
   font-size: var(--fs-large);
-  margin: 6px 0 3px
+  margin: 1rem 0 0 0;
 }
 
 .card>.description {
@@ -294,7 +281,7 @@ main .container {
 }
 
 .description {
-  margin: 0 0 8px
+  margin: 1rem 0 .65rem 0;
 }
 
 .link>a {
@@ -341,19 +328,19 @@ swiper-container .container-image {
 }
 
 .container-image.st {
-  background-image: url('../public/pr/AreaCrew.jpg')
+  background-image: url('../public/pr/AreaCrew.webp')
 }
 
 .container-image.nd {
-  background-image: url('../public/pr/login-ejs.png')
+  background-image: url('../public/pr/login-ejs.webp')
 }
 
 .container-image.rd {
-  background-image: url('../public/pr/CssReset.jpg')
+  background-image: url('../public/pr/CssReset.webp')
 }
 
 .container-image.th {
-  background-image: url('../public/pr/PcConfig.jpg')
+  background-image: url('../public/pr/PcConfig.webp')
 }
 
 swiper-slide .container-image:hover {
@@ -434,7 +421,7 @@ body.dark .flex-container>.cards {
 }
 
 footer {
-  margin: 6rem auto 0;
+  margin: 5rem auto 0 !important;
   width: 100%;
   border-top: 1px solid currentColor;
   background-color: inherit;
