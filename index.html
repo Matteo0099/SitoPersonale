@@ -1,262 +1,122 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Matteo Manià | Web Developer | Design5</title>
-    <meta name="description"
-        content="Hi, I'Matteo Manià and i'm a web-developer and programmer. I love maths and science.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="./sass/main.css">
-    <link rel="stylesheet" href="./sass/base/reset.css">
-    <link rel="icon" type="image" href="./public/img/fav.Face.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <!-- google adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
-        crossorigin="anonymous" defer></script>
-    <!-- three -->
-    <script defer src="https://unpkg.com/es-module-shims@0.4.6/dist/es-module-shims.js" defer></script>
-    <script type="importmap-shim">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@0.118.1/build/three.module.js",
-        "three/examples/jsm/": "https://unpkg.com/three@0.118.1/examples/jsm/"
-      }
-    }
-    </script>
-</head>
+    <title>Matteo Manià | Developer & web designer</title>
+    <meta name="description"
+      content="Hi! I'Matteo Manià and I'm a developer and web designer. I love develop always something new!">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
 
-<body class="vertical-scroll">
-    <!-- Hero -->
-    <section class="et-hero-tabs" id="home">
+  <body>
+    <main>
+      <div class="toggle-dark">
+        <i class="bi bi-moon light"></i>
+        <i class="bi bi-moon-fill dark"></i>
+      </div>
+      <div class="hero-content">
         <div class="container">
-            <h1>Matteo Manià</h1>
-            <h3>
-                <span id="holder"></span>
-                <span class="blinking-cursor"></span>
-            </h3>
-        </div>
-
-        <!-- stats - count particles -->
-        <div id="particles-js"></div>
-
-        <div class="scroll">
-            <a href="#about" class="et-hero-tab" aria-label="scroll">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
+          <header>
+            <div class="card">
+              <div class="head">
+                <picture>
+                  <img src="./public/Face.webp" alt="photo">
+                </picture>
+              </div>
+              <div class="title">
+                Matteo Manià
+              </div>
+              <div class="description">
+                Developer & web designer
+              </div>
+              <div class="link">
+                <a href="https://www.facebook.com/robin.ticke.50/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/itz_matteomania/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Matteo0099" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://stackoverflow.com/users/19768851/area-crew-bmx" target="_blank"><i class="bi bi-stack-overflow"></i></a>
+              </div>
+            </div>
+          </header>
+          <!-- container cards -->
+          <div class="flex-container">
+            <!-- maybe swiper? -->
+            <div class="cards">
+              <h1 class="card-title">Projects</h1>
+              <swiper-container class="mySwiper" pagination="true"
+                pagination-dynamic-bullets="true">
+                <swiper-slide>
+                  <div class="container-image st">
+                    <a href target="_blank">
+                      <button class="sw-btn">AreaCrewWebsite</button>
+                    </a>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="container-image nd">
+                    <a href target="_blank">
+                      <button class="sw-btn">Dashboard express-js</button>
+                    </a>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="container-image rd">
+                    <a href target="_blank">
+                      <button class="sw-btn">Css reset/normalize</button>
+                    </a>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="container-image th">
+                    <a href target="_blank">
+                      <button class="sw-btn">PC configurator</button>
+                    </a>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/5w49GjtZ2UOT0e86q63PgP?si=da47316fca614c59"
+              class="cards spotify">
+              <h1 class="card-title">Entra nel flusso</h1>
+              <button class="btn">chill</button>
             </a>
-        </div>
-
-        <div class="et-hero-tabs-container">
-            <a class="et-hero-tab" href="#home" aria-label="Home">Home</a>
-            <a class="et-hero-tab" href="#about" aria-label="About">About</a>
-            <a class="et-hero-tab" href="#project" aria-label="Projec">Project</a>
-            <a class="et-hero-tab" href="#contact" aria-label="Contact">Contact</a>
-            <span class="et-hero-tab-slider"></span>
-        </div>
-    </section>
-
-    <!-- Main -->
-    <main class="et-main">
-        <!-- ABOUT -->
-        <section class="et-slide about" id="about">
-            <div class="container__flex">
-                <h1>About</h1>
-                <h3>something about me</h3>
-                <div class="flex__row card2">
-                    <div class="image-container">
-                        <div class="blurred-img" aria-label="Image">
-                            <img src="./public/img/Face.webp" alt="image" title="link" role="img" loading="lazy"
-                                class="img">
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <p>
-                            I'm web developer and designer,
-                            I specialize in using various
-                            programming languages such as C, C++,
-                            Java, JavaScript, CSS, HTML, SCSS,
-                            Vue.js, Next.js, Vite.js, and Node.js.
-                        </p>
-                        <p>
-                            Passionate about creating functional and clean web designs.
-                        </p>
-                        <ul class="flex">
-                            <li><i class="ti ti-brand-vue" title="vuejs"></i></li>
-                            <li><i class="ti ti-brand-javascript" title="js"></i></li>
-                            <li><i class="ti ti-brand-typescript" title="typescript"></i></li>
-                            <li><i class="ti ti-json" title="json"></i></li>
-                            <li><i class="ti ti-brand-css3" title="css3"></i></li>
-                            <li><i class="ti ti-brand-html5" title="html5"></i></li>
-                            <li><i class="ti ti-brand-tailwind" title="tailwindcss"></i></li>
-                            <li><i class="ti ti-brand-bootstrap" title="bootstrap"></i></li>
-                        </ul>
-                    </div>
+            <div class="cards about">
+              <div class="about-container">
+                <div class="photo-about">
+                  <img src="./public/Face.webp" alt="image" title="image1">
                 </div>
+                <div class="text">
+                  <h1 class="card-title">Chi sono</h1>
+                  <p class="par">
+                    Matteo Manià, nato a Monfalcone nel 2005, ha iniziato a
+                    sviluppare
+                    applicazioni e siti web a soli 16 anni; Ad oggi continuo i
+                    miei studi
+                    alle superiori, con lo studio dell'informatica.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- PROJECT -->
-        <section class="et-slide project" id="project">
-            <h1>Project</h1>
-            <h3>...all my projects</h3>
-            <ul class="cards">
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <div class="blurred-img" aria-label="Image">
-                                <img src="./public/img/AreaCrew.webp" alt="image" title="link" role="img"
-                                    loading="lazy">
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">Areacrew</h2>
-                            <p class="card_text">The official website of AreaCrew. AreaCrew is a bmx-crew that is born
-                                in Italy since 2018.</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <div class="blurred-img" aria-label="Image">
-                                <img src="./public/img/CssReset.webp" alt="image" title="link" role="img"
-                                    loading="lazy">
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">CssReset & Normalize</h2>
-                            <p class="card_text">All browser have some issues with layout,support and
-                                accessibility.there's my version of reset.css and a normalize.css for style.</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <div class="blurred-img" aria-label="Image">
-                                <img src="./public/img/PcConfig.webp" alt="image" title="link" role="img"
-                                    loading="lazy">
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">PcConfigurator(shop)</h2>
-                            <p class="card_text">I created a special version of a pc configurator, with the shop
-                                integrated. It will be useful for the shops.</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <div class="blurred-img" aria-label="Image">
-                                <img src="./public/img/Typer.webp" alt="image" title="link" role="img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">Typewriter race</h2>
-                            <p class="card_text">The speed with which you write is important in order not to waste time.
-                                You can type as much as possible with the type-racer!</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
+          </div>
+          <!-- footer -->
+          <footer>
+            <h1>Matteo Manià</h1>
+            <ul class="footer-list">
+              <li><a href="./pages/termsCondition.html">Termini e condizioni</a></li>
+              <li><a href="/pages/Privacy.html">Privacy</a></li>
+              <li><a href="mailto:matteomania09@gmail.com">Contatti</a></li>
+              <li><a href="/">Altro</a></li>
             </ul>
-        </section>
-        <section class="threejs">
-            <h1 class="title">Magic cube with three.js</h1>
-            <!-- the car container for threejs-->
-            <div class="blurred-canvas" aria-label="cube 3d">
-                <div id="canvas-container" class="canvas1" loading="lazy"></div>
-            </div>
-            <!-- <canvas id="myCanvas"></canvas> -->
-        </section>
-        <!-- CONTACT -->
-        <section class="et-slide contact" id="contact">
-            <h1 class="contact-title">Contact</h1>
-            <footer class="footer-distributed">
-                <div class="footer-right">
-                    <a href="https://www.instagram.com/itz_matteomania/" class="brand-inst"><i
-                            class="ti ti-brand-instagram"></i></a>
-                    <a href="https://github.com/Matteo0099" class="brand-git"><i class="ti ti-brand-github"></i></a>
-                    <a href="https://www.linkedin.com/in/matteo-mani%C3%A0-ba3a4b271/" class="brand-link"><i
-                            class="ti ti-brand-linkedin"></i></a>
-                    <a href="https://www.reddit.com/user/matty0507" class="brand-red"><i
-                            class="ti ti-brand-reddit"></i></a>
-                </div>
-
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a class="link-1" href="#home" aria-label="lnik">Home</a>
-                        <a href="#about" aria-label="lnik">About</a>
-                        <a href="#project" aria-label="lnik">Project</a>
-                        <a href="#contact" aria-label="lnik">Contact</a>
-                    </p>
-                    <p>Matteo Manià &copy; 2023</p>
-                </div>
-            </footer>
-        </section>
+          </footer>
+        </div>
+      </div>
     </main>
-
-    <script src="./src/LazyLoading.js"></script>
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
-    <!-- MAIN JS -->
-    <script src="./src/main.js" defer></script>
-    <!-- PARTICLES JS -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script> <!-- stats.js lib -->
-    <script src="./src/Particles.js" defer></script> <!-- CODE FOR PARTICLES -->
-    <!-- THREE JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js" defer></script>
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
-        }
-    }
-    </script>
-    <!-- three js code -->
-    <script defer type="module-shim">
-        import * as THREE from 'three';
-        window.three = THREE;
-
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
-
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        var container = document.getElementById('canvas-container');
-        container.appendChild(renderer.domElement);
-        renderer.domElement.id = 'myCanvas';
-
-        var geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
-        var material = new THREE.MeshBasicMaterial({ color: 0xfffff, wireframe: false });
-        var cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        camera.position.z = 1000;
-
-        function render() {
-            requestAnimationFrame(render);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        render();
-    </script>
-    <!-- icons -->
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"></script>
-</body>
-
+    <script src="./src/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  </body>
 </html>
