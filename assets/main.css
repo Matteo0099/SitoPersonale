@@ -109,7 +109,7 @@ main .container {
 }
 
 .spotify {
-  background-image: url('../public/spotify_logo.jpg');
+  background-image: url('../public/spotify_logo.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
