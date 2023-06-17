@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matteo Manià | Developer & web designer</title>
     <meta name="description"
       content="Hi! I'Matteo Manià and I'm a developer and web designer. I love develop always something new!">
     <meta name="author" content="Matteo Manià">
     <link rel="icon" href="./public/Face.webp">
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="preload" href="./assets/main.css" 
+      as="style" onload="this.onload=null; this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/main.css"></noscript>
     <link rel="stylesheet" href="./assets/swiperjs.css" />
     <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
 
   <body>
@@ -21,7 +24,7 @@
         <i class="bi bi-moon light"></i>
         <i class="bi bi-moon-fill dark"></i>
       </div>
-
+      <!-- main -->
       <div class="container">
         <header>
           <div class="card">
@@ -62,28 +65,28 @@
               pagination-dynamic-bullets="true">
               <swiper-slide>
                 <div class="container-image st" loading="lazy">
-                  <a href target="_blank">
+                  <a href="https://github.com/Matteo0099/AreacrewWebsite" target="_blank">
                     <button class="sw-btn">AreaCrewWebsite</button>
                   </a>
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image nd" loading="lazy">
-                  <a href target="_blank">
+                  <a href="https://github.com/Matteo0099/Login-Express-Bootstrap" target="_blank">
                     <button class="sw-btn">Dashboard express-js</button>
                   </a>
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image rd" loading="lazy">
-                  <a href target="_blank">
+                  <a href="https://github.com/Matteo0099/CssReset-V2.0" target="_blank">
                     <button class="sw-btn">Css reset/normalize</button>
                   </a>
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image th" loading="lazy">
-                  <a href target="_blank">
+                  <a href="https://github.com/Matteo0099/PCconfigurator" target="_blank">
                     <button class="sw-btn">PC configurator</button>
                   </a>
                 </div>

@@ -1,65 +1,4 @@
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: normal;
-  src: url("../font/IBMPlexSans-Thin.woff2") format('truetype');
-  font-weight: 100
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: italic;
-  src: url("../font/IBMPlexSans-ThinItalic.woff2") format('truetype');
-  font-weight: 100
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: normal;
-  src: url("../font/IBMPlexSans-Light.woff2") format('truetype');
-  font-weight: 200
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: italic;
-  src: url("../font/IBMPlexSans-LightItalic.woff2") format('truetype');
-  font-weight: 200
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: normal;
-  src: url("../font/IBMPlexSans-Regular.woff2") format('truetype');
-  font-weight: 400
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: normal;
-  src: url("../font/IBMPlexSans-Medium.woff2") format('truetype');
-  font-weight: 500
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: italic;
-  src: url("../font/IBMPlexSans-MediumItalic.woff2") format('truetype');
-  font-weight: 500
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: normal;
-  src: url("../font/IBMPlexSans-Bold.woff2") format('truetype');
-  font-weight: 700
-}
-
-@font-face {
-  font-family: var(--ff-fam);
-  font-style: italic;
-  src: url("../font/IBMPlexSans-BoldItalic.woff2") format('truetype');
-  font-weight: 700
-}
+@import url('./font.css');
 
 :root {
   --ff-fam: 'IBM Plex Sans', sans-serif;
@@ -77,6 +16,7 @@
   --fs-large: clamp(20px, 4vw, 28px);
   --fs-big: clamp(32px, 4vw, 40px);
   --tt-short: all 300ms ease;
+  --cubic-animation: all 300ms cubic-bezier(.215, .61, .355, 1);
   --max-w-xl: 1124px
 }
 
@@ -140,7 +80,6 @@ body, html, main {
   position: absolute;
   inset: 0;
   margin: auto;
-  appearance: none;
   border: none;
   background: var(--bg-primary);
   color: var(--card-clr);
@@ -164,7 +103,6 @@ body, html, main {
 
 main .container {
   margin: 0 auto;
-  width: 100%;
   min-height: 100%;
   display: grid;
   place-content: center
@@ -345,7 +283,7 @@ swiper-container .container-image {
 
 swiper-slide .container-image:hover {
   opacity: 0.85;
-  transition: all 300ms cubic-bezier(.215, .61, .355, 1)
+  transition: var(--cubic-animation)
 }
 
 swiper-slide {
@@ -372,7 +310,6 @@ swiper-slide img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin: 3rem 0 0;
   gap: 1.5rem
 }
@@ -422,8 +359,7 @@ body.dark .flex-container>.cards {
 
 footer {
   margin: 5rem auto 0 !important;
-  width: 100%;
-  border-top: 1px solid currentColor;
+  width: 95%;
   background-color: inherit;
   color: currentColor;
   text-align: left

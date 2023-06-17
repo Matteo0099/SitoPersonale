@@ -1,0 +1,64 @@
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: normal;
+  src: url("../font/IBMPlexSans-Thin.woff2") format('truetype');
+  font-weight: 100
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: italic;
+  src: url("../font/IBMPlexSans-ThinItalic.woff2") format('truetype');
+  font-weight: 100
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: normal;
+  src: url("../font/IBMPlexSans-Light.woff2") format('truetype');
+  font-weight: 200
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: italic;
+  src: url("../font/IBMPlexSans-LightItalic.woff2") format('truetype');
+  font-weight: 200
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: normal;
+  src: url("../font/IBMPlexSans-Regular.woff2") format('truetype');
+  font-weight: 400
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: normal;
+  src: url("../font/IBMPlexSans-Medium.woff2") format('truetype');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: italic;
+  src: url("../font/IBMPlexSans-MediumItalic.woff2") format('truetype');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: normal;
+  src: url("../font/IBMPlexSans-Bold.woff2") format('truetype');
+  font-weight: 700
+}
+
+@font-face {
+  font-family: var(--ff-fam);
+  font-style: italic;
+  src: url("../font/IBMPlexSans-BoldItalic.woff2") format('truetype');
+  font-weight: 700
+}
+
+body { font-family: 'IBM Plex Sans', sans-serif }
