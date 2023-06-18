@@ -8,7 +8,8 @@
     <meta name="description"
       content="Hi! I'Matteo Manià and I'm a developer and web designer. I love develop always something new!">
     <meta name="author" content="Matteo Manià">
-    <link rel="icon" href="https://matteomania.netlify.app/public/Face.webp">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/Face.webp" type="image/webp">
+    <link rel="icon" href="./public/Face.webp">
     <link rel="preload" href="./assets/main.css"
       as="style" onload="this.onload=null; this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="./assets/main.css"></noscript>
@@ -44,9 +45,9 @@
           <div class="card">
             <div class="head">
               <picture>
-                <img src="https://matteomania.netlify.app/public/Face.webp"
-                  loading="lazy" role="img"
-                  alt="photo"
+                <img src="./public/Face.webp"
+                  loading="eager" role="img"
+                  alt="photo" fetchpriority="high"
                   width="419" height="559" title="image-profile">
               </picture>
             </div>
@@ -61,8 +62,7 @@
                 target="_blank" aria-label="Facebook link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
               </a>
               <a href="https://www.instagram.com/itz_matteomania/"
@@ -87,10 +87,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   fill="currentColor" class="bi bi-stack-overflow"
                   viewBox="0 0 16 16">
-                  <path
-                    d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z" />
-                  <path
-                    d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z" />
+                  <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z" />
+                  <path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z" />
                 </svg>
               </a>
             </div>
@@ -112,8 +110,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image nd" loading="lazy">
-                  <a
-                    href="https://github.com/Matteo0099/Login-Express-Bootstrap"
+                  <a href="https://github.com/Matteo0099/Login-Express-Bootstrap"
                     target="_blank" aria-label="link-project">
                     <button class="sw-btn">Dashboard express-js</button>
                   </a>
@@ -146,7 +143,7 @@
           <div class="cards about">
             <div class="about-container">
               <div class="photo-about">
-                <img src="https://matteomania.netlify.app/public/Face.webp"
+                <img src="./public/Face.webp"
                   width="419" height="559"
                   role="img" alt="image" title="image-profile">
               </div>
