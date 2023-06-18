@@ -250,27 +250,14 @@ swiper-container .container-image {
   border-radius: 10px
 }
 
+.container-image img {
+  border-radius: 10px
+}
+
 .container-image.nd, .container-image.rd, .container-image.st, .container-image.th {
   background-position: center center;
   background-size: cover;
   aspect-ratio: 5 / 3;
-}
-
-/*https://matteomania.netlify.app/public/pr*/
-.container-image.st {
-  background-image: url('https://matteomania.netlify.app/public/pr/AreaCrew.webp')
-}
-
-.container-image.nd {
-  background-image: url('https://matteomania.netlify.app/public/pr/login-ejs.webp')
-}
-
-.container-image.rd {
-  background-image: url('https://matteomania.netlify.app/public/pr/CssReset.webp')
-}
-
-.container-image.th {
-  background-image: url('https://matteomania.netlify.app/public/pr/PcConfig.webp')
 }
 
 swiper-slide .container-image:hover {
