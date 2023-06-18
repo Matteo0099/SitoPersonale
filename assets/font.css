@@ -2,63 +2,137 @@
   font-family: var(--ff-fam);
   font-style: normal;
   src: url("../font/IBMPlexSans-Thin.woff2") format('truetype');
-  font-weight: 100
+  font-weight: 100;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: italic;
   src: url("../font/IBMPlexSans-ThinItalic.woff2") format('truetype');
-  font-weight: 100
+  font-weight: 100;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: normal;
   src: url("../font/IBMPlexSans-Light.woff2") format('truetype');
-  font-weight: 200
+  font-weight: 200;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: italic;
   src: url("../font/IBMPlexSans-LightItalic.woff2") format('truetype');
-  font-weight: 200
+  font-weight: 200;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: normal;
   src: url("../font/IBMPlexSans-Regular.woff2") format('truetype');
-  font-weight: 400
+  font-weight: 400;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: normal;
   src: url("../font/IBMPlexSans-Medium.woff2") format('truetype');
-  font-weight: 500
+  font-weight: 500;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: italic;
   src: url("../font/IBMPlexSans-MediumItalic.woff2") format('truetype');
-  font-weight: 500
+  font-weight: 500;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: normal;
   src: url("../font/IBMPlexSans-Bold.woff2") format('truetype');
-  font-weight: 700
+  font-weight: 700;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
 @font-face {
   font-family: var(--ff-fam);
   font-style: italic;
   src: url("../font/IBMPlexSans-BoldItalic.woff2") format('truetype');
-  font-weight: 700
+  font-weight: 700;
+  font-display: optional;
+  ascent-override: 105%;
+  /* = 1050/1000 */
+  descent-override: 35%;
+  /* = 350/1000 */
+  line-gap-override: 10%;
+  /* = 100/1000 */
+  size-adjust: 100%;
 }
 
-body { font-family: 'IBM Plex Sans', sans-serif }
+body {
+  font-family: 'IBM Plex Sans', sans-serif
+}

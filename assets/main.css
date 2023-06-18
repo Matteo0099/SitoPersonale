@@ -28,6 +28,7 @@ body, html {
   transition: var(--tt-short);
   line-height: 1.15 !important;
   image-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
 }
 
 body.dark {
@@ -39,6 +40,7 @@ body.dark {
 img, picture, svg, video {
   display: block;
   max-width: 100%;
+  aspect-ratio: auto 640 / 360;
 }
 
 a, button {
@@ -87,18 +89,6 @@ body, html, main {
   background-image: none;
   outline: none;
   text-align: center
-}
-
-.hero-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 2.5rem
 }
 
 main .container {
@@ -231,6 +221,7 @@ main .container {
   border: 1px solid currentColor;
   box-shadow: 0 0 0 0 currentColor;
   transition: box-shadow 100ms ease, opacity 100ms ease;
+  will-change: box-shadow;
   opacity: 1
 }
 
