@@ -8,12 +8,12 @@
     <meta name="description"
       content="Hi! I'Matteo Manià and I'm a developer and web designer. I love develop always something new!">
     <meta name="author" content="Matteo Manià">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/Face.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/spotify_logo.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/AreaCrew.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/CssReset.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/login-ejs.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/PcConfig.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/Face.webp" type="image/webp" role="img">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/spotify_logo.webp" type="image/webp" role="img">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/AreaCrew.webp" type="image/webp" role="img">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/CssReset.webp" type="image/webp" role="img">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/login-ejs.webp" type="image/webp" role="img">
+    <link rel="preload" fetchpriority="high" as="image" href="./public/pr/PcConfig.webp" type="image/webp" role="img">
     <link rel="icon" href="./public/Face.webp">
     <link rel="preload" href="./assets/main.css"
       as="style" onload="this.onload=null; this.rel='stylesheet'">
@@ -25,7 +25,7 @@
       as="style" onload="this.onload=null; this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="./assets/reset.css"></noscript>
     <script src="./src/script.js" type="text/javascript" defer async></script>
-    <script src="./src/swiperJs.js" type="text/javascript" defer async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer async></script>  
   </head>
 
   <body>
@@ -34,14 +34,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           fill="currentColor"
           class="bi bi-moon-fill light" viewBox="0 0 16 16">
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          fill="currentColor"
-          class="bi bi-moon dark" viewBox="0 0 16 16">
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+          fill="currentColor" class="bi bi-moon dark" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
         </svg>
       </div>
       <!-- main -->
@@ -51,8 +48,7 @@
             <div class="head">
               <picture>
                 <img src="./public/Face.webp"
-                  loading="eager" role="img"
-                  alt="photo" fetchpriority="high"
+                  loading="eager" role="img" alt="photo" fetchpriority="high"
                   width="419" height="559" title="image-profile">
               </picture>
             </div>
@@ -116,7 +112,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image nd">
-                  <img src="./public/pr/login-ejs.webp" alt="image" width="1876" height="819">
+                  <img src="./public/pr/login-ejs.webp" alt="image" loading="lazy" width="1876" height="819">
                   <a href="https://github.com/Matteo0099/Login-Express-Bootstrap"
                     target="_blank" aria-label="link-project">
                     <button class="sw-btn">Dashboard express-js</button>
@@ -125,7 +121,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image rd">
-                  <img src="./public/pr/CssReset.webp" alt="image" width="1689" height="1042">
+                  <img src="./public/pr/CssReset.webp" alt="image" loading="lazy" width="1689" height="1042">
                   <a href="https://github.com/Matteo0099/CssReset-V2.0"
                     target="_blank" aria-label="link-project">
                     <button class="sw-btn">Css reset/normalize</button>
@@ -134,7 +130,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image th">
-                  <img src="./public/pr/PcConfig.webp" alt="image" width="1852" height="1238">
+                  <img src="./public/pr/PcConfig.webp" alt="image" loading="lazy" width="1852" height="1238">
                   <a href="https://github.com/Matteo0099/PCconfigurator"
                     target="_blank" aria-label="link-project">
                     <button class="sw-btn">PC configurator</button>
