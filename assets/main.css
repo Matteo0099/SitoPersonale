@@ -326,7 +326,7 @@ main .container {
   height: 100%;
   margin: auto;
   border-radius: 21px;
-  aspect-ratio: 16 / 9
+  aspect-ratio: 1024 / 768 !important
 }
 
 @media screen and (max-width: 558px) {
@@ -560,7 +560,6 @@ swiper-slide img {
   display: grid;
   place-content: center;
   max-width: 586px;
-  min-height: 375px;
   height: max-content;
   text-align: center;
   padding: 1rem;
@@ -575,9 +574,15 @@ swiper-slide img {
     max-width: 767px !important;
   }
 }
+/* values 310px and 430px */
 @media screen and (max-width: 466px) {
   .flex-container>.cards {
     min-height: 310px;
+  }
+}
+@media screen and (min-width: 466px) {
+  .flex-container>.cards {
+    min-height: 430px;
   }
 }
 
