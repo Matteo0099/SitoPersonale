@@ -266,7 +266,6 @@ img, picture, svg, video {
   display: block;
   max-width: 100%;
   height: auto;
-  aspect-ratio: auto 640 / 360
 }
 
 a, button {
@@ -323,11 +322,11 @@ main .container {
   inset: 0;
   z-index: 0;
   overflow: hidden;
-  width: 100%;
+  width: fit-content;
   height: 100%;
   margin: auto;
   border-radius: 21px;
-  aspect-ratio: 9 / 16
+  aspect-ratio: 16 / 9
 }
 
 @media screen and (max-width: 558px) {
@@ -573,7 +572,11 @@ swiper-slide img {
 
 @media screen and (max-width: 767px) {
   .flex-container {
-    max-width: 767px !important
+    max-width: 767px !important;
+  }
+
+  .flex-container>.cards {
+    min-height: 335px !important;
   }
 }
 
