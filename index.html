@@ -13,7 +13,6 @@
     <link rel="dns-prefetch" href="http://www.w3.org/2000/svg">
     <!-- icon profile tab -->
     <link rel="icon" href="./public/Face.webp">
-    <link rel="icon" href="./public/Face.jpg">
     <!-- css modules -->
     <link rel="preload" href="./assets/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="./assets/main.css"></noscript>
@@ -30,7 +29,7 @@
 
   <body>
     <main>
-      <div class="toggle-dark">
+      <div class="toggle-dark animate-in" style="--animation-order:1">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           fill="currentColor" class="bi bi-moon-fill dark" viewBox="0 0 16 16">
           <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
@@ -44,26 +43,24 @@
       <div class="container">
         <header>
           <div class="card">
-            <div class="head">
-              <picture>
-                <source type="image/webp" srcset="./public/Face.webp">
-                <source type="image/jpg" srcset="./public/Face.jpg"> 
+            <div class="head animate-in" style="--animation-order:1">
+              <picture> 
                 <img src="./public/Face.webp" loading="eager" role="img" alt="Image" fetchpriority="high"
                 width="419" height="559" title="image-profile">
               </picture>
             </div>
-            <div class="title"> <h1>Matteo Manià</h1> </div>
-            <div class="description"> <h2>Developer & web designer</h2> </div>
-            <div class="link">
+            <div class="title animate-in" style="--animation-order:2"> <h1>Matteo Manià</h1> </div>
+            <div class="description animate-in" style="--animation-order:3"> <h2>Developer & web designer</h2> </div>
+            <div class="link animate-in" style="--animation-order:3">
               <a href="https://www.facebook.com/robin.ticke.50/"
-                target="_blank" aria-label="Facebook link">
+                target="_blank" class="animate-in" style="--animation-order:4" aria-label="Facebook link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
               </a>
               <a href="https://www.instagram.com/itz_matteomania/"
-                target="_blank" aria-label="Instagram link">
+                target="_blank" class="animate-in" style="--animation-order:5" aria-label="Instagram link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   fill="currentColor" class="bi bi-instagram"
                   viewBox="0 0 16 16">
@@ -71,14 +68,14 @@
                 </svg>
               </a>
               <a href="https://github.com/Matteo0099"
-                target="_blank" aria-label="Github link">
+                target="_blank" class="animate-in" style="--animation-order:6" aria-label="Github link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg>
               </a>
               <a href="https://stackoverflow.com/users/19768851/area-crew-bmx"
-                target="_blank" aria-label="Stackoverflow link">
+                target="_blank" class="animate-in" style="--animation-order:7" aria-label="Stackoverflow link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
                   <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z" />
@@ -90,14 +87,12 @@
         </header>
         <!-- container cards -->
         <div class="flex-container">
-          <div class="cards">
+          <div class="cards animate-in" style="--animation-order: 8">
             <swiper-container class="mySwiper" pagination="true"
               pagination-dynamic-bullets="true" role="contentinfo">
               <swiper-slide>
                 <div class="container-image st">
                   <picture>
-                    <source type="image/webp" srcset="./public/pr/AreaCrew.webp">
-                    <source type="image/jpg" srcset="./public/pr/AreaCrew.jpg"> 
                     <img src="./public/pr/AreaCrew.webp" alt="image" width="2019" height="1242">
                   </picture>
                   <a href="https://github.com/Matteo0099/AreacrewWebsite" target="_blank" aria-label="link-project">
@@ -107,9 +102,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div class="container-image nd">
-                  <picture>
-                    <source type="image/webp" srcset="./public/pr/login-ejs.webp">
-                    <source type="image/jpg" srcset="./public/pr/login-ejs.jpg"> 
+                  <picture> 
                     <img src="./public/pr/login-ejs.webp" alt="image"
                   loading="eager" width="1876" height="819">
                   </picture>
@@ -121,8 +114,6 @@
               <swiper-slide>
                 <div class="container-image rd">
                   <picture>
-                    <source type="image/webp" srcset="./public/pr/CssReset.webp">
-                    <source type="image/jpg" srcset="./public/pr/CssReset.jpg"> 
                     <img src="./public/pr/CssReset.webp" alt="image"
                     loading="eager" width="1689" height="1042">
                   </picture>
@@ -135,8 +126,6 @@
               <swiper-slide>
                 <div class="container-image th">
                   <picture>
-                    <source type="image/webp" srcset="./public/pr/PcConfig.webp">
-                    <source type="image/jpg" srcset="./public/pr/PcConfig.jpg"> 
                     <img src="./public/pr/PcConfig.webp" alt="image"
                     loading="eager" width="1852" height="1238">
                   </picture>
@@ -148,27 +137,10 @@
               </swiper-slide>
             </swiper-container>
           </div>
-          <a target="_blank" href="https://open.spotify.com/playlist/5w49GjtZ2UOT0e86q63PgP?si=da47316fca614c59"
-            class="cards spotify" aria-label="spotify playset">
-            <picture>
-              <source type="image/webp" srcset="./public/spotify_logo.webp">
-              <source type="image/jpg" srcset="./public/spotify_logo.jpg"> 
-              <img src="./public/spotify_logo.webp" type="image/webp" role="img"
-              alt="image" class="img-spotify" height="808" width="1298">
-            </picture>
-            <h1 class="card-title">Entra nel flusso</h1>
-            <button class="btn">chill</button>
-          </a>
-          <div class="cards chill">
-            <h1 class="card-title">Chill'n drip</h1>
-            <p>"tutto si può fare, nel chill ovviamente!"</p>
-          </div>
-          <div class="cards about">
+          <div class="cards about animate-in" style="--animation-order: 9">
             <div class="about-container">
               <div class="photo-about">
                 <picture>
-                  <source type="image/webp" srcset="./public/Face.webp">
-                  <source type="image/jpg" srcset="./public/Face.jpg"> 
                   <img src="./public/Face.webp"
                   width="419" height="559" loading="eager"
                   role="img" alt="image" title="image-profile">
@@ -184,11 +156,24 @@
               </div>
             </div>
           </div>
+          <div class="cards chill animate-in" style="--animation-order: 10">
+            <h1 class="card-title">Chill'n drip</h1>
+            <p>"tutto si può fare, nel chill ovviamente!"</p>
+          </div>
+          <a target="_blank" href="https://open.spotify.com/playlist/5w49GjtZ2UOT0e86q63PgP?si=da47316fca614c59"
+            class="cards spotify animate-in" style="--animation-order: 11" aria-label="spotify playset">
+            <picture>
+              <img src="./public/spotify_logo.webp" type="image/webp" role="img"
+              alt="image" class="img-spotify" height="808" width="1298">
+            </picture>
+            <h1 class="card-title">Entra nel flusso</h1>
+            <button class="btn">chill</button>
+          </a>
         </div>
         <!-- footer -->
         <footer>
-          <h1>Matteo Manià</h1>
-          <ul class="footer-list">
+          <h1 class="animate-in" style="--animation-order: 12">Matteo Manià</h1>
+          <ul class="footer-list animate-in" style="--animation-order: 13">
             <li><a href="./pages/termsCondition.html" role="button" aria-label="link footer">Termini e condizioni</a></li>
             <li><a href="/pages/Privacy.html" role="button" aria-label="link footer">Privacy</a></li>
             <li><a href="mailto:matteomania09@gmail.com" role="button" aria-label="link footer">Contatti</a></li>
