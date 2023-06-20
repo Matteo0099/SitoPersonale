@@ -7,6 +7,8 @@
     <title>Matteo Manià | Developer & web designer</title>
     <meta name="description" content="Hi! I'Matteo Manià and I'm a developer and web designer. I love develop always something new!">
     <meta name="author" content="Matteo Manià">
+    <link rel="preconnect" href="https://matteomania.netlify.app/">
+    <link rel="dns-prefetch" href="https://matteomania.netlify.app/" />
     <link rel="preload" fetchpriority="high" as="image" href="https://matteomania.netlify.app/public/Face.webp" type="image/webp" role="img">
     <link rel="icon" href="https://matteomania.netlify.app/public/Face.webp">
     <link rel="preload" fetchpriority="high" as="image" href="https://matteomania.netlify.app/public/spotify_logo.webp" type="image/webp" role="img">
@@ -14,16 +16,13 @@
     <link rel="preload" fetchpriority="high" as="image" href="https://matteomania.netlify.app/public/pr/CssReset.webp" type="image/webp" role="img">
     <link rel="preload" fetchpriority="high" as="image" href="https://matteomania.netlify.app/public/pr/login-ejs.webp" type="image/webp" role="img">
     <link rel="preload" fetchpriority="high" as="image" href="https://matteomania.netlify.app/public/pr/PcConfig.webp" type="image/webp" role="img">
-    
-    <link rel="preload" href="./assets/main.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./assets/main.css"></noscript>
-    <link rel="preload" href="./assets/swiperjs.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./assets/swiperjs.css"></noscript>
-    <link rel="preload" href="./assets/reset.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./assets/reset.css"></noscript>
-    
-    <script src="./src/script.js" type="text/javascript" defer async></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer async></script>
+    <link rel="preload" href="./assets/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./assets/reset.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./assets/swiperjs.css" as="style" onload="this.rel='stylesheet'">
+    <!-- <script src="./src/script.js" type="text/javascript" defer></script> -->
+    <link rel="preload" href="./src/script.js" as="script">
+    <script src="./src/script.js" defer></script>
+    <script src="./src/SwiperJs.js" type="text/javascript" defer></script><!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer></script> -->
   </head>
 
   <body>
