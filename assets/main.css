@@ -574,9 +574,10 @@ swiper-slide img {
   .flex-container {
     max-width: 767px !important;
   }
-
+}
+@media screen and (max-width: 466px) {
   .flex-container>.cards {
-    min-height: 305px;
+    min-height: 310px;
   }
 }
 
