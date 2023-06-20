@@ -560,7 +560,7 @@ swiper-slide img {
   display: grid;
   place-content: center;
   max-width: 586px;
-  min-height: 370px;
+  min-height: 375px;
   height: max-content;
   text-align: center;
   padding: 1rem;
@@ -576,7 +576,7 @@ swiper-slide img {
   }
 
   .flex-container>.cards {
-    min-height: 335px !important;
+    min-height: 315px;
   }
 }
 
