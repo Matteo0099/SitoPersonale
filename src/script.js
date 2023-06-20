@@ -10,7 +10,6 @@ function updateTheme(theme) {
 } 
 
 const storedTheme = localStorage.getItem('theme'); 
-
 if (storedTheme) { 
   updateTheme(storedTheme) 
 } 
@@ -34,13 +33,3 @@ self.addEventListener("fetch", (e) => {
     caches.match(e.request).then((r) => r || fetch(e.request))
   );
 });
-
-// script pre load
-// const preloadLink = document.createElement("link");
-// preloadLink.href = "script.js";
-// preloadLink.rel = "preload";
-// preloadLink.as = "script";
-// document.head.appendChild(preloadLink);
-// const preloadedScript = document.createElement("script");
-// preloadedScript.src = "script.js";
-// document.body.appendChild(preloadedScript);
