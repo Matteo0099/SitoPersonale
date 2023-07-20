@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer>
+  <div>
+    <small>
+      Copyright &copy; 
+      <span id="copyright"></span> 
+      | All rights reserved
+    </small>
+    <small>
+      <a href="https://github.com/Matteo0099/SitoPersonale">
+        Leave a star on github!
+        <Icon name="bi:github" width="20" height="20" />
+      </a>
+    </small>
+  </div>
+</footer>
+
+<script>
+  document.querySelector("#copyright").textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>
