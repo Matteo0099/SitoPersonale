@@ -138,7 +138,6 @@ h6 {
 
 /* prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -314,6 +313,12 @@ button {
   }
 }
 
+a svg:hover {
+  opacity: .75;
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  transition: var(--transition-squish-slow);
+}
 
 ::selection {
   background: hsl(var(--accent) / .85);
@@ -324,11 +329,11 @@ button {
   width: 100%;
   max-width: 1500px;
   margin-inline: auto;
+  margin-top: var(--space-md);
   padding: var(--space-md);
 }
 
 /* nav */
-
 [aria-label="Primary"] {
   width: 100%;
   padding-block: var(--space-xs);
@@ -364,34 +369,34 @@ button {
 }
 
 /* footer */
-
 :where(footer) {
-    width: 100%;
-    text-align: center;
-    padding: var(--space-sm);
-    background-color: hsl(var(--muted));
-    box-shadow: var(--shadow-lg);
+  width: 100%;
+  text-align: center;
+  padding: var(--space-sm);
+  background-color: hsl(var(--muted));
+  box-shadow: var(--shadow-lg);
+  margin-top: var(--space-md);
 
-    & div {
-      display: grid;
-      place-items: center;
-      max-width: 1500px;
-      margin-inline: auto;
-      gap: var(--space-sm);
+  & div {
+    display: grid;
+    place-items: center;
+    max-width: 1500px;
+    margin-inline: auto;
+    gap: var(--space-sm);
 
-      @media --sm {
-        display: flex;
-        justify-content: space-between;
-      }
+    @media --sm {
+      display: flex;
+      justify-content: space-between;
+    }
 
-      & a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        text-decoration: none;
-      }
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
     }
   }
+}
 
 /* about */
 .about {
@@ -422,6 +427,7 @@ button {
     display: grid;
     gap: var(--space-xs);
     max-width: var(--content-md);
+    margin-left: var(--space-xs);
   }
 }
 
@@ -535,7 +541,7 @@ header {
     margin-block-start: var(--space-xl);
 
     @media --md {
-      margin:0;
+      margin: 0;
     }
 
     & aside {
@@ -548,9 +554,10 @@ header {
       }
 
       @media --md {
-      text-align: left;
-      justify-content: start;
-      justify-items: start;
+        text-align: left;
+        justify-content: start;
+        justify-items: start;
+
         & .categories {
           justify-content: start;
         }
@@ -595,32 +602,32 @@ header {
   }
 }
 
-[aria-label="Blog categories"], [aria-label="Related posts"] {
-    padding: 0;
-    text-align: center;
-    display: grid;
-    gap: var(--space-sm);
-    justify-items: center;
+[aria-label="Blog categories"],
+[aria-label="Related posts"] {
+  padding: 0;
+  text-align: center;
+  display: grid;
+  gap: var(--space-sm);
+  justify-items: center;
 
-    & .post {
-      background-color: hsl(var(--muted));
-      padding: var(--space-xs);
-      gap: var(--space-2xs);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
-      width: fit-content;
+  & .post {
+    background-color: hsl(var(--muted));
+    padding: var(--space-xs);
+    gap: var(--space-2xs);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    width: fit-content;
 
-      & a {
-        text-decoration: none;
-      }
+    & a {
+      text-decoration: none;
     }
   }
+}
 
-
-:where([aria-label="Blog categories"]){
+:where([aria-label="Blog categories"]) {
   margin-block-end: var(--space-lg);
 }
 
-.sidebar [aria-label="Blog categories"]{
+.sidebar [aria-label="Blog categories"] {
   margin-block: 0;
 }
