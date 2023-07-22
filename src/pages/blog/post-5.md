@@ -1,23 +1,50 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: JavaScript SchmavaScript
+title: How To Center Vertically In CSS
 date: 2022-12-05
-author: Kevin Powell
+author: Matteo Manià
 image: {
   src: "/images/post-5.jpg",
   alt: "A picture of a coder",
 }
-description: This is a blog post about the JavaScript programming language. Like it, love it, hate it, it's here to stay.
+description: Center vertically in CSS is a little bit weird sometimes, but in this case wouldn't not!
 draft: false
 category: Reference Docs
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+<h2>
+  Basic example
+</h2>
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+```html
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+```
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+```css
+  .parent {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+  }
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+  .child {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 100px;
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+    width: 100px;
+    background-color: yellow;
+  }
+```
+
+<p style="padding: 3rem 0 0 0;">↓ ↓ ↓</p>
+
+## final result: 
+
+<div style="height: 300px; position: relative; width: 300px; background-color: lightblue;">
+  <div style="height: 100px; position: absolute; top: 100px; left: 100px; width: 100px; background-color:yellow"></div>
+</div>

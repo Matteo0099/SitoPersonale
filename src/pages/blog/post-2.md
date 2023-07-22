@@ -1,27 +1,97 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: Running out of sample post ideas
+title: Javascript vs TypeScript
 date: 2022-11-25
 author: Matteo Manià
 image: {
   src: "/images/post-2.jpg",
   alt: "A picture of a coder",
 }
-description: Sometimes you just run out of ideas for sample blog posts. It’s no one’s fault, it’s just the way it is.
+description: TypeScript is a language js based that was born by Microsoft
 draft: false
 category: General
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+<h2>
+  Will Typescript remove javascript?
+</h2>
 
-## Kinda Sus
+Typescript is js based, with some new features. It cannot remove javascript, but is better in performance e code manteniability. 
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
 
-## Is anyone reading these?
+<h2>
+  Differences
+</h2>
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+JS is dynamic and TS is static
+This is the core difference between JavaScript and TypeScript. While JavaScript is dynamically-typed, TypeScript is a statically-typed superset of JavaScript, which means it offers strict static typing as an option but will allow dynamic typing, as well. As a result, TypeScript code is safer  but a little trickier to write, resulting in more errors earlier in development. The language you use depends on the project you want to execute and the type of code you like to write.
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+
+
+<h2>TypeScript:</h2>
+
+Pros:
+
+<ul>
+  <li>Static Typing: TypeScript's static typing feature allows for catching type-related errors early in the development process, leading to improved code quality and fewer runtime errors.</li>
+
+  <li>Code Maintainability: The use of explicit types and better IDE support makes the code more self-documenting and easier to understand, leading to better code maintainability, especially in larger projects.</li>
+
+  <li>Enhanced Tooling: TypeScript's intelligent autocompletion, code navigation, and refactoring tools improve developer productivity and make it easier to work with large codebases.</li>
+
+  <li>Gradual Adoption: TypeScript can be introduced incrementally into existing JavaScript projects, allowing developers to gradually adopt it as they see fit.</li>
+
+  <li>ECMAScript Support: TypeScript supports the latest ECMAScript features, enabling developers to use modern JavaScript even when targeting older environments.</li>
+
+  <li>Community and Libraries: TypeScript has a growing community and integrates well with popular JavaScript libraries and frameworks like React, Angular, and Vue.js. </li>
+</ul>
+
+Cons:
+
+<ul>
+  <li>Learning Curve: Developers who are new to TypeScript might face a learning curve when adopting static typing and dealing with more complex type annotations. </li>
+
+  <li>Overhead: TypeScript adds some overhead due to the type-checking process during compilation, which might result in slightly larger file sizes and a longer build time compared to pure JavaScript. </li>
+
+  <li>Compatibility Issues: While TypeScript is compatible with most JavaScript code, some third-party libraries might not have TypeScript definitions readily available, requiring developers to write their own type declarations or use type assertion. </li>
+</ul>
+
+
+<h2>JavaScript:</h2>
+
+Pros:
+
+<ul>
+  <li>Simplicity: JavaScript has a simple and easy-to-understand syntax, making it accessible to developers with varying levels of experience.</li>
+
+  <li>Browser Compatibility: As the language of the web, JavaScript runs natively in browsers without any additional compilation steps.</li>
+
+  <li>Vast Ecosystem: JavaScript has a massive ecosystem of libraries, frameworks, and tools, making it easy to find solutions and resources for almost any use case.</li>
+
+  <li>Dynamic Typing: For some developers, dynamic typing can be seen as an advantage, as it allows for more flexible and concise code.</li>
+
+  <li>Performance: JavaScript execution engines have been highly optimized over the years, making JavaScript code performant and efficient.</li>
+</ul>
+
+Cons:
+
+<ul>
+  <li>Type Safety: JavaScript's lack of static typing can lead to runtime errors due to unexpected type-related issues, which can be harder to catch during development.</li>
+
+  <li>Code Maintainability: In larger codebases, JavaScript's dynamic typing and implicit type conversions can make the code harder to maintain and understand.</li>
+
+  <li>Tooling Limitations: JavaScript's tooling, while continuously improving, might not be as robust as TypeScript's in terms of type checking and refactoring support.</li>
+
+  <li>Async Programming Complexity: JavaScript's callback-based asynchronous programming can lead to complex and hard-to-read code, especially in deeply nested scenarios.</li>
+
+  <li>Language Quirks: JavaScript has some peculiarities and inconsistencies, which can be challenging for developers to deal with, especially those coming from more strictly-typed languages</li>
+</ul>
+
+
+<h2 style="margin-top: 2.75rem; border-top: 1px solid #999; padding-top: 2rem;">
+  Conclusion
+</h2>
+
+
+Ultimately, the choice between TypeScript and JavaScript depends on factors like the project's complexity, team familiarity with static typing, the need for enhanced tooling, and the specific use case. TypeScript is well-suited for larger projects where static typing and tooling can improve code reliability and maintenance. On the other hand, JavaScript's simplicity and flexibility make it a good fit for smaller projects or when a more dynamic approach is preferred.
