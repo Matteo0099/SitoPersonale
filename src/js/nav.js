@@ -5,3 +5,7 @@ navLinks.forEach((link) => {
     link.setAttribute("aria-current", "page");
   }
 })
+
+document.querySelector(".burger-icon").addEventListener("click", function() {
+  document.querySelector(".nav-menu").classList.toggle("active");
+});

@@ -12,19 +12,27 @@ import navData from "../data/navData";
     <a href="/" class="logomark" aria-label="Go home">
       <Icon name="logomark" width="120" />
     </a>
-    <ul>
-      {
-        navData.map((item) => (
-          <Link
-            text={item.name}
-            href={item.path}
-            style="primary"
-            isFilled={false}
-            data-navLink
-          />
-        ))
-      }
-    </ul>
+    <div class="nav-menu">
+      <ul>
+        {
+          navData.map((item) => (
+            <Link
+              text={item.name}
+              href={item.path}
+              style="primary"
+              isFilled={false}
+              data-navLink
+            />
+          ))
+        }
+      </ul>
+      <button class="btn-dark">
+        <i class="bi bi-moon"></i>
+      </button>
+    </div>
+    <button class="burger-icon">
+      <i class="bi bi-list"></i>
+    </button>
   </div>
 </nav>
 

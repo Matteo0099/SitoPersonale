@@ -16,9 +16,13 @@ const {
 } = Astro.props;
 ---
 
+<script>
+  import '../js/DarkMode';
+</script>
+
 <html lang="en">
   <MainHead {title} {description} {image} {frontmatter} {robots} />
-  <body>
+  <body class="body-primary">
     <Nav />
     <main>
       <slot>Default</slot>
