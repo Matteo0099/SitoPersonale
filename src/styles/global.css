@@ -439,6 +439,7 @@ a svg:hover {
     justify-content: center;
     align-items: center;
   }
+
   .btn-dark {
     margin: 1rem 0 0 0;
   }
@@ -456,6 +457,11 @@ a svg:hover {
   max-width: 1500px;
   margin-inline: auto;
   padding-inline: var(--space-md);
+}
+
+.navbar-first {
+  transition: background 350ms ease !important;
+  -webkit-transition: background 350ms ease !important;
 }
 
 .logomark {
