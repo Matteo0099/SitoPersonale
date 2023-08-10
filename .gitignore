@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# vs code 
+.vscode
+
 # dependencies
 node_modules/
 

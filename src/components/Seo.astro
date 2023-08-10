@@ -5,7 +5,7 @@ import jsonLDGenerator from "../js/jsonLD";
 const {
   title,
   description,
-  url = Astro.url,
+  url = "https://matteomania.netlify.app",
   image,
   frontmatter,
   robots,
@@ -43,7 +43,7 @@ const jsonLD = jsonLDGenerator({
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content={image?.src || siteData.image.src} />
 <meta name="twitter:image:alt" content={title} />
-<meta name="twitter:domain" content={import.meta.env.SITE} />
+<meta name="twitter:domain" content={url} />
 
 {robots && <meta name="robots" content="noindex, nofollow" />}
 
