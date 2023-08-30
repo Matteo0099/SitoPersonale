@@ -22,7 +22,12 @@ const { page } = Astro.props;
 
 <MainLayout title="My Blog">
   <section class="container" aria-label="New Blog Posts">
-    <h1 class="h1">New Blog Posts</h1>
+    <h1 class="h1" 
+      data-aos="fade-down"
+      data-aos-anchor-placement="bottom-bottom"
+    >
+      New Blog Posts
+    </h1>
     <div class="post-container">
       {
         page.data.map((post) => (
@@ -37,7 +42,15 @@ const { page } = Astro.props;
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </section>
   <aside class="container" aria-label="Blog categories">
-    <h2 class="h3">Blog Categories</h2>
+    <h2 
+      class="h3"
+      data-aos="zoom-in-up"
+      data-aos-anchor-placement="bottom-bottom"
+      data-aos-easing="cubic"
+      data-aos-duration="300"
+    >
+      Blog Categories
+    </h2>
     <CategoryCloud showCount={true} />
   </aside>
 </MainLayout>

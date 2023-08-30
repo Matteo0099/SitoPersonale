@@ -9,7 +9,7 @@ const { category, title, author, date, image } = Astro.props;
 ---
 
 <header>
-  <div class="container">
+  <div class="container" data-aos="fade-in" data-aos-delay="250" data-aos-duration="300">
     <small>
       <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
     </small>

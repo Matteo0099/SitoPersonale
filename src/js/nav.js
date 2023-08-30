@@ -13,14 +13,6 @@ document.querySelector(".burger-icon").addEventListener("click", function () {
 document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar-first');
   let body = document.querySelector('body');
-  // const gradients = [
-  //   'linear-gradient(to right, #43e97b, #38f9d7)', // 0%
-  //   'linear-gradient(to right, #ff0000, #ffff00)', // 20%
-  //   'linear-gradient(to right, #0000ff, #ff00ff)', // 40%
-  //   'linear-gradient(to right, #00ff00, #00ffff)', // 60%
-  //   'linear-gradient(to right, #ffffff, #000000)'  // 80%
-  // ];
-  // flags (aggiornamento fluido)
   let ticking = false;
 
   window.addEventListener('scroll', () => {
@@ -75,4 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-

@@ -15,7 +15,7 @@ const Tag = tagType;
 const { title, date, author, image, description, category } = frontmatter;
 ---
 
-<article class="card">
+<article class="card" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="300">
   <small>
     <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
   </small>
@@ -31,7 +31,7 @@ const { title, date, author, image, description, category } = frontmatter;
       aspectRatio="4:1"
     />
   </a>
-  <div class="content">
+  <div class="content" data-aos="fade-in" data-aos-delay="250" data-aos-duration="300">
     <div>
       <Tag class="h3">
         <a href={url}>{title}</a>

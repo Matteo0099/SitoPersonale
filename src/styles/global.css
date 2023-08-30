@@ -11,6 +11,10 @@ nav :where(ol, ul) {
   list-style: none;
 }
 
+:where(nav) {
+  z-index: 9999 !important;
+}
+
 img,
 picture {
   width: 100%;
@@ -125,13 +129,10 @@ h6 {
 
 /* prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }

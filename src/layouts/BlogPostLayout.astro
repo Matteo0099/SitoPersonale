@@ -36,8 +36,8 @@ const relatedPosts = formattedPosts
   robots={frontmatter.robots}
 >
   <PostHeader {title} {description} {date} {category} {image} {author} />
-  <div class="post-content">
-    <div class="content">
+  <div class="post-content" data-aos="fade-in" data-aos-duration="300" data-aos-delay="0">
+    <div class="content" data-aos="fade-in" data-aos-duration="300" data-aos-delay="250">
       <slot />
     </div>
     <div class="sidebar">
