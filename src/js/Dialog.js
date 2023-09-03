@@ -23,3 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("btn or dialog element not found.");
   }
 });
+
+console.clear();

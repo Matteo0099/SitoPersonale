@@ -47,3 +47,5 @@ export function formatBlogPosts(posts, {
   }
   return filteredPosts;
 }
+
+console.clear();

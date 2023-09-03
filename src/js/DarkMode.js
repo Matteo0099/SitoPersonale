@@ -23,3 +23,5 @@ window.onload = function() {
   currentTheme = getTheme();
   setTheme(currentTheme);
 }
+
+console.clear();

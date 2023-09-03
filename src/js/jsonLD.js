@@ -33,3 +33,5 @@ export default function jsonLDGenerator({ type, post, url }) {
       }
     </script>`;
 }
+
+console.clear();
