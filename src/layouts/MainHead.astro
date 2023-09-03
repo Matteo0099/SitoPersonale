@@ -17,6 +17,14 @@ const { title, description, image, frontmatter, robots } = Astro.props;
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
     crossorigin="anonymous"
   ></script>
+  <ins
+    class="adsbygoogle"
+    style="display:inline-block;width:200px;height:800px"
+    data-ad-client="ca-pub-5370518478483298"
+    data-ad-slot="XXXX"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
   <!-- seo -->
   <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
   <!-- font -->
