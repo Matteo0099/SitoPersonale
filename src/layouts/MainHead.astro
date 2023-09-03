@@ -11,6 +11,12 @@ const { title, description, image, frontmatter, robots } = Astro.props;
   <meta name="generator" content={Astro.generator} />
   <title>{title}</title>
   <meta name="description" content={description} />
+  <!-- google ad sense -->
+  <script
+  is:inline
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
+  crossorigin="anonymous"></script>
   <!-- seo -->
   <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
   <!-- font -->
