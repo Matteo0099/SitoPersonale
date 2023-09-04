@@ -1,0 +1,54 @@
+<!-- PostMail --><!-- access token: mu2kz84gez2h4bloglrum8ff -->
+<form
+  action="https://postmail.invotes.com/send"
+  method="post"
+  id="email_form"
+  class="form"
+>
+  <input type="text" name="subject" class="name" placeholder="Name*" required />
+
+  <!-- <textarea name="text" placeholder="Message" required>
+ Specifications:(extra)
+  </textarea> -->
+
+  <label for="product" class="product-label">Type of site:</label>
+  <!-- Default message -->
+  <select name="text" id="text" required aria-placeholder="Choose one option*">
+    <option value="Base">Base</option>
+    <option value="Completo">Completo</option>
+    <option value="Vetrina">Vetrina</option>
+  </select>
+
+  <!-- dont touch this -->
+  <input type="hidden" name="access_token" value="mu2kz84gez2h4bloglrum8ff" />
+  <!-- return urls can be fully qualified -OR- 
+    start with / for root relative -OR-
+    start with . for url relative -->
+  <input
+    type="hidden"
+    name="success_url"
+    value=".?message=Email+Successfully+Sent%21&isError=0"
+  />
+  <input
+    type="hidden"
+    name="error_url"
+    value=".?message=Email+could+not+be+sent.&isError=1"
+  />
+
+  <!-- set the reply-to address -->
+  <input type="text" name="reply_to" required placeholder="Your Email*" />
+
+  <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+  <input
+    type="text"
+    name="extra_phone_number"
+    placeholder="Phone Number*"
+    required
+  />
+
+  <!-- to split your message into 160 chars for an sms gateway -->
+  <input type="hidden" name="sms_format" value="true" />
+
+  <input id="submit_form" type="submit" value="Send" disabled class="send" />
+</form>
