@@ -30,6 +30,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 :root {
@@ -319,7 +320,7 @@ small {
 }
 
 :where(.h1-blog) {
-  margin: calc(15% + 100px) 0 2rem;
+  margin: .5rem 0 0 0;
 }
 
 a,
@@ -423,13 +424,12 @@ a svg:hover {
   text-align: center;
   padding: var(--space-md);
   /* <767px> */
-  margin: calc((100dvh - 87.333%) + 2rem) auto;
-  margin: calc((100vh - 87.333%) + 2rem) auto; /* if not dvh */
+  margin: 4rem auto; /* if not dvh */
 }
 
 @media screen and (min-width: 767px) {
   .container:not(.container.about) {
-    margin: calc((100vh - 50%) + 6rem) auto;
+    margin: 2.5rem auto;
   }
 }
 
