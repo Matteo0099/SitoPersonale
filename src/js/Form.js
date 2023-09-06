@@ -9,31 +9,86 @@ form.addEventListener("submit", function (e) {
 });
 
 // Disable the submit button if any required field is empty
-var requiredFields = form.querySelectorAll("[required]");
+var requiredFields = Array.from(form.querySelectorAll("[required]"));
 requiredFields.forEach(function (field) {
-  field.addEventListener("input", function () {
-    var isFormValid = true;
-    requiredFields.forEach(function (reqField) {
-      if (!reqField.value.trim()) {
-        isFormValid = false;
-      }
-    });
-    submitButton.disabled = !isFormValid;
-  });
+  field.addEventListener("input", validateForm);
 });
+
+function validateForm() {
+  var isFormValid = requiredFields.every(function (field) {
+    return field.value.trim() !== "";
+  });
+  submitButton.disabled = !isFormValid;
+}
+
 
 var data_js = {
   "access_token": "mu2kz84gez2h4bloglrum8ff"
 };
 
 function js_onSuccess() {
+  // Update the button text to "Sent!" after 3000ms
+  setTimeout(function () {
+    submitButton.value = "Sent!";
+  }, 3000);
+
   // Remove this to avoid redirect
-  window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+  // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+  SuccessMessage(); 
+}
+
+function SuccessMessage() {
+  // Create a full-screen div to show the sending message
+  var sendingMessage = document.createElement('div');
+  sendingMessage.style.position = 'fixed';
+  sendingMessage.style.left = 0;
+  sendingMessage.style.top = 0;
+  sendingMessage.style.width = '100%';
+  sendingMessage.style.height = '100%';
+  sendingMessage.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  sendingMessage.style.color = 'white';
+  sendingMessage.style.display = 'flex';
+  sendingMessage.style.justifyContent = 'center';
+  sendingMessage.style.alignItems = 'center';
+  sendingMessage.style.zIndex = 1000;
+  sendingMessage.innerHTML = 'Sending...';
+  document.body.appendChild(sendingMessage);
+
+  setTimeout(function () {
+    // Remove the sending message
+    sendingMessage.style.display = 'none';
+    // Can optionally add more logic here to handle the success state
+  }, 1500);
+
+  sendingMessage.innerHTML = 'Message has been sent successfully!';
+
+  setTimeout(function() {
+    sendingMessage.style.display = 'none';
+  }, 3000);
 }
 
 function js_onError(error) {
   console.log(error);
   window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+  ErrorMessage();
+}
+
+function ErrorMessage() {
+  // Create a full-screen div to show the sending message
+  var sendingMessage = document.createElement('div');
+  sendingMessage.style.position = 'fixed';
+  sendingMessage.style.left = 0;
+  sendingMessage.style.top = 0;
+  sendingMessage.style.width = '100%';
+  sendingMessage.style.height = '100%';
+  sendingMessage.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  sendingMessage.style.color = 'white';
+  sendingMessage.style.display = 'flex';
+  sendingMessage.style.justifyContent = 'center';
+  sendingMessage.style.alignItems = 'center';
+  sendingMessage.style.zIndex = 1000;
+  sendingMessage.innerHTML = 'Error ' + `${error}`;
+  document.body.appendChild(sendingMessage);
 }
 
 function js_send() {
@@ -84,4 +139,5 @@ function toParams(data_js) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
 });

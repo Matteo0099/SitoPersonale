@@ -80,23 +80,38 @@ const formattedPosts = formatBlogPosts(allPosts, {
   </section>
 
   <section class="container mx-auto" aria-label="My Services">
+    <div class="flexx">
+      <h2
+        class="h1 h1-shop"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="350"
+        data-aos-delay="750"
+        data-aos-easing="cubic"
+      >
+        Build a site for you!
+      </h2>
+      <svg class="builder-svg"></svg>
+    </div>
+    <h2 class="h1 h1-shop pricing">Pricing: </h2>
+    <!-- the cards -->
+    <Shop />
+  </section>
+
+  <section class="container mx-auto" aria-label="Contact me!">
     <h2
-      class="h1 h1-shop"
+      class="h1 h1-shop aos-init aos-animate"
       data-aos="fade-up"
       data-aos-anchor-placement="bottom-bottom"
       data-aos-duration="350"
       data-aos-delay="750"
       data-aos-easing="cubic"
     >
-      Build a site for you!
+      Contact me!
     </h2>
-    <!-- the cards -->
-    <Shop />
+    <div class="container-flex">
+      <svg class="Mentor-uiux"></svg>
+      <Form />
+    </div>
   </section>
-
-  <section class="container mx-auto" aria-label="Contact me!">
-    <h1>Contact me!</h1>
-    <Form />
-  </section>
-
 </MainLayout>

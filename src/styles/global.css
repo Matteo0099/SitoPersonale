@@ -9,6 +9,7 @@
 
 nav :where(ol, ul) {
   list-style: none;
+  appearance: none;
 }
 
 :where(nav) {
@@ -17,7 +18,8 @@ nav :where(ol, ul) {
 
 img,
 picture {
-  width: 100%;
+  /* width: 100%; */
+  margin: auto;
   max-width: 100%;
   display: block;
 }
@@ -323,10 +325,17 @@ small {
   margin: .5rem 0 0 0;
 }
 
+/** GOOGLE ADSENSE **/
+.adsbygoogle {
+  position: absolute !important;
+  left: -100% !important;
+  overflow: hidden !important;
+}
+
 a,
 button {
   color: hsl(var(--txt));
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   transition:
     opacity var(--transition-ease-fast),
     color var(--transition-ease-fast),
@@ -358,7 +367,7 @@ button {
   background-color: var(--fill);
   color: var(--type);
   font-size: var(--fs-md);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   border-width: var(--border-md);
   border-style: solid;
   border-color: transparent;
@@ -421,7 +430,7 @@ a svg:hover {
 .container {
   width: 100%;
   max-width: 1500px;
-  text-align: center;
+  text-align: left;
   padding: var(--space-md);
   /* <767px> */
   margin: 4rem auto; /* if not dvh */
@@ -464,6 +473,12 @@ a svg:hover {
 
   .btn-dark {
     margin: 1rem 0 0 0;
+  }
+
+  .Mentor-uiux {
+    width: 100% !important;
+    min-width: 160px !important;
+    min-height: 120px !important;
   }
 }
 
@@ -574,7 +589,6 @@ a svg:hover {
 }
 
 /* posts */
-
 .post-container {
   margin-block: var(--space-md);
   display: grid;
@@ -650,13 +664,13 @@ header {
   display: grid;
   place-items: center;
   gap: var(--space-sm);
-  text-align: center;
+  text-align: left;
 
   & .container {
     display: grid;
     place-items: center;
     gap: var(--space-sm);
-    text-align: center;
+    text-align: left;
     margin-block: var(--space-lg) var(--space-sm);
   }
 }
@@ -764,7 +778,7 @@ header {
     background-color: hsl(var(--muted));
     padding: var(--space-xs);
     gap: var(--space-2xs);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     width: fit-content;
 
@@ -783,8 +797,30 @@ header {
 }
 
 /** shop section **/
-.h1-shop {
+.h1-shop:not(.h1-shop.pricing) {
   margin: 8rem 0 2rem;
+}
+
+.pricing {
+  margin: 3rem 0 2rem; 
+}
+
+.icon-boot {
+  --_misure: 60px;
+  width: var(--_misure);
+  height: var(--_misure);
+  border: 3px solid #007bff;
+  margin: 0 auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-container .price {
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  letter-spacing: .35px;
 }
 
 .shop-container {
@@ -807,14 +843,22 @@ header {
   text-align: center;
   padding: 12px;
   min-width: 250px;
+  max-width: 425px;
+  overflow: hidden;
+  margin: 0 auto;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 
 .card h2 {
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #007bff; /* Colore blu accent */
+  font-size: var(--fs-lg);
 }
 
 .card p {
-  margin-top: 20px;
+  text-overflow: clip;
 }
 
 .buy-button {
@@ -825,8 +869,7 @@ header {
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  border-radius: var(--radius-lg);
   font-size: var(--fs-md);
 }
 
@@ -835,48 +878,16 @@ header {
   color: #fefefe;
 }
 
-
-/* .shop-container {
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-basis: 100%;
-  gap: 1.5rem;
-  margin: 2rem auto 4rem;
-}
-
-.shop-card {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  
-  border: 1px solid red;
-  padding: 1rem 2rem;
-  border-radius: var(--radius-md);
-  width: 100%;
-  max-width: 462px;
-  min-width: 300px;
-  height: 100%;
-  max-height: 675px;
-  min-height: 450px;
-} */
-
 /* form container */
 .form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  width: 100%;
   margin: 4rem auto;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: var(--radius-lg);
 }
 
 .form > *:not(input[type="submit"]), .form:not(input[type="submit"]) {
@@ -891,7 +902,7 @@ header {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: var(--radius-md);
   font-size: 16px;
 }
 
@@ -967,6 +978,103 @@ header {
   color: red;
   font-size: var(--fs-md);
   margin-top: 0.5rem;
+}
+
+/* builder svg */
+.builder-svg {
+  background-image: url('/builder.svg');
+  max-width: 800px;
+  display: block;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 550px;
+  aspect-ratio: 16 / 9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  -o-object-fit: cover;
+  background-clip: border-box;
+}
+
+
+/** BIG DEVICES **/
+@media screen and (min-width: 1168px) {
+  .flexx svg {
+    width: 40%;
+    flex-basis: 40%;
+  }
+  
+  .flexx h2 {
+    width: 60%;
+    flex-basis: 60%;
+  }
+}
+
+.flexx {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/** SMALL DEVICES **/
+@media screen and (max-width: 968px) {
+  .flexx {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 814px) {
+  .flexx {
+    justify-content: left;
+  }
+
+  .builder-svg {
+    min-height: 250px !important;
+  }
+
+  .flexx svg, .flexx h2 {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  .flexx svg {
+    margin: 0 0 3rem 0;
+  }
+}
+
+/* mentor ui ux */
+.Mentor-uiux {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  -o-object-fit: cover;
+  background-clip: border-box;
+  background-image: url('/UiuxMaterialmentor.svg');
+  max-width: 800px;
+  display: block;
+  min-width: 500px;
+  min-height: 350px;
+  max-height: 550px;
+  aspect-ratio: 16 / 9;
+}
+
+.container-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1376px) {
+  .container-flex {
+    justify-content: center !important;
+  }
 }
 
 
