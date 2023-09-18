@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = 'none'
       });
     }
-  } else {
+  } else 
     console.error("btn or dialog element not found.");
-  }
 });
 
 console.clear();

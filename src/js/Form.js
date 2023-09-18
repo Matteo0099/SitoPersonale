@@ -21,7 +21,6 @@ function validateForm() {
   submitButton.disabled = !isFormValid;
 }
 
-
 var data_js = {
   "access_token": "mu2kz84gez2h4bloglrum8ff"
 };
@@ -32,8 +31,7 @@ function js_onSuccess() {
     submitButton.value = "Sent!";
   }, 3000);
 
-  // Remove this to avoid redirect
-  // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+  // Remove (avoid redirect) window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
   SuccessMessage(); 
 }
 
@@ -111,11 +109,9 @@ function js_send() {
   var productDropdown = document.querySelector("#email_form [name='text']");
   var selectedProduct = productDropdown.options[productDropdown.selectedIndex].value;
 
-  // Assign values to data_js
+  // Assign values to data_js  // data_js['reply_to'] = yourEmail;
   data_js['subject'] = name;
-  // data_js['reply_to'] = yourEmail;
   data_js['extra_phone_number'] = PhoneNumber + "\n\n Email: " + yourEmail;
-  // Assign the selected product value to data_js
   data_js['text'] = selectedProduct;
 
   var params = toParams(data_js);
@@ -139,5 +135,4 @@ function toParams(data_js) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
 });
