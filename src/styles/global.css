@@ -281,13 +281,6 @@ small { font-size: var(--fs-sm) }
 :where(h2.postH2) { margin-top: 1.75rem }
 :where(.h1-blog) { margin: .5rem 0 0 0 }
 
-/** GOOGLE ADSENSE **/
-.adsbygoogle {
-  position: absolute !important;
-  left: -100% !important;
-  overflow: hidden !important;
-}
-
 a,
 button {
   color: hsl(var(--txt));

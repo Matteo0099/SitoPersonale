@@ -22,14 +22,12 @@ const {
 
 <html lang="en">
   <MainHead {title} {description} {image} {frontmatter} {robots} />
-  <!-- google analytics -->
-  <!-- Google tag (gtag.js) -->
+  <!-- google analytics --><!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PE5X8BZVX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9PE5X8BZVX');
   </script>
   <body class="body-primary">
@@ -40,8 +38,6 @@ const {
     <Footer />
     <!-- aos animation -->
     <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script is:inline>
-      AOS.init();
-    </script>
+    <script is:inline> AOS.init(); </script>
   </body>
 </html>
