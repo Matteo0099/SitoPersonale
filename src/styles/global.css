@@ -172,6 +172,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-synthesis: none;
   font-style: normal;
+  font-display: optional;
   /* colors */
   background-color: hsl(var(--bkg));
   color: hsl(var(--txt--light));
