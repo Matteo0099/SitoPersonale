@@ -222,7 +222,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .burger-icon { display: block }
+  .burger-icon { display: block; z-index: 9999 }
   .nav-menu { display: none !important }
 
   .nav-menu.active {
@@ -230,12 +230,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: fixed;
-    top: 87px;
-    left: 0;
-    right: 0;
+    position: absolute;
+    inset: 0;
+    /* margin: auto; */
     background-color: #fcfcfd;
-    height: calc(100vh - 80px);
+    height: 100vh;
     z-index: 999;
   }
 }

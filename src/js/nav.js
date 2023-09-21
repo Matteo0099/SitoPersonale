@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Toggle navigation menu
   document.querySelector(".burger-icon").addEventListener("click", () => {
     document.querySelector(".nav-menu").classList.toggle("active");
+    if(document.querySelector(".nav-menu").classList.contains("active")) 
+      body.style.overflow = "hidden";
+    else 
+      body.style.overflow = "auto";
   });
 });
 
