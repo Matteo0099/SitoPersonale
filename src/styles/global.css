@@ -260,7 +260,6 @@ main {
 }
 
 .fancyH1 {
-  font-size: clamp(3rem, 10vw, 10rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
