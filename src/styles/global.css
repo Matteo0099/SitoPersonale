@@ -153,6 +153,10 @@ h6 {
   box-shadow: var(--shadow-md);
 }
 
+.dark .btn-dark, .dark .nav-menu button {
+  color: #fff !important;
+}
+
 /* custom media query breakpoints */
 @custom-media --sm (width >=480px);
 @custom-media --md (width >=768px);
@@ -193,13 +197,10 @@ body {
   --btn-form-txt-light: var(--btn-form-txt-dark) !important;
 }
 
-.dark h1,
-.dark p,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 { color: hsl(var(--txt)) !important }
+.dark .content:not(.dark .post-container .content),
+.dark section .h1-shop,
+.dark section .h1-blog
+{ color: hsl(var(--txt)) !important }
 
 .btn-dark {
   --btn-w-h: 50px;
@@ -258,6 +259,11 @@ main {
   max-width: var(--content-xs);
 }
 
+.fancyH1 {
+  font-size: clamp(3rem, 10vw, 10rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
 h1 span { color: hsl(var(--accent)) }
 
 .h2,
@@ -283,7 +289,7 @@ small { font-size: var(--fs-sm) }
 
 a,
 button {
-  color: hsl(var(--txt));
+  color: currentColor;
   border-radius: var(--radius-md);
   transition:
     opacity var(--transition-ease-fast),
@@ -331,9 +337,14 @@ button {
 
   &.primary { --type: hsl(var(--txt)) }
 
-  &.secondary {
+  &.secondary:not(.content .link.secondary) {
     --type: hsl(var(--accent));
     color: hsl(var(--txt));
+    margin-left: auto;
+    width: 150px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 1rem;
   }
 
   &.filled {
@@ -343,6 +354,11 @@ button {
   &.bordered { border-color: var(--type) }
   &[aria-current="page"] { --type: hsl(var(--accent)) }
   &:hover { opacity: .8 }
+}
+
+.content .link.secondary, .content .linkspan {
+  --type: hsl(var(--accent));
+  color: #fdfdfd;
 }
 
 a svg:hover {
@@ -726,7 +742,7 @@ header {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 12px;
+  padding: 40px 30px;
   min-width: 250px;
   max-width: 425px;
   overflow: hidden;

@@ -1,10 +1,8 @@
 ---
 // library imports
 import { Image } from "@astrojs/image/components";
-
 // utils imports
 import { slugify, formatDate } from "../js/utils";
-
 const { category, title, author, date, image } = Astro.props;
 ---
 
@@ -13,7 +11,7 @@ const { category, title, author, date, image } = Astro.props;
     <small>
       <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
     </small>
-    <h1 class="h2">{title}</h1>
+    <h2 class="h2">{title}</h2>
     <p>
       by <a href={`/author/${slugify(author)}/`}>{author}</a> • {
         formatDate(date)

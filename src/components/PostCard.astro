@@ -1,17 +1,12 @@
 ---
 // library imports
 import { Image } from "@astrojs/image/components";
-
 // component imports
 import Link from "./Link.astro";
-
 // utils imports
 import { slugify, formatDate } from "../js/utils";
-
 const { frontmatter, url, tagType } = Astro.props;
-
 const Tag = tagType;
-
 const { title, date, author, image, description, category } = frontmatter;
 ---
 
