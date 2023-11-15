@@ -874,8 +874,9 @@ header {
 #pricing-cards {
   display: flex;
   font-size: 14px;
+  margin-top: 4rem;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -883,6 +884,7 @@ header {
 @media screen and (max-width: 767px) {
   #pricing-cards {
     margin: 2rem 0;
+    flex-direction: column !important;
   }
 }
 
