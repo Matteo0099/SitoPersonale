@@ -1016,9 +1016,18 @@ header {
 
 /* - - - - - - - - - Hero Card Styles - - - */
 #pricing-container .price-card--hero {
-  margin: -38px 6px 0;
+  margin: -51px 6px 0;
   /* 	width:31%; */
   z-index: 10;
+}
+
+#pricing-cards .price-card:nth-child(1) {
+  margin-top: 3rem;
+}
+
+.price-card--features--list.social {
+  padding-bottom: 4rem !important;
+  padding-top: 3rem !important;
 }
 
 #pricing-container .price-card--hero-text {
