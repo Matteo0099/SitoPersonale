@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let interval = null;
 
-  document.querySelectorAll("h1").forEach(h1Element => {
+  document.querySelectorAll("h1:not(.404)").forEach(h1Element => {
     h1Element.addEventListener('mouseover', event => {
       let iteration = 0;
       clearInterval(interval);

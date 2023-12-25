@@ -36,7 +36,7 @@ h6 {
 
 :root {
   /* font family */
-  --ff: 'Montserrat', sans-serif !important;
+  --ff: 'DM Sans', sans-serif !important;
 
   /* colors */
   --_hue: 235;
@@ -267,18 +267,32 @@ main {
   min-height: calc(100vh - 185px);
 }
 
+p,
 .h1,
 .h2,
 .h3,
 .h4,
+.h5,
+.h6,
+.title,
 .content :where(h1, h2, h3, h4) {
   font-weight: 700;
   line-height: var(--lh-1-1);
+  color: hsl(var(--txt)) !important;
 }
 
-.h1 {
+.h1,.title {
   font-size: var(--fs-2xl);
   max-width: var(--content-xs);
+}
+
+.subtitle {
+  font-weight: 400;
+  margin: .25rem 0;
+}
+
+.mb-4 {
+  margin: 0 0 1.75rem 0;
 }
 
 .fancyH1 {
@@ -387,7 +401,7 @@ button {
     --type: hsl(var(--txt))
   }
 
-  &.secondary:not(.content .link.secondary) {
+  &.secondary:not(.content .link.secondary):not(.errorPage) {
     --type: hsl(var(--accent));
     color: hsl(var(--txt));
     margin-left: auto;
@@ -425,6 +439,13 @@ a svg:hover {
   transform: scale(1.025);
   -webkit-transform: scale(1.025);
   transition: var(--transition-squish-slow);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important; 
 }
 
 ::selection {
@@ -609,6 +630,10 @@ a svg:hover {
 
   @media --lg {
     grid-template-columns: 1fr 1fr 1fr
+  }
+
+  p {
+    font-weight: 300 !important;
   }
 }
 
@@ -1262,6 +1287,8 @@ header {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .form #submit_form:disabled {
@@ -1296,11 +1323,15 @@ header {
   outline: none;
 }
 
-/* Error message style (customize as needed) */
+/* Error message style */
 .error-message {
   color: red;
   font-size: var(--fs-md);
   margin-top: 0.5rem;
+}
+
+.errorCap {
+  margin: 1.5rem 0 0 0;
 }
 
 /* builder svg */

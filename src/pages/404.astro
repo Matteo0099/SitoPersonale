@@ -13,15 +13,20 @@ import MainLayout from "../layouts/MainLayout.astro";
       gap: "var(--space-sm)",
     }} >
     <div>
-      <h1 class="h1" data-value="Welp, something gone wrong!">Welp, something gone wrong!</h1>
-      <p>turn back or go right…</p>
+      <h1 class="title">Welp, something gone wrong!</h1>
+      <p class="errorCap">turn back or go home!</p>
     </div>
-    <Link href="/"
-      style="secondary"
-      text="Go Home"
-      icon={{
-        name: "tabler:home",
-        side: "right",
-      }} />
+    <div class="container center">  
+      <div class="errorPage">
+        <Link href="/"
+          style="secondary"
+          text="Go Home"
+          icon={{
+            name: "tabler:home",
+            side: "right",
+          }} 
+        />
+      </div>
+    </div>
   </div>
 </MainLayout>
