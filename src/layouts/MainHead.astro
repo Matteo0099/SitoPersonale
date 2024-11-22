@@ -11,6 +11,13 @@ const { title, description, image, frontmatter, robots } = Astro.props;
   <meta name="generator" content={Astro.generator} />
   <title>{title}</title>
   <meta name="description" content={description} />
+  
+  <!-- ads ggl -->
+  <meta name="google-adsense-account" content="ca-pub-5370518478483298">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5370518478483298"
+    crossorigin="anonymous"></script>
+  <!-- /ads -->
+
   <!-- seo -->
   <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
   <link rel="preload" href="../styles/global.css" as="style">
@@ -25,4 +32,5 @@ const { title, description, image, frontmatter, robots } = Astro.props;
   />
   <!-- aos animation -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 </head>
